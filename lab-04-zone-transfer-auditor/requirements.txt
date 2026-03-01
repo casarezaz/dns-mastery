@@ -1,0 +1,5 @@
+# Zone Transfer Auditor - Lab 4
+# No pip dependencies required — uses dig (system) and Python stdlib only
+#
+# System requirement:
+#   brew install bind   (provides dig with AXFR support)
