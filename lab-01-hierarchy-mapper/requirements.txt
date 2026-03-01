@@ -1,0 +1,9 @@
+# DNS Hierarchy Mapper — Lab 1
+# Core dependencies (Python 3.10+ stdlib handles most needs)
+#
+# No pip packages required for core functionality.
+# dig (from bind/dnsutils) and graphviz are system-level dependencies.
+#
+# Optional: uncomment for extended features
+# dnspython>=2.5.0        # Alternative to dig subprocess calls
+# rich>=13.0.0            # Enhanced terminal rendering

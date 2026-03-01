@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+.env
+
+# Lab output directories (generated, not tracked)
+**/output/
+!**/output/.gitkeep
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_metadata/
+
+# Datasets (too large for git)
+*.pcap
+*.pcapng
+*.csv
+!**/samples/*.csv
+
+# Model artifacts
+*.pkl
+*.h5
+*.savedmodel/
+*.pt
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
