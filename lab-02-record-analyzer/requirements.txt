@@ -1,0 +1,5 @@
+# DNS Record Type Analyzer - Lab 2
+# No pip dependencies required — uses dig (system) and Python stdlib only
+#
+# System requirement:
+#   brew install bind   (provides dig)
