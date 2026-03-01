@@ -6,7 +6,7 @@
 
 This repository contains 12 hands-on labs that build a complete understanding of DNS from the ground up — from how the namespace tree works to how nation-state actors abuse it for command-and-control operations. Each lab produces a portfolio-quality deliverable: functional tools, detection rules, and research artifacts.
 
-**Author:** Angie Casarez — Detection Engineer | CISSP, GCIH, GSEC, eJPT
+**Author:** Angie Agee | CISSP, GCIH, GSEC, eJPT
 
 ---
 
