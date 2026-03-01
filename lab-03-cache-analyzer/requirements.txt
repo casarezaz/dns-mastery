@@ -1,0 +1,8 @@
+# DNS Cache Analyzer - Lab 3
+# No pip dependencies required — uses dig (system) and Python stdlib only
+#
+# System requirement:
+#   brew install bind   (provides dig)
+#
+# Optional (for HTML reports with interactive charts):
+#   Chart.js loaded via CDN in HTML output — no local install needed
