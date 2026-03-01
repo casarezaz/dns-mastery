@@ -17,8 +17,8 @@ This repository contains 12 hands-on labs that build a complete understanding of
 | Lab | Project | Status | Description |
 |-----|---------|--------|-------------|
 | 01 | [Hierarchy Mapper](lab-01-hierarchy-mapper/) | ✅ Complete | Traces full delegation chain from root → authoritative NS with visual output |
-| 02 | [Record Type Analyzer](lab-02-record-analyzer/) | 🔲 Planned | Comprehensive DNS enumeration + security posture assessment |
-| 03 | [Query Path Tracer](lab-03-query-path-tracer/) | 🔲 Planned | Resolution path tracing with latency measurement + anomaly detection |
+| 02 | [Record Type Analyzer](lab-02-record-analyzer/) | ✅ Planned | Comprehensive DNS enumeration + security posture assessment |
+| 03 | [Query Path Tracer](lab-03-query-path-tracer/) | ✅ Planned | Resolution path tracing with latency measurement + anomaly detection |
 | 04 | [Zone Transfer Auditor](lab-04-zone-transfer-auditor/) | 🔲 Planned | AXFR misconfiguration scanner + sensitive record identification |
 
 ### Phase 2: DNS Security & Attack Techniques (Weeks 5–8)
