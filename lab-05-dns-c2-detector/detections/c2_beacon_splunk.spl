@@ -1,0 +1,229 @@
+| ============================================================================
+| DNS C2 Detection — Splunk SPL Queries
+| Lab 05: DNS C2 Detector (DNS Mastery Study Plan)
+|
+| MITRE ATT&CK:
+|   T1071.004 — Application Layer Protocol: DNS
+|   T1568.002 — Dynamic Resolution: Domain Generation Algorithms
+|   T1572     — Protocol Tunneling
+|   T1041     — Exfiltration Over C2 Channel
+|
+| These queries detect DNS-based C2 patterns across Zeek, Sysmon, and
+| generic DNS log sources.
+| ============================================================================
+
+
+| --------------------------------------------------------------------------
+| QUERY 1: Beacon Interval Detection (Zeek dns.log)
+| --------------------------------------------------------------------------
+| Identifies periodic DNS query patterns by measuring the standard
+| deviation and coefficient of variation of inter-query intervals.
+| Low CV = regular beacon. Threshold: CV < 0.20, min 10 queries.
+| --------------------------------------------------------------------------
+index=zeek sourcetype="bro:dns:json" earliest=-4h
+| eval base_domain=mvindex(split(query, "."), -2) + "." + mvindex(split(query, "."), -1)
+| sort 0 _time
+| streamstats current=f window=1 last(_time) AS prev_time BY id.orig_h, base_domain
+| eval interval=_time - prev_time
+| where interval > 1 AND interval < 3600
+| stats count AS query_count,
+        avg(interval) AS mean_interval,
+        stdev(interval) AS stdev_interval,
+        min(interval) AS min_interval,
+        max(interval) AS max_interval,
+        dc(query) AS unique_subdomains,
+        values(id.orig_h) AS src_ips
+    BY base_domain
+| eval cv = stdev_interval / mean_interval
+| where query_count >= 10 AND cv < 0.20
+| eval beacon_confidence = round((1 - (cv / 0.20)) * 100, 1)
+| eval mean_interval_str = tostring(round(mean_interval, 1)) + "s"
+| sort - beacon_confidence
+| table base_domain, query_count, mean_interval_str, cv, beacon_confidence,
+        unique_subdomains, src_ips
+
+
+| --------------------------------------------------------------------------
+| QUERY 2: High-Entropy Subdomain Detection (Zeek dns.log)
+| --------------------------------------------------------------------------
+| Calculates Shannon entropy of subdomain labels. Legitimate subdomains
+| (www, mail, api) have low entropy; encoded C2 data has high entropy.
+| Threshold: avg entropy > 3.5 bits.
+| --------------------------------------------------------------------------
+index=zeek sourcetype="bro:dns:json" earliest=-4h
+| eval base_domain=mvindex(split(query, "."), -2) + "." + mvindex(split(query, "."), -1)
+| eval subdomain=replace(query, "\." + replace(base_domain, "\.", "\\.") + "$", "")
+| where subdomain!=query AND len(subdomain) > 5
+| eval subdomain_flat=replace(subdomain, "\.", "")
+| eval sd_len=len(subdomain_flat)
+| lookup ut_shannon_lookup word AS subdomain_flat OUTPUT ut_shannon AS entropy
+| stats count AS query_count,
+        avg(entropy) AS avg_entropy,
+        max(entropy) AS max_entropy,
+        dc(subdomain) AS unique_subdomains,
+        values(id.orig_h) AS src_ips,
+        avg(sd_len) AS avg_label_length
+    BY base_domain
+| where avg_entropy > 3.5 AND query_count >= 5
+| eval avg_entropy=round(avg_entropy, 2)
+| eval max_entropy=round(max_entropy, 2)
+| eval avg_label_length=round(avg_label_length, 0)
+| sort - avg_entropy
+| table base_domain, query_count, avg_entropy, max_entropy,
+        unique_subdomains, avg_label_length, src_ips
+
+
+| --------------------------------------------------------------------------
+| QUERY 3: Encoded Subdomain Label Detection
+| --------------------------------------------------------------------------
+| Flags subdomain labels matching base32, base64, or hex encoding
+| patterns — strong indicator of DNS tunneling or data exfiltration.
+| --------------------------------------------------------------------------
+index=zeek sourcetype="bro:dns:json" earliest=-4h
+| eval base_domain=mvindex(split(query, "."), -2) + "." + mvindex(split(query, "."), -1)
+| eval subdomain=replace(query, "\." + replace(base_domain, "\.", "\\.") + "$", "")
+| where subdomain!=query
+| eval labels=split(subdomain, ".")
+| mvexpand labels
+| where len(labels) >= 16
+| eval is_base32=if(match(labels, "^[A-Z2-7]{16,}={0,6}$"), 1, 0)
+| eval is_base64=if(match(labels, "^[A-Za-z0-9+/\-_]{16,}={0,2}$"), 1, 0)
+| eval is_hex=if(match(labels, "^[0-9a-fA-F]{16,}$"), 1, 0)
+| eval encoding_type=case(is_hex=1, "hex", is_base32=1, "base32", is_base64=1, "base64", true(), "none")
+| where encoding_type!="none"
+| stats count AS encoded_labels,
+        dc(encoding_type) AS encoding_types,
+        values(encoding_type) AS encodings,
+        dc(query) AS unique_queries
+    BY base_domain, id.orig_h
+| where encoded_labels >= 3
+| sort - encoded_labels
+| table base_domain, id.orig_h, encoded_labels, encodings, unique_queries
+
+
+| --------------------------------------------------------------------------
+| QUERY 4: TXT Record Abuse Detection
+| --------------------------------------------------------------------------
+| Detects domains receiving excessive TXT queries, a common C2 data
+| download technique. Flags domains where TXT makes up >50% of queries.
+| --------------------------------------------------------------------------
+index=zeek sourcetype="bro:dns:json" earliest=-4h
+| eval base_domain=mvindex(split(query, "."), -2) + "." + mvindex(split(query, "."), -1)
+| stats count AS total_queries,
+        count(eval(qtype_name="TXT")) AS txt_queries,
+        dc(id.orig_h) AS unique_sources,
+        values(id.orig_h) AS src_ips
+    BY base_domain
+| eval txt_ratio=round(txt_queries/total_queries, 2)
+| where txt_queries >= 5 AND txt_ratio > 0.50
+| sort - txt_queries
+| table base_domain, total_queries, txt_queries, txt_ratio, unique_sources, src_ips
+
+
+| --------------------------------------------------------------------------
+| QUERY 5: NXDOMAIN Flood / DGA Detection
+| --------------------------------------------------------------------------
+| High NXDOMAIN rates to a domain's subdomains indicate DGA activity.
+| Malware cycles through algorithmically generated domains until one
+| resolves to a live C2 server.
+| --------------------------------------------------------------------------
+index=zeek sourcetype="bro:dns:json" earliest=-4h
+    (rcode_name="NXDOMAIN" OR rcode=3)
+| eval base_domain=mvindex(split(query, "."), -2) + "." + mvindex(split(query, "."), -1)
+| stats count AS nxdomain_count,
+        dc(query) AS unique_nxdomains,
+        values(id.orig_h) AS src_ips
+    BY base_domain
+| join type=left base_domain
+    [search index=zeek sourcetype="bro:dns:json" earliest=-4h
+    | eval base_domain=mvindex(split(query, "."), -2) + "." + mvindex(split(query, "."), -1)
+    | stats count AS total_queries BY base_domain]
+| eval nxdomain_ratio=round(nxdomain_count/total_queries, 2)
+| where nxdomain_count >= 10 AND nxdomain_ratio > 0.50
+| sort - nxdomain_ratio
+| table base_domain, nxdomain_count, total_queries, nxdomain_ratio,
+        unique_nxdomains, src_ips
+
+
+| --------------------------------------------------------------------------
+| QUERY 6: Long Subdomain Label Detection
+| --------------------------------------------------------------------------
+| Unusually long subdomain labels (>24 chars) indicate data encoding.
+| Normal subdomains (www, mail, api) are short. C2 tunnels pack data
+| into labels up to the 63-char DNS label limit.
+| --------------------------------------------------------------------------
+index=zeek sourcetype="bro:dns:json" earliest=-4h
+| eval base_domain=mvindex(split(query, "."), -2) + "." + mvindex(split(query, "."), -1)
+| eval subdomain=replace(query, "\." + replace(base_domain, "\.", "\\.") + "$", "")
+| where subdomain!=query
+| eval labels=split(subdomain, ".")
+| mvexpand labels
+| eval label_length=len(labels)
+| where label_length > 24
+| stats count AS long_labels,
+        avg(label_length) AS avg_length,
+        max(label_length) AS max_length,
+        dc(query) AS unique_queries,
+        values(id.orig_h) AS src_ips
+    BY base_domain
+| where long_labels >= 3
+| eval avg_length=round(avg_length, 0)
+| sort - long_labels
+| table base_domain, long_labels, avg_length, max_length, unique_queries, src_ips
+
+
+| --------------------------------------------------------------------------
+| QUERY 7: Composite C2 Threat Score
+| --------------------------------------------------------------------------
+| Combines multiple detection signals into a single threat score.
+| Domains triggering multiple techniques get higher scores.
+| --------------------------------------------------------------------------
+index=zeek sourcetype="bro:dns:json" earliest=-4h
+| eval base_domain=mvindex(split(query, "."), -2) + "." + mvindex(split(query, "."), -1)
+| eval subdomain=replace(query, "\." + replace(base_domain, "\.", "\\.") + "$", "")
+| eval subdomain_flat=replace(subdomain, "\.", "")
+| eval sd_len=len(subdomain_flat)
+| eval is_txt=if(qtype_name="TXT", 1, 0)
+| eval is_nxdomain=if(rcode_name="NXDOMAIN" OR rcode=3, 1, 0)
+| eval long_label=if(sd_len > 24, 1, 0)
+| stats count AS total_queries,
+        dc(query) AS unique_queries,
+        avg(sd_len) AS avg_sd_len,
+        sum(is_txt) AS txt_count,
+        sum(is_nxdomain) AS nxdomain_count,
+        sum(long_label) AS long_label_count,
+        values(id.orig_h) AS src_ips
+    BY base_domain
+| where total_queries >= 5
+| eval txt_ratio=txt_count/total_queries
+| eval nxdomain_ratio=nxdomain_count/total_queries
+| eval long_label_ratio=long_label_count/total_queries
+| eval subdomain_diversity=unique_queries/total_queries
+| eval threat_score=0
+| eval threat_score=threat_score + if(avg_sd_len > 20, 20, 0)
+| eval threat_score=threat_score + if(txt_ratio > 0.5, 15, 0)
+| eval threat_score=threat_score + if(nxdomain_ratio > 0.5, 15, 0)
+| eval threat_score=threat_score + if(long_label_ratio > 0.3, 20, 0)
+| eval threat_score=threat_score + if(subdomain_diversity > 0.8, 15, 0)
+| eval threat_score=threat_score + if(total_queries > 100, 15, 0)
+| where threat_score >= 30
+| eval threat_rating=case(threat_score>=80, "CRITICAL", threat_score>=60, "HIGH",
+                           threat_score>=40, "MEDIUM", true(), "LOW")
+| sort - threat_score
+| table base_domain, threat_score, threat_rating, total_queries,
+        unique_queries, avg_sd_len, txt_ratio, nxdomain_ratio,
+        long_label_ratio, src_ips
+
+
+| --------------------------------------------------------------------------
+| QUERY 8: Time-Series Dashboard — C2 Indicator Activity
+| --------------------------------------------------------------------------
+| Tracks C2-suspicious activity over time for SOC dashboards.
+| Shows spike patterns and persistent beaconing.
+| --------------------------------------------------------------------------
+index=zeek sourcetype="bro:dns:json" earliest=-24h
+| eval base_domain=mvindex(split(query, "."), -2) + "." + mvindex(split(query, "."), -1)
+| eval subdomain=replace(query, "\." + replace(base_domain, "\.", "\\.") + "$", "")
+| eval sd_len=len(replace(subdomain, "\.", ""))
+| where sd_len > 20
+| timechart span=15m count BY base_domain limit=10

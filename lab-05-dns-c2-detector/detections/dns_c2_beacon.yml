@@ -1,0 +1,180 @@
+title: DNS C2 Beacon Detection - High Entropy Subdomains
+id: a1b2c3d4-e5f6-7890-abcd-ef1234567890
+status: experimental
+description: |
+    Detects DNS queries with high-entropy subdomain labels, a strong indicator
+    of DNS-based command-and-control communication. C2 tools encode commands
+    and exfiltrated data in subdomain labels using base32, base64, or hex
+    encoding, producing distinctively high Shannon entropy values.
+references:
+    - https://attack.mitre.org/techniques/T1071/004/
+    - https://github.com/casarezaz/dns-mastery/tree/main/lab-05-dns-c2-detector
+author: Angie Casarez (casarezaz)
+date: 2026/03/25
+modified: 2026/03/25
+tags:
+    - attack.command_and_control
+    - attack.t1071.004
+    - attack.t1572
+    - attack.exfiltration
+    - attack.t1041
+logsource:
+    category: dns
+    product: zeek
+detection:
+    selection_long_labels:
+        query|re: '^[a-z0-9\-\_]{24,}\.'
+    filter_known_benign:
+        query|endswith:
+            - '.googleapis.com'
+            - '.gstatic.com'
+            - '.cloudfront.net'
+            - '.akamaiedge.net'
+            - '.cloudflare.com'
+            - '.amazonaws.com'
+            - '.windows.net'
+            - '.office365.com'
+            - '.microsoftonline.com'
+            - '._domainkey.'
+            - '._dmarc.'
+            - '._acme-challenge.'
+    condition: selection_long_labels and not filter_known_benign
+falsepositives:
+    - DKIM and SPF record lookups with long selectors
+    - ACME certificate validation challenges
+    - Legitimate CDN and cloud provider subdomains
+    - Anti-spam verification tokens
+level: high
+---
+title: DNS C2 Beacon Detection - Periodic Query Intervals
+id: b2c3d4e5-f6a7-8901-bcde-f12345678901
+status: experimental
+description: |
+    Detects hosts sending DNS queries to the same base domain at regular
+    intervals, consistent with C2 beacon check-in behavior. Most C2 implants
+    query their controller domain on a timer (e.g., every 60 seconds) with
+    small random jitter to avoid exact-interval detection.
+references:
+    - https://attack.mitre.org/techniques/T1071/004/
+author: Angie Casarez (casarezaz)
+date: 2026/03/25
+tags:
+    - attack.command_and_control
+    - attack.t1071.004
+logsource:
+    category: dns
+    product: zeek
+detection:
+    selection:
+        # Correlate by source IP — same host querying same domain repeatedly
+        id.orig_h|count_gt: 10
+    timeframe: 1h
+    condition: selection
+    # NOTE: This rule requires enrichment with interval analysis.
+    # Sigma alone cannot compute inter-query intervals.
+    # Use the companion SPL queries or dns_c2_detector.py for full
+    # beacon interval analysis with coefficient of variation scoring.
+falsepositives:
+    - Heartbeat/health-check services
+    - Monitoring agents querying status endpoints
+    - Auto-update mechanisms
+level: medium
+---
+title: DNS C2 - Excessive TXT Record Queries
+id: c3d4e5f6-a7b8-9012-cdef-123456789012
+status: experimental
+description: |
+    Detects hosts sending an excessive number of TXT record queries to a
+    single domain. TXT records can carry up to 255 bytes per string and are
+    commonly abused by C2 frameworks to download commands and configuration
+    from attacker-controlled DNS infrastructure.
+references:
+    - https://attack.mitre.org/techniques/T1071/004/
+author: Angie Casarez (casarezaz)
+date: 2026/03/25
+tags:
+    - attack.command_and_control
+    - attack.t1071.004
+    - attack.exfiltration
+    - attack.t1041
+logsource:
+    category: dns
+    product: zeek
+detection:
+    selection:
+        qtype_name: 'TXT'
+    filter_known_txt:
+        query|contains:
+            - '_dmarc.'
+            - '_domainkey.'
+            - '_spf.'
+            - '_mta-sts.'
+            - '_acme-challenge.'
+    condition: selection and not filter_known_txt | count() by query > 5
+    timeframe: 1h
+falsepositives:
+    - DMARC/DKIM/SPF record lookups (filtered)
+    - Certificate validation
+    - Service discovery
+level: high
+---
+title: DNS C2 - High NXDOMAIN Rate (DGA Indicator)
+id: d4e5f6a7-b8c9-0123-defa-234567890123
+status: experimental
+description: |
+    Detects hosts generating a high rate of NXDOMAIN responses, indicating
+    Domain Generation Algorithm (DGA) activity. DGA-based malware generates
+    many random domains and queries them sequentially — most return NXDOMAIN,
+    but the few that resolve reach the attacker's C2 server.
+references:
+    - https://attack.mitre.org/techniques/T1568/002/
+author: Angie Casarez (casarezaz)
+date: 2026/03/25
+tags:
+    - attack.command_and_control
+    - attack.t1568.002
+logsource:
+    category: dns
+    product: zeek
+detection:
+    selection:
+        rcode_name: 'NXDOMAIN'
+    condition: selection | count() by id.orig_h > 50
+    timeframe: 1h
+falsepositives:
+    - Misconfigured applications querying stale domains
+    - DNS-based blocklists returning NXDOMAIN
+    - Split-horizon DNS issues
+level: high
+---
+title: DNS C2 - Encoded Subdomain Labels (Base32/Hex)
+id: e5f6a7b8-c9d0-1234-efab-345678901234
+status: experimental
+description: |
+    Detects DNS queries containing subdomain labels that match base32 or
+    hexadecimal encoding patterns. DNS tunneling tools (iodine, dnscat2,
+    dns2tcp) encode data in subdomain labels using these encodings to
+    exfiltrate data or receive commands via DNS.
+references:
+    - https://attack.mitre.org/techniques/T1572/
+    - https://attack.mitre.org/techniques/T1041/
+author: Angie Casarez (casarezaz)
+date: 2026/03/25
+tags:
+    - attack.command_and_control
+    - attack.t1572
+    - attack.exfiltration
+    - attack.t1041
+logsource:
+    category: dns
+    product: zeek
+detection:
+    selection_base32:
+        query|re: '[A-Z2-7]{20,}\.'
+    selection_hex:
+        query|re: '[0-9a-f]{20,}\.'
+    condition: selection_base32 or selection_hex
+falsepositives:
+    - DKIM key lookups with long selectors
+    - Legitimate base32-encoded service identifiers
+level: high
