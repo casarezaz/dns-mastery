@@ -1,0 +1,15 @@
+{
+  "name": "Original Home Network DNS Setup",
+  "resolver_type": "recursive",
+  "encryption": "none",
+  "dnssec_validation": false,
+  "upstream_providers": [
+    "8.8.8.8",
+    "8.8.4.4"
+  ],
+  "rpz_blocklists": [],
+  "logging_level": "none",
+  "caching_enabled": true,
+  "rate_limiting": false,
+  "description": "Original unprotected DNS resolver configuration"
+}

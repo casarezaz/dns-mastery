@@ -1,0 +1,135 @@
+// RPZ Policy Monitoring Splunk Queries
+// Lab 10 — RPZ Policy Builder Detection Rules
+// Monitor RPZ hits, policy enforcement, and policy bypass attempts
+
+// ============================================================================
+// Query 1: RPZ Block Hits by Policy Action
+// Monitors successful RPZ policy enforcement (NXDOMAIN, NODATA, etc.)
+// ============================================================================
+
+index=dns sourcetype=named:query
+| search response_code=NXDOMAIN OR response_code=NODATA
+| stats count by host, query, response_code
+| rename response_code as "RPZ Action"
+| where count > 1
+| sort - count
+
+
+// ============================================================================
+// Query 2: RPZ Policy Enforcement Rate
+// Daily breakdown of policy enforcement vs. total queries
+// ============================================================================
+
+index=dns sourcetype=named:query
+| eval is_blocked=if(response_code="NXDOMAIN" OR response_code="NODATA", 1, 0)
+| stats count as total_queries, sum(is_blocked) as blocked_queries by host, date_mday
+| eval enforcement_rate=round(blocked_queries/total_queries * 100, 2)
+| table host, date_mday, total_queries, blocked_queries, enforcement_rate
+| sort - enforcement_rate
+
+
+// ============================================================================
+// Query 3: Top Blocked Domains by RPZ Policy
+// Identify most frequently blocked domains
+// ============================================================================
+
+index=dns sourcetype=named:query
+| search response_code=NXDOMAIN OR response_code=NODATA
+| stats count by query
+| rename query as domain
+| sort - count
+| head 20
+
+
+// ============================================================================
+// Query 4: RPZ Policy Bypass Attempts
+// Detect queries attempting to bypass RPZ via subdomain rotation
+// (multiple subdomains of same base domain in short time)
+// ============================================================================
+
+index=dns sourcetype=named:query
+| regex query="^[a-z0-9]{8,}\..*\.(com|net|org|ru)$"
+| extract field=query "^(?<subdomain>[^.]+)\.(?<base_domain>.*)"
+| stats dc(subdomain) as unique_subdomains by base_domain, src_ip
+| where unique_subdomains > 10
+| rename base_domain as domain
+| table src_ip, domain, unique_subdomains
+
+
+// ============================================================================
+// Query 5: Clients with Highest RPZ Block Hits
+// Identify clients generating most RPZ blocks
+// ============================================================================
+
+index=dns sourcetype=named:query
+| search response_code=NXDOMAIN OR response_code=NODATA
+| stats count by src_ip
+| rename src_ip as client_ip
+| sort - count
+| head 20
+
+
+// ============================================================================
+// Query 6: RPZ Block Spike Detection
+// Detect unusual spikes in RPZ block activity (possible malware outbreak)
+// ============================================================================
+
+index=dns sourcetype=named:query
+| search response_code=NXDOMAIN OR response_code=NODATA
+| timechart count by host
+| eval baseline=avg(count)
+| eval threshold=baseline*2
+| where count > threshold
+| table _time, host, count, baseline, threshold
+
+
+// ============================================================================
+// Query 7: Failed RPZ Policy Redirects
+// Monitor REDIRECT policy action failures and timeouts
+// ============================================================================
+
+index=dns response_code=SERVFAIL OR response_code=REFUSED
+| search query IN (phishing*, malware*, c2*, botnet*)
+| stats count by host, query, response_code
+| rename response_code as error_type
+| sort - count
+
+
+// ============================================================================
+// Query 8: RPZ Whitelist Validation
+// Verify whitelisted domains are allowed (not receiving NXDOMAIN)
+// ============================================================================
+
+index=dns sourcetype=named:query
+| search query IN ("google.com", "facebook.com", "github.com", "stackoverflow.com", "wikipedia.org")
+| stats count by query, response_code
+| where response_code="NXDOMAIN"
+| table query, response_code, count
+| appendcols [search index=dns query="google.com" response_code="NOERROR" | stats count]
+
+
+// ============================================================================
+// Query 9: RPZ Policy Coverage Analysis
+// Analyze coverage of RPZ policy across different client subnets
+// ============================================================================
+
+index=dns sourcetype=named:query
+| rex field=src_ip "(?<client_subnet>\d+\.\d+\.\d+)\."
+| search response_code=NXDOMAIN OR response_code=NODATA
+| stats count as rpz_blocks by client_subnet
+| join client_subnet [search index=dns | rex field=src_ip "(?<client_subnet>\d+\.\d+\.\d+)\." | stats count as total_queries by client_subnet]
+| eval coverage=round(rpz_blocks/total_queries * 100, 2)
+| table client_subnet, rpz_blocks, total_queries, coverage
+| sort - coverage
+
+
+// ============================================================================
+// Query 10: RPZ Zone Serial Change Detection
+// Monitor RPZ zone file updates and serial number changes
+// ============================================================================
+
+index=dns sourcetype=named:zone OR (sourcetype=syslog "rpz" "serial")
+| stats values(serial) as serials by zone, host
+| eval serial_change=if(mvcount(serials) > 1, "YES", "NO")
+| where serial_change="YES"
+| table host, zone, serials, serial_change

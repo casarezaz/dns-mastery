@@ -1,0 +1,56 @@
+$ORIGIN rpz.local.
+
+; SOA record
+@  3600  IN  SOA  ns1.rpz.local. hostmaster.rpz.local. (
+    2024032700  ; serial
+    3600           ; refresh
+    1800           ; retry
+    604800         ; expire
+    3600 )         ; minimum
+
+; Nameserver records
+@  3600  IN  NS  ns1.rpz.local.
+ns1.rpz.local.  3600  IN  A  127.0.0.1
+
+; RPZ Policy Records (nxdomain)
+
+adware-loader.info.  3600  IN  CNAME  .
+amazon-account-confirm.org.  3600  IN  CNAME  .
+apple-id-security.xyz.  3600  IN  CNAME  .
+backdoor-tunnel.pw.  3600  IN  CNAME  .
+bank-credentials-check.ru.  3600  IN  CNAME  .
+botnet-control.net.  3600  IN  CNAME  .
+cerber-recovery.cc.  3600  IN  CNAME  .
+commandcontrol1.tv.  3600  IN  CNAME  .
+commandcontrol2.pw.  3600  IN  CNAME  .
+conti-leak-site.pw.  3600  IN  CNAME  .
+cryptowall-gate.ru.  3600  IN  CNAME  .
+darkside-marketplace.tv.  3600  IN  CNAME  .
+dga-seed1.net.  3600  IN  CNAME  .
+dga-seed2.com.  3600  IN  CNAME  .
+ebay-billing-update.info.  3600  IN  CNAME  .
+exploit-kit.tv.  3600  IN  CNAME  .
+facebook-security-alert.pw.  3600  IN  CNAME  .
+fast-flux1.org.  3600  IN  CNAME  .
+fast-flux2.ru.  3600  IN  CNAME  .
+google-account-recovery.cc.  3600  IN  CNAME  .
+infrastructure-hub.tk.  3600  IN  CNAME  .
+lhc-extortion.tk.  3600  IN  CNAME  .
+linkedin-verification.tk.  3600  IN  CNAME  .
+locky-decryption.com.  3600  IN  CNAME  .
+malware-c2.com.  3600  IN  CNAME  .
+microsoft-office365-update.net.  3600  IN  CNAME  .
+netflix-billing-verify.tv.  3600  IN  CNAME  .
+paypal-login-verify.com.  3600  IN  CNAME  .
+peer-to-peer-control.cc.  3600  IN  CNAME  .
+petya-ransom.net.  3600  IN  CNAME  .
+ransomware-gateway.org.  3600  IN  CNAME  .
+revil-payment.info.  3600  IN  CNAME  .
+rootkit-command.cc.  3600  IN  CNAME  .
+shadowserver-node.info.  3600  IN  CNAME  .
+sodinokibi-demand.xyz.  3600  IN  CNAME  .
+spyware-beacon.xyz.  3600  IN  CNAME  .
+trojan-delivery.ru.  3600  IN  CNAME  .
+wannacry-payment.org.  3600  IN  CNAME  .
+worm-distribution.tk.  3600  IN  CNAME  .
+zombie-network.xyz.  3600  IN  CNAME  .

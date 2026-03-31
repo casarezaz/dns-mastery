@@ -1,0 +1,34 @@
+# abuse.ch Domain Blocklist
+# Format: plain domain list
+# Generated: 2026-03-27T18:30:46.818835
+#
+malware-c2.com
+botnet-control.net
+ransomware-gateway.org
+trojan-delivery.ru
+rootkit-command.cc
+adware-loader.info
+worm-distribution.tk
+spyware-beacon.xyz
+backdoor-tunnel.pw
+exploit-kit.tv
+dga-seed1.net
+dga-seed2.com
+fast-flux1.org
+fast-flux2.ru
+peer-to-peer-control.cc
+zombie-network.xyz
+commandcontrol1.tv
+commandcontrol2.pw
+shadowserver-node.info
+infrastructure-hub.tk
+locky-decryption.com
+wannacry-payment.org
+petya-ransom.net
+cryptowall-gate.ru
+cerber-recovery.cc
+sodinokibi-demand.xyz
+darkside-marketplace.tv
+conti-leak-site.pw
+revil-payment.info
+lhc-extortion.tk

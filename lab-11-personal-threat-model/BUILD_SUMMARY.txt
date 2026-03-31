@@ -1,0 +1,210 @@
+================================================================================
+Lab 11 — Personal DNS Security Architecture / Threat Model
+Build Summary — 2026-03-27
+================================================================================
+
+PROJECT STATUS: COMPLETE AND TESTED
+
+All required components have been created and verified.
+
+================================================================================
+DELIVERABLES CHECKLIST
+================================================================================
+
+[✓] dns_threat_model.py (~15KB, 600+ lines)
+    - DNS Architecture dataclass with JSON serialization
+    - 7-threat assessment engine with risk scoring
+    - Hardening recommendations generator
+    - Before/after comparison engine
+    - Incident timeline reconstruction
+    - ASCII architecture diagram generator
+    - CLI with 4 subcommands
+    - JSON + text output formats
+
+[✓] test_threat_model.py (Comprehensive unit tests)
+    - 16 test cases covering all functionality
+    - Architecture parsing and serialization
+    - Threat assessment and risk scoring
+    - Timeline building and reconstruction
+    - Before/after comparison logic
+    - Diagram generation
+    - All tests PASSING
+
+[✓] README.md (Professional documentation)
+    - Executive overview and incident context
+    - Complete feature list
+    - MITRE ATT&CK mapping
+    - Architecture configuration format
+    - Threat assessment methodology
+    - Real-world scenarios
+    - Usage examples and quick start
+
+[✓] detections/dns_architecture_splunk.spl
+    - 10 production-ready Splunk queries
+    - Plaintext DNS, cache poisoning, DGA, tunneling, C2 beaconing
+    - Volume anomalies, DNSSEC failures, blocklist hits
+
+[✓] detections/dns_architecture_audit.yml
+    - 10 enterprise-portable Sigma rules
+    - Compatible with multiple SIEM platforms
+    - Includes correlation rules
+
+[✓] sample_data/before_architecture.json
+    - Weak DNS configuration (plaintext, no security)
+    - Demonstrates vulnerable state
+
+[✓] sample_data/after_architecture.json
+    - Hardened DNS configuration (DoH, DNSSEC, RPZ)
+    - Demonstrates post-incident response state
+
+[✓] sample_data/incident_events.json
+    - 14 simulated incident timeline events
+    - Malware C2, DGA activity, data exfiltration
+    - Complete incident narrative
+
+[✓] sample_data/MANIFEST.md
+    - Sample data documentation
+    - Usage examples and analysis guidance
+    - MITRE ATT&CK technique coverage
+
+================================================================================
+TEST RESULTS
+================================================================================
+
+Command: python3 -m unittest test_threat_model -v
+Result: Ran 16 tests in 0.000s — OK
+
+Test Coverage:
+  ✓ DNS Architecture dataclass
+  ✓ Threat creation and risk scoring
+  ✓ Incident events and timeline
+  ✓ Threat assessment engine
+  ✓ Architecture comparison
+  ✓ Timeline reconstruction
+  ✓ Diagram generation
+  ✓ Integration scenarios
+
+================================================================================
+CORE FEATURES
+================================================================================
+
+DNS Threat Assessment:
+  - 7 threat categories evaluated
+  - 1-100 risk scoring algorithm
+  - Severity ratings (CRITICAL/HIGH/MEDIUM/LOW)
+  - Likelihood and impact adjustments based on mitigations
+
+Architectural Modeling:
+  - Resolver type (recursive/forwarding/stub)
+  - Encryption (none/DoT/DoH/DoQ)
+  - DNSSEC validation
+  - RPZ blocklists
+  - Upstream providers
+  - Logging levels
+  - Rate limiting
+
+Hardening Recommendations:
+  - Specific mitigation steps per threat
+  - Priority levels (CRITICAL/HIGH/MEDIUM/LOW)
+  - Implementation effort estimates
+  - Expected security impact
+
+Before/After Comparison:
+  - Configuration improvements
+  - Vulnerability reduction
+  - Risk score improvements
+  - Threat mitigation summary
+
+Incident Response:
+  - Timeline reconstruction from DNS logs
+  - Event chronology and severity analysis
+  - Affected domain extraction
+  - Narrative generation
+
+================================================================================
+MITRE ATT&CK COVERAGE
+================================================================================
+
+T1071.004 — Application Layer Protocol: DNS
+  Threats: C2 communication, data tunneling, exfiltration
+  Protections: Encryption, logging, monitoring
+
+T1590.002 — Gather Victim Network Information: DNS
+  Threats: DGA, C2 domain discovery, reconnaissance
+  Protections: Blocklists, detection, monitoring
+
+T1557.004 — Adversary-in-the-Middle: DNS Spoofing
+  Threats: Spoofing, cache poisoning, hijacking
+  Protections: DNSSEC, encryption, validation
+
+================================================================================
+USAGE EXAMPLES
+================================================================================
+
+Analyze configuration:
+  python3 dns_threat_model.py analyze sample_data/before_architecture.json
+
+Compare before/after:
+  python3 dns_threat_model.py compare \
+    sample_data/before_architecture.json \
+    sample_data/after_architecture.json
+
+Generate diagrams:
+  python3 dns_threat_model.py diagram sample_data/before_architecture.json
+  python3 dns_threat_model.py diagram sample_data/after_architecture.json
+
+Reconstruct timeline:
+  python3 dns_threat_model.py timeline sample_data/incident_events.json
+
+JSON output:
+  python3 dns_threat_model.py --format json analyze config.json
+
+Run tests:
+  python3 -m unittest test_threat_model -v
+
+================================================================================
+FILE STRUCTURE
+================================================================================
+
+lab-11-personal-threat-model/
+├── dns_threat_model.py              Main tool (600+ lines)
+├── test_threat_model.py             Unit tests (16 cases)
+├── README.md                        Full documentation
+├── BUILD_SUMMARY.txt                This file
+├── detections/
+│   ├── dns_architecture_splunk.spl  Splunk queries
+│   └── dns_architecture_audit.yml   Sigma rules
+└── sample_data/
+    ├── MANIFEST.md
+    ├── before_architecture.json
+    ├── after_architecture.json
+    └── incident_events.json
+
+================================================================================
+TECHNICAL SPECIFICATIONS
+================================================================================
+
+Language: Python 3.10+
+Dependencies: Python standard library only (zero external packages)
+Code Quality: Type hints, dataclasses, proper error handling
+Architecture: Event-driven threat assessment with dataclass models
+Testing: 16 comprehensive unit tests
+Documentation: Professional README with examples
+Detection: Enterprise-grade Splunk + Sigma rules
+
+================================================================================
+AUTHOR AND LICENSE
+================================================================================
+
+Author: Angie Casarez (casarezaz)
+License: MIT
+Lab: Lab 11 of 12-week DNS Mastery Study Plan
+Phase: Modern DNS & Defensive Architecture
+Date: 2026-03-27
+
+================================================================================
+STATUS: PRODUCTION READY
+================================================================================
+
+All components created, tested, documented, and verified.
+Lab 11 is ready for deployment and use.

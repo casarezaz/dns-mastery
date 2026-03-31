@@ -1,0 +1,1057 @@
+#fields	timestamp	src_ip	query_name	query_type	response_code	answer	server_ip
+1774658354	10.0.0.5	images.apple.com	A	NOERROR	1.2.3.227	8.8.8.8
+1774658056	10.0.0.2	static.twitter.com	A	NOERROR	1.2.3.84	8.8.8.8
+1774659144	192.168.100.75	c2VjcmV0ZGF0YV8wMDQ3eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658366	10.0.0.5	www.microsoft.com	A	NOERROR	1.2.3.63	8.8.8.8
+1774659128	192.168.100.75	c2VjcmV0ZGF0YV8wMDE0eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658770	192.168.100.75	linkedin.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658923	192.168.100.50		HTTPS	NOERROR	1.1.1.1	1.1.1.1
+1774658153	10.0.0.1	mail.microsoft.com	A	NOERROR	1.2.3.141	8.8.8.8
+1774658366	192.168.100.75	18s7bvmcq9ur.ru	A	NXDOMAIN		8.8.8.8
+1774658280	10.0.0.10	mail.google.com	A	NOERROR	1.2.3.69	8.8.8.8
+1774658586	203.0.113.50	internal.company.local	SOA	NOERROR	10.0.0.1	8.8.8.8
+1774658373	192.168.100.75	8ank06k9awdt.org	A	NXDOMAIN		8.8.8.8
+1774658310	10.0.0.1	smtp.microsoft.com	A	NOERROR	1.2.3.209	8.8.8.8
+1774659035	10.0.0.3	malware-c2.net	A	NOERROR	192.0.2.3	8.8.8.8
+1774658438	10.0.0.5	files.apple.com	A	NOERROR	1.2.3.210	8.8.8.8
+1774658541	10.0.0.10	legitimate-bank.com	A	NOERROR	192.0.2.16	8.8.8.8
+1774658129	10.0.0.2	upload.youtube.com	A	NOERROR	1.2.3.112	8.8.8.8
+1774658764	192.168.100.75	apple.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658345	10.0.0.2	smtp.stackoverflow.com	A	NOERROR	1.2.3.99	8.8.8.8
+1774659121	192.168.100.75	c2VjcmV0ZGF0YV8wMDAxeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658422	192.168.100.75	5jmvtisws6gq.org	A	NXDOMAIN		8.8.8.8
+1774658341	10.0.0.2	imap.netflix.com	A	NOERROR	1.2.3.34	8.8.8.8
+1774658158	10.0.0.5	ftp.facebook.com	A	NOERROR	1.2.3.8	8.8.8.8
+1774658212	10.0.0.10	pop.netflix.com	A	NOERROR	1.2.3.161	8.8.8.8
+1774658067	10.0.0.10	vpn.microsoft.com	A	NOERROR	1.2.3.209	8.8.8.8
+1774658764	192.168.100.75	twitter.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658352	10.0.0.3	files.linkedin.com	A	NOERROR	1.2.3.6	8.8.8.8
+1774659129	192.168.100.75	c2VjcmV0ZGF0YV8wMDE3eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658411	192.168.100.75	bg30o9pw8qmx.cc	A	NXDOMAIN		8.8.8.8
+1774658528	10.0.0.1	imap.reddit.com	A	NOERROR	1.2.3.120	8.8.8.8
+1774659132	192.168.100.75	c2VjcmV0ZGF0YV8wMDIzeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658521	10.0.0.5	www.twitter.com	A	NOERROR	1.2.3.246	8.8.8.8
+1774658238	10.0.0.2	upload.linkedin.com	A	NOERROR	1.2.3.185	8.8.8.8
+1774658063	10.0.0.3	vpn.akamai.com	A	NOERROR	1.2.3.51	8.8.8.8
+1774658101	10.0.0.10	static.microsoft.com	A	NOERROR	1.2.3.37	8.8.8.8
+1774658102	10.0.0.5	files.linkedin.com	A	NOERROR	1.2.3.14	8.8.8.8
+1774659421	192.168.200.100	cmd.botnet-control.ru	TXT	NOERROR	execute_payload	8.8.8.8
+1774658061	10.0.0.10	download.amazon.com	A	NOERROR	1.2.3.115	8.8.8.8
+1774658944	192.168.200.100	MNWWIXZQGAYTE.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658345	192.168.100.75	lbmop80j2tdw.com	A	NXDOMAIN		8.8.8.8
+1774658767	192.168.100.75	amazon.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658058	10.0.0.5	static.cloudflare.com	A	NOERROR	1.2.3.196	8.8.8.8
+1774658331	10.0.0.3	ftp.facebook.com	A	NOERROR	1.2.3.237	8.8.8.8
+1774658589	203.0.113.50	internal.company.local	SOA	NOERROR	10.0.0.1	8.8.8.8
+1774658382	192.168.100.75	5kg4brixvtkq.net	A	NXDOMAIN		8.8.8.8
+1774658761	192.168.100.75	wikipedia.org	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658107	192.168.100.75	CANOWY5G3PZVIFICRFCEWQCPWHTQVZHLJE5UYYML3SR3HBZK.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658469	10.0.0.1	api.apple.com	A	NOERROR	1.2.3.41	8.8.8.8
+1774658291	10.0.0.3	pop.netflix.com	A	NOERROR	1.2.3.28	8.8.8.8
+1774658156	10.0.0.5	static.twitter.com	A	NOERROR	1.2.3.111	8.8.8.8
+1774658509	10.0.0.5	files.akamai.com	A	NOERROR	1.2.3.36	8.8.8.8
+1774658421	192.168.100.75	6t089n2643r2.cc	A	NXDOMAIN		8.8.8.8
+1774658767	192.168.100.75	microsoft.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658363	10.0.0.1	www.facebook.com	A	NOERROR	1.2.3.174	8.8.8.8
+1774658452	10.0.0.5	files.stackoverflow.com	A	NOERROR	1.2.3.67	8.8.8.8
+1774658429	192.168.100.75	88uraytt5q6u.org	A	NXDOMAIN		8.8.8.8
+1774658093	10.0.0.2	vpn.microsoft.com	A	NOERROR	1.2.3.10	8.8.8.8
+1774658351	192.168.100.75	cjc571mr4kh2.net	A	NXDOMAIN		8.8.8.8
+1774658474	10.0.0.2	smtp.google.com	A	NOERROR	1.2.3.99	8.8.8.8
+1774658174	10.0.0.1	www.facebook.com	A	NOERROR	1.2.3.51	8.8.8.8
+1774658762	192.168.100.75	akamai.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658762	192.168.100.75	akamai.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658763	192.168.100.75	netflix.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658770	192.168.100.75	facebook.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658407	192.168.100.75	f84wlirk8pz0.cc	A	NXDOMAIN		8.8.8.8
+1774658353	192.168.100.75	cl46i01me8zy.cc	A	NOERROR	10.0.0.99	8.8.8.8
+1774658762	192.168.100.75	youtube.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658761	192.168.100.75	cloudflare.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658507	10.0.0.10	imap.netflix.com	A	NOERROR	1.2.3.231	8.8.8.8
+1774658363	192.168.100.75	auvq2iooixhb.org	A	NXDOMAIN		8.8.8.8
+1774658418	10.0.0.2	imap.linkedin.com	A	NOERROR	1.2.3.23	8.8.8.8
+1774658129	192.168.100.75	UJLY22V7SLIBTPWWK7HDDPXRUDCANC7MOC43GXL3536TTKHT.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658346	10.0.0.5	www.wikipedia.org	A	NOERROR	1.2.3.250	8.8.8.8
+1774658233	10.0.0.2	vpn.amazon.com	A	NOERROR	1.2.3.207	8.8.8.8
+1774658429	10.0.0.10	vpn.github.com	A	NOERROR	1.2.3.45	8.8.8.8
+1774658088	10.0.0.1	pop.akamai.com	A	NOERROR	1.2.3.94	8.8.8.8
+1774658048	10.0.0.3	cdn.facebook.com	A	NOERROR	1.2.3.97	8.8.8.8
+1774658420	192.168.100.75	a85enbc1xock.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658430	192.168.100.75	9l7y67hln4ok.com	A	NXDOMAIN		8.8.8.8
+1774659017	10.0.0.2	malware-c2.net	A	NOERROR	192.0.2.11	8.8.8.8
+1774658114	10.0.0.5	mail.reddit.com	A	NOERROR	1.2.3.77	8.8.8.8
+1774658763	192.168.100.75	wikipedia.org	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658765	192.168.100.75	linkedin.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658166	10.0.0.1	smtp.microsoft.com	A	NOERROR	1.2.3.204	8.8.8.8
+1774658428	192.168.100.75	s5dqm84i425q.ru	A	NXDOMAIN		8.8.8.8
+1774658883	192.168.100.50		HTTPS	NOERROR	8.8.8.8	8.8.8.8
+1774659005	10.0.0.5	malware-c2.net	A	NOERROR	192.0.2.3	8.8.8.8
+1774658194	10.0.0.1	images.microsoft.com	A	NOERROR	1.2.3.200	8.8.8.8
+1774659137	192.168.100.75	c2VjcmV0ZGF0YV8wMDMzeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658524	10.0.0.2	vpn.netflix.com	A	NOERROR	1.2.3.233	8.8.8.8
+1774658470	10.0.0.3	imap.amazon.com	A	NOERROR	1.2.3.52	8.8.8.8
+1774658320	10.0.0.1	files.wikipedia.org	A	NOERROR	1.2.3.72	8.8.8.8
+1774659122	192.168.100.75	c2VjcmV0ZGF0YV8wMDAyeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658367	192.168.100.75	1k0qdd4j5w9b.ru	A	NXDOMAIN		8.8.8.8
+1774658763	192.168.100.75	facebook.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658770	192.168.100.75	reddit.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658766	192.168.100.75	apple.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658378	192.168.100.75	s4jpxh3yvryr.cc	A	NXDOMAIN		8.8.8.8
+1774659143	192.168.100.75	c2VjcmV0ZGF0YV8wMDQ1eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658426	192.168.100.75	tqwdx7f08d0x.com	A	NOERROR	10.0.0.99	8.8.8.8
+1774658379	10.0.0.1	files.linkedin.com	A	NOERROR	1.2.3.245	8.8.8.8
+1774658137	192.168.100.75	YGQUJ3LFTZSSQBVUGGW2AZXYDGPDCD2ZTIJLVHLI6NRU3YT7.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774660558	192.168.200.100	MNWWIXZQGAZTS.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658304	10.0.0.5	imap.stackoverflow.com	A	NOERROR	1.2.3.221	8.8.8.8
+1774658186	10.0.0.5	admin.youtube.com	A	NOERROR	1.2.3.84	8.8.8.8
+1774658430	10.0.0.10	smtp.amazon.com	A	NOERROR	1.2.3.133	8.8.8.8
+1774658217	10.0.0.2	imap.akamai.com	A	NOERROR	1.2.3.131	8.8.8.8
+1774658134	10.0.0.5	download.apple.com	A	NOERROR	1.2.3.44	8.8.8.8
+1774658268	10.0.0.1	pop.facebook.com	A	NOERROR	1.2.3.126	8.8.8.8
+1774658536	10.0.0.5	legitimate-bank.com	A	NOERROR	203.0.113.1	8.8.8.8
+1774659049	10.0.0.3	malware-c2.net	A	NOERROR	192.0.2.12	8.8.8.8
+1774658294	10.0.0.1	vpn.google.com	A	NOERROR	1.2.3.70	8.8.8.8
+1774658405	192.168.100.75	up4nn29kk129.org	A	NXDOMAIN		8.8.8.8
+1774658461	10.0.0.10	legitimate-bank.com	A	NOERROR	192.0.2.0	8.8.8.8
+1774658059	10.0.0.2	mail.twitter.com	A	NOERROR	1.2.3.36	8.8.8.8
+1774658397	192.168.100.75	sm3pgkvslc1b.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658383	192.168.100.75	evqlp41c5q9w.ru	A	NXDOMAIN		8.8.8.8
+1774660624	192.168.200.100	MNWWIXZQGA2DA.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658137	10.0.0.10	mail.wikipedia.org	A	NOERROR	1.2.3.193	8.8.8.8
+1774658450	10.0.0.5	assets.linkedin.com	A	NOERROR	1.2.3.46	8.8.8.8
+1774658412	192.168.100.75	5bwakuydqwtt.org	A	NXDOMAIN		8.8.8.8
+1774658120	10.0.0.2	api.linkedin.com	A	NOERROR	1.2.3.225	8.8.8.8
+1774658440	10.0.0.3	imap.stackoverflow.com	A	NOERROR	1.2.3.93	8.8.8.8
+1774658098	10.0.0.3	static.twitter.com	A	NOERROR	1.2.3.200	8.8.8.8
+1774658769	192.168.100.75	linkedin.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658097	10.0.0.10	upload.akamai.com	A	NOERROR	1.2.3.148	8.8.8.8
+1774659542	192.168.200.100	MNWWIXZQGAZDE.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658354	192.168.100.75	fz0tx118m7hh.com	A	NXDOMAIN		8.8.8.8
+1774658344	192.168.100.75	a5t5vw5j05zl.com	A	NXDOMAIN		8.8.8.8
+1774658765	192.168.100.75	youtube.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658526	10.0.0.2	vpn.akamai.com	A	NOERROR	1.2.3.122	8.8.8.8
+1774658501	10.0.0.5	download.youtube.com	A	NOERROR	1.2.3.130	8.8.8.8
+1774660979	192.168.200.100	MNWWIXZQGA2DM.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658064	10.0.0.10	mail.cloudflare.com	A	NOERROR	1.2.3.67	8.8.8.8
+1774658264	10.0.0.3	mail.netflix.com	A	NOERROR	1.2.3.209	8.8.8.8
+1774658290	10.0.0.10	files.microsoft.com	A	NOERROR	1.2.3.32	8.8.8.8
+1774659600	192.168.200.100	MNWWIXZQGAZDG.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774659008	10.0.0.5	malware-c2.net	A	NOERROR	192.0.2.5	8.8.8.8
+1774659121	192.168.100.75	c2VjcmV0ZGF0YV8wMDAweHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658477	10.0.0.2	cdn.apple.com	A	NOERROR	1.2.3.199	8.8.8.8
+1774658939	192.168.100.50		HTTPS	NOERROR	45.33.32.156	45.33.32.156
+1774658516	10.0.0.3	legitimate-bank.com	A	NOERROR	203.0.113.1	8.8.8.8
+1774658911	192.168.100.50		HTTPS	NOERROR	1.1.1.1	1.1.1.1
+1774659050	10.0.0.1	malware-c2.net	A	NOERROR	192.0.2.13	8.8.8.8
+1774658151	10.0.0.1	pop.stackoverflow.com	A	NOERROR	1.2.3.53	8.8.8.8
+1774658359	10.0.0.1	pop.amazon.com	A	NOERROR	1.2.3.151	8.8.8.8
+1774658101	192.168.100.75	YOEIKUW46FX6CEG6HDQBH7LWX2SUTVVERHOK4IBTDK5BRS6X.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658185	10.0.0.2	static.microsoft.com	A	NOERROR	1.2.3.15	8.8.8.8
+1774658358	192.168.100.75	7f67ha1yts2k.com	A	NXDOMAIN		8.8.8.8
+1774658485	10.0.0.5	www.amazon.com	A	NOERROR	1.2.3.254	8.8.8.8
+1774658123	10.0.0.10	download.linkedin.com	A	NOERROR	1.2.3.8	8.8.8.8
+1774658070	10.0.0.10	smtp.linkedin.com	A	NOERROR	1.2.3.127	8.8.8.8
+1774658506	10.0.0.1	smtp.reddit.com	A	NOERROR	1.2.3.122	8.8.8.8
+1774658765	192.168.100.75	microsoft.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658399	192.168.100.75	sl4yfmfiqmuq.com	A	NXDOMAIN		8.8.8.8
+1774658504	10.0.0.2	static.apple.com	A	NOERROR	1.2.3.202	8.8.8.8
+1774658355	192.168.100.75	e3kg7wnax77m.net	A	NXDOMAIN		8.8.8.8
+1774658456	10.0.0.5	imap.twitter.com	A	NOERROR	1.2.3.103	8.8.8.8
+1774658353	10.0.0.10	pop.netflix.com	A	NOERROR	1.2.3.2	8.8.8.8
+1774658431	192.168.100.75	7fw5frwyyxo7.org	A	NXDOMAIN		8.8.8.8
+1774658369	192.168.100.75	sihohec14bmc.ru	A	NXDOMAIN		8.8.8.8
+1774658639	192.168.200.100	MNWWIXZQGAYDO.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658148	10.0.0.2	download.stackoverflow.com	A	NOERROR	1.2.3.169	8.8.8.8
+1774658041	10.0.0.5	imap.stackoverflow.com	A	NOERROR	1.2.3.223	8.8.8.8
+1774658109	192.168.100.75	IASXZHS6ACCDD42U3V3CTIGEXZT4K3EXRKSGH4I6PAHTTZAE.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658379	192.168.100.75	mgcfpqfyr8pe.cc	A	NXDOMAIN		8.8.8.8
+1774658769	192.168.100.75	facebook.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658343	10.0.0.3	download.google.com	A	NOERROR	1.2.3.41	8.8.8.8
+1774658377	192.168.100.75	z2p7fcl41z8x.com	A	NXDOMAIN		8.8.8.8
+1774658336	10.0.0.1	upload.stackoverflow.com	A	NOERROR	1.2.3.218	8.8.8.8
+1774658498	10.0.0.10	mail.wikipedia.org	A	NOERROR	1.2.3.155	8.8.8.8
+1774658182	10.0.0.5	admin.facebook.com	A	NOERROR	1.2.3.225	8.8.8.8
+1774658254	10.0.0.3	vpn.stackoverflow.com	A	NOERROR	1.2.3.89	8.8.8.8
+1774658419	192.168.100.75	qpy375vwbfzu.org	A	NXDOMAIN		8.8.8.8
+1774658382	10.0.0.1	static.facebook.com	A	NOERROR	1.2.3.57	8.8.8.8
+1774658082	10.0.0.3	mail.wikipedia.org	A	NOERROR	1.2.3.220	8.8.8.8
+1774659131	192.168.100.75	c2VjcmV0ZGF0YV8wMDIxeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658390	192.168.100.75	zkcza9hjtbdy.com	A	NXDOMAIN		8.8.8.8
+1774658511	10.0.0.1	vpn.youtube.com	A	NOERROR	1.2.3.200	8.8.8.8
+1774658493	10.0.0.3	static.apple.com	A	NOERROR	1.2.3.147	8.8.8.8
+1774658142	10.0.0.3	vpn.youtube.com	A	NOERROR	1.2.3.178	8.8.8.8
+1774659481	192.168.200.100	MNWWIXZQGAZDC.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658766	192.168.100.75	google.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658765	192.168.100.75	netflix.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658410	10.0.0.1	vpn.stackoverflow.com	A	NOERROR	1.2.3.154	8.8.8.8
+1774658241	10.0.0.5	images.google.com	A	NOERROR	1.2.3.35	8.8.8.8
+1774658141	192.168.100.75	UNYNNN3FVBWPILEDGNPJ4MH5A76WILEBWSF4GSTVWKIQXH7I.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658090	10.0.0.2	ftp.linkedin.com	A	NOERROR	1.2.3.209	8.8.8.8
+1774658767	192.168.100.75	twitter.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658768	192.168.100.75	github.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658929	192.168.100.50		HTTPS	NOERROR	45.33.32.156	45.33.32.156
+1774658425	10.0.0.5	files.twitter.com	A	NOERROR	1.2.3.225	8.8.8.8
+1774658183	10.0.0.10	static.linkedin.com	A	NOERROR	1.2.3.122	8.8.8.8
+1774658305	10.0.0.2	pop.facebook.com	A	NOERROR	1.2.3.216	8.8.8.8
+1774658239	10.0.0.10	assets.google.com	A	NOERROR	1.2.3.202	8.8.8.8
+1774659134	192.168.100.75	c2VjcmV0ZGF0YV8wMDI2eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658416	192.168.100.75	zxqedjce9mnw.org	A	NXDOMAIN		8.8.8.8
+1774658281	10.0.0.3	static.wikipedia.org	A	NOERROR	1.2.3.213	8.8.8.8
+1774658248	10.0.0.1	smtp.reddit.com	A	NOERROR	1.2.3.23	8.8.8.8
+1774658308	10.0.0.1	cdn.akamai.com	A	NOERROR	1.2.3.12	8.8.8.8
+1774658420	10.0.0.3	mail.linkedin.com	A	NOERROR	1.2.3.157	8.8.8.8
+1774658381	192.168.100.75	3sn1glx5mn4t.cc	A	NXDOMAIN		8.8.8.8
+1774658296	10.0.0.1	imap.netflix.com	A	NOERROR	1.2.3.19	8.8.8.8
+1774659145	192.168.100.75	c2VjcmV0ZGF0YV8wMDQ4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658132	10.0.0.10	vpn.reddit.com	A	NOERROR	1.2.3.23	8.8.8.8
+1774658411	10.0.0.10	images.stackoverflow.com	A	NOERROR	1.2.3.52	8.8.8.8
+1774658416	192.168.100.75	ocp9ofj3p5hk.org	A	NXDOMAIN		8.8.8.8
+1774658105	192.168.100.75	SEUNRWZDSPBCUOM6VNQS5ZZIA6Q7MAIZ7IN7LJLE3VX3IYGX.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658905	192.168.100.50		HTTPS	NOERROR	45.33.32.156	45.33.32.156
+1774658412	10.0.0.2	www.apple.com	A	NOERROR	1.2.3.185	8.8.8.8
+1774658392	192.168.100.75	uzse7schiear.ru	A	NXDOMAIN		8.8.8.8
+1774659179	192.168.200.100	MNWWIXZQGAYTM.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658164	10.0.0.10	mail.stackoverflow.com	A	NOERROR	1.2.3.143	8.8.8.8
+1774658476	10.0.0.3	legitimate-bank.com	A	NOERROR	203.0.113.1	8.8.8.8
+1774658140	10.0.0.2	download.twitter.com	A	NOERROR	1.2.3.35	8.8.8.8
+1774658583	203.0.113.50	internal.company.local	SOA	NOERROR	10.0.0.1	8.8.8.8
+1774658160	10.0.0.5	mail.youtube.com	A	NOERROR	1.2.3.223	8.8.8.8
+1774658721	10.0.0.2	dnssec-zone.com	A	SERVFAIL		8.8.8.8
+1774658517	10.0.0.2	images.cloudflare.com	A	NOERROR	1.2.3.244	8.8.8.8
+1774658375	192.168.100.75	6768dw3zgw64.net	A	NXDOMAIN		8.8.8.8
+1774658178	10.0.0.1	api.cloudflare.com	A	NOERROR	1.2.3.249	8.8.8.8
+1774658435	192.168.100.75	6advawe1wpuq.net	A	NXDOMAIN		8.8.8.8
+1774660919	192.168.200.100	cmd.botnet-control.ru	TXT	NOERROR	execute_payload	8.8.8.8
+1774658357	192.168.100.75	n23gj7lbdfau.ru	A	NXDOMAIN		8.8.8.8
+1774658496	10.0.0.1	legitimate-bank.com	A	NOERROR	203.0.113.1	8.8.8.8
+1774659142	192.168.100.75	c2VjcmV0ZGF0YV8wMDQzeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658084	10.0.0.10	ftp.netflix.com	A	NOERROR	1.2.3.224	8.8.8.8
+1774658404	10.0.0.5	www.akamai.com	A	NOERROR	1.2.3.128	8.8.8.8
+1774658661	10.0.0.2	dnssec-zone.com	A	SERVFAIL		8.8.8.8
+1774658369	192.168.100.75	gyas14uq75n1.ru	A	NXDOMAIN		8.8.8.8
+1774658931	192.168.100.50		HTTPS	NOERROR	8.8.8.8	8.8.8.8
+1774658357	192.168.100.75	gkajnnn72nh9.com	A	NXDOMAIN		8.8.8.8
+1774658347	192.168.100.75	yqmjbk6smayq.com	A	NXDOMAIN		8.8.8.8
+1774658203	10.0.0.3	smtp.cloudflare.com	A	NOERROR	1.2.3.15	8.8.8.8
+1774659044	10.0.0.5	malware-c2.net	A	NOERROR	192.0.2.9	8.8.8.8
+1774658489	10.0.0.3	vpn.microsoft.com	A	NOERROR	1.2.3.203	8.8.8.8
+1774658252	10.0.0.1	admin.reddit.com	A	NOERROR	1.2.3.126	8.8.8.8
+1774658770	192.168.100.75	apple.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658391	192.168.100.75	viv818ibtn9r.net	A	NXDOMAIN		8.8.8.8
+1774658341	192.168.100.75	ljasqjb2j8wm.net	A	NXDOMAIN		8.8.8.8
+1774658490	10.0.0.5	static.youtube.com	A	NOERROR	1.2.3.167	8.8.8.8
+1774658761	192.168.100.75	reddit.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658397	10.0.0.3	smtp.netflix.com	A	NOERROR	1.2.3.68	8.8.8.8
+1774658513	10.0.0.1	cdn.facebook.com	A	NOERROR	1.2.3.198	8.8.8.8
+1774658289	10.0.0.10	admin.stackoverflow.com	A	NOERROR	1.2.3.79	8.8.8.8
+1774659133	192.168.100.75	c2VjcmV0ZGF0YV8wMDI1eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658587	203.0.113.50	internal.company.local	SOA	NOERROR	10.0.0.1	8.8.8.8
+1774658395	192.168.100.75	g973dfkaircy.ru	A	NXDOMAIN		8.8.8.8
+1774658397	192.168.100.75	wtxw0y9ro67s.net	A	NXDOMAIN		8.8.8.8
+1774658253	10.0.0.2	api.stackoverflow.com	A	NOERROR	1.2.3.27	8.8.8.8
+1774658249	10.0.0.3	download.wikipedia.org	A	NOERROR	1.2.3.132	8.8.8.8
+1774658371	192.168.100.75	f47cvgz9z1go.com	A	NXDOMAIN		8.8.8.8
+1774658523	10.0.0.2	upload.github.com	A	NOERROR	1.2.3.57	8.8.8.8
+1774658494	10.0.0.10	pop.reddit.com	A	NOERROR	1.2.3.41	8.8.8.8
+1774658424	192.168.100.75	593s4soxdbgz.com	A	NXDOMAIN		8.8.8.8
+1774659135	192.168.100.75	c2VjcmV0ZGF0YV8wMDI5eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658162	10.0.0.10	imap.facebook.com	A	NOERROR	1.2.3.12	8.8.8.8
+1774658421	192.168.100.75	h6btdvaft6xw.org	A	NOERROR	10.0.0.99	8.8.8.8
+1774658274	10.0.0.10	vpn.twitter.com	A	NOERROR	1.2.3.85	8.8.8.8
+1774658187	10.0.0.1	api.linkedin.com	A	NOERROR	1.2.3.65	8.8.8.8
+1774660798	192.168.200.100	MNWWIXZQGA2DG.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658422	10.0.0.1	upload.facebook.com	A	NOERROR	1.2.3.228	8.8.8.8
+1774658546	10.0.0.10	legitimate-bank.com	A	NOERROR	203.0.113.1	8.8.8.8
+1774658378	192.168.100.75	99yvayxfc8xw.cc	A	NXDOMAIN		8.8.8.8
+1774658169	10.0.0.3	vpn.linkedin.com	A	NOERROR	1.2.3.132	8.8.8.8
+1774658419	192.168.100.75	8ec21gf5vsmb.cc	A	NXDOMAIN		8.8.8.8
+1774659131	192.168.100.75	c2VjcmV0ZGF0YV8wMDIweHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658766	192.168.100.75	stackoverflow.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658391	10.0.0.5	smtp.apple.com	A	NOERROR	1.2.3.146	8.8.8.8
+1774658349	10.0.0.5	www.stackoverflow.com	A	NOERROR	1.2.3.61	8.8.8.8
+1774658095	10.0.0.1	www.microsoft.com	A	NOERROR	1.2.3.254	8.8.8.8
+1774658499	10.0.0.2	static.cloudflare.com	A	NOERROR	1.2.3.75	8.8.8.8
+1774658105	10.0.0.2	smtp.github.com	A	NOERROR	1.2.3.252	8.8.8.8
+1774658364	10.0.0.10	api.linkedin.com	A	NOERROR	1.2.3.154	8.8.8.8
+1774658071	10.0.0.3	images.apple.com	A	NOERROR	1.2.3.18	8.8.8.8
+1774659055	10.0.0.2	malware-c2.net	A	NOERROR	192.0.2.16	8.8.8.8
+1774658139	10.0.0.5	assets.netflix.com	A	NOERROR	1.2.3.96	8.8.8.8
+1774658223	10.0.0.3	vpn.youtube.com	A	NOERROR	1.2.3.207	8.8.8.8
+1774658360	10.0.0.1	static.twitter.com	A	NOERROR	1.2.3.122	8.8.8.8
+1774658766	192.168.100.75	akamai.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658378	10.0.0.1	vpn.facebook.com	A	NOERROR	1.2.3.14	8.8.8.8
+1774658107	10.0.0.1	download.reddit.com	A	NOERROR	1.2.3.94	8.8.8.8
+1774658123	192.168.100.75	LCBWSHPY5ELMYLTJKXQVQIKDRQXEEI3YYIFWGEI6SDYJNE47.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774659358	192.168.200.100	MNWWIXZQGAYTS.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658465	10.0.0.10	upload.apple.com	A	NOERROR	1.2.3.164	8.8.8.8
+1774658771	192.168.100.75	microsoft.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658125	10.0.0.2	www.youtube.com	A	NOERROR	1.2.3.70	8.8.8.8
+1774658534	10.0.0.10	vpn.akamai.com	A	NOERROR	1.2.3.40	8.8.8.8
+1774658533	10.0.0.1	assets.akamai.com	A	NOERROR	1.2.3.56	8.8.8.8
+1774658049	10.0.0.10	www.google.com	A	NOERROR	1.2.3.249	8.8.8.8
+1774658138	10.0.0.3	vpn.twitter.com	A	NOERROR	1.2.3.142	8.8.8.8
+1774658349	192.168.100.75	ucnbexn1ne1m.com	A	NXDOMAIN		8.8.8.8
+1774658410	192.168.100.75	0bliwbjvdvdt.ru	A	NXDOMAIN		8.8.8.8
+1774658770	192.168.100.75	stackoverflow.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774660079	192.168.200.100	MNWWIXZQGAZTC.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658224	10.0.0.10	assets.wikipedia.org	A	NOERROR	1.2.3.58	8.8.8.8
+1774658766	192.168.100.75	wikipedia.org	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658424	10.0.0.3	upload.stackoverflow.com	A	NOERROR	1.2.3.214	8.8.8.8
+1774658345	192.168.100.75	94fqi8yzpd19.cc	A	NXDOMAIN		8.8.8.8
+1774658045	10.0.0.5	files.akamai.com	A	NOERROR	1.2.3.213	8.8.8.8
+1774658371	10.0.0.3	assets.cloudflare.com	A	NOERROR	1.2.3.186	8.8.8.8
+1774658369	10.0.0.5	admin.wikipedia.org	A	NOERROR	1.2.3.17	8.8.8.8
+1774658255	10.0.0.1	smtp.stackoverflow.com	A	NOERROR	1.2.3.100	8.8.8.8
+1774658394	10.0.0.1	assets.microsoft.com	A	NOERROR	1.2.3.15	8.8.8.8
+1774658258	10.0.0.3	vpn.amazon.com	A	NOERROR	1.2.3.219	8.8.8.8
+1774658770	192.168.100.75	netflix.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658179	10.0.0.10	imap.github.com	A	NOERROR	1.2.3.50	8.8.8.8
+1774658461	10.0.0.2	pop.twitter.com	A	NOERROR	1.2.3.252	8.8.8.8
+1774658402	192.168.100.75	c68eokwv9t3v.cc	A	NXDOMAIN		8.8.8.8
+1774659124	192.168.200.100	cmd.botnet-control.ru	TXT	NOERROR	execute_payload	8.8.8.8
+1774658177	10.0.0.2	vpn.cloudflare.com	A	NOERROR	1.2.3.91	8.8.8.8
+1774658424	192.168.100.75	vio9woq13ood.org	A	NXDOMAIN		8.8.8.8
+1774658434	192.168.100.75	ttnk4dc8av85.ru	A	NXDOMAIN		8.8.8.8
+1774659025	10.0.0.5	malware-c2.net	A	NOERROR	192.0.2.16	8.8.8.8
+1774658343	192.168.100.75	oilfblspftbl.cc	A	NXDOMAIN		8.8.8.8
+1774658325	10.0.0.1	files.google.com	A	NOERROR	1.2.3.142	8.8.8.8
+1774658145	10.0.0.5	download.akamai.com	A	NOERROR	1.2.3.37	8.8.8.8
+1774658159	192.168.100.75	ATU55YKJOIYO7DUACZE25GFZ7CBI6BQVVFOPD5CSDV426XVW.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658244	10.0.0.1	admin.apple.com	A	NOERROR	1.2.3.228	8.8.8.8
+1774658399	192.168.100.75	mo5fs00otsdx.com	A	NXDOMAIN		8.8.8.8
+1774658413	10.0.0.2	download.reddit.com	A	NOERROR	1.2.3.222	8.8.8.8
+1774658405	10.0.0.2	pop.linkedin.com	A	NOERROR	1.2.3.72	8.8.8.8
+1774658438	192.168.100.75	yk6hsu1x274t.org	A	NXDOMAIN		8.8.8.8
+1774658582	203.0.113.50	internal.company.local	NS	NOERROR	10.0.0.1	8.8.8.8
+1774658767	192.168.100.75	microsoft.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658201	10.0.0.1	images.google.com	A	NOERROR	1.2.3.236	8.8.8.8
+1774659143	192.168.100.75	c2VjcmV0ZGF0YV8wMDQ0eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658159	10.0.0.3	images.github.com	A	NOERROR	1.2.3.177	8.8.8.8
+1774658307	10.0.0.2	www.linkedin.com	A	NOERROR	1.2.3.27	8.8.8.8
+1774658346	192.168.100.75	nj8vg78sceyf.net	A	NXDOMAIN		8.8.8.8
+1774658466	10.0.0.10	legitimate-bank.com	A	NOERROR	203.0.113.1	8.8.8.8
+1774658181	10.0.0.10	download.amazon.com	A	NOERROR	1.2.3.41	8.8.8.8
+1774658429	192.168.100.75	udugw5hfmhme.org	A	NXDOMAIN		8.8.8.8
+1774658765	192.168.100.75	facebook.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658381	192.168.100.75	59pjoswjum1f.com	A	NXDOMAIN		8.8.8.8
+1774658781	10.0.0.10	dnssec-zone.com	A	SERVFAIL		8.8.8.8
+1774659721	192.168.200.100	cmd.botnet-control.ru	TXT	NOERROR	execute_payload	8.8.8.8
+1774658171	10.0.0.3	mail.twitter.com	A	NOERROR	1.2.3.121	8.8.8.8
+1774658199	10.0.0.2	mail.google.com	A	NOERROR	1.2.3.191	8.8.8.8
+1774659007	10.0.0.5	malware-c2.net	A	NOERROR	192.0.2.4	8.8.8.8
+1774658094	10.0.0.10	mail.wikipedia.org	A	NOERROR	1.2.3.250	8.8.8.8
+1774659899	192.168.200.100	MNWWIXZQGAZDQ.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658236	10.0.0.10	download.google.com	A	NOERROR	1.2.3.97	8.8.8.8
+1774659059	10.0.0.5	malware-c2.net	A	NOERROR	192.0.2.19	8.8.8.8
+1774658231	10.0.0.10	images.stackoverflow.com	A	NOERROR	1.2.3.46	8.8.8.8
+1774658299	10.0.0.3	download.netflix.com	A	NOERROR	1.2.3.103	8.8.8.8
+1774658403	192.168.100.75	rn05c2f9tnqf.org	A	NXDOMAIN		8.8.8.8
+1774659023	10.0.0.5	malware-c2.net	A	NOERROR	192.0.2.15	8.8.8.8
+1774658109	10.0.0.10	images.twitter.com	A	NOERROR	1.2.3.167	8.8.8.8
+1774660918	192.168.200.100	MNWWIXZQGA2DK.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658352	192.168.100.75	15wg2qvijcrs.net	A	NXDOMAIN		8.8.8.8
+1774658135	192.168.100.75	3E5OKLFLHDACEK7SSCJASQCSFJFP2T4JTPC5ESCNTQWI2IU2.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658889	192.168.100.50		HTTPS	NOERROR	45.33.32.156	45.33.32.156
+1774658903	192.168.100.50		HTTPS	NOERROR	1.1.1.1	1.1.1.1
+1774658375	192.168.100.75	7erwju1dbtqg.net	A	NOERROR	10.0.0.99	8.8.8.8
+1774658408	192.168.100.75	z6hejrlqg8nx.org	A	NXDOMAIN		8.8.8.8
+1774659136	192.168.100.75	c2VjcmV0ZGF0YV8wMDMweHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658447	10.0.0.2	download.linkedin.com	A	NOERROR	1.2.3.15	8.8.8.8
+1774658329	10.0.0.1	api.twitter.com	A	NOERROR	1.2.3.235	8.8.8.8
+1774659139	192.168.100.75	c2VjcmV0ZGF0YV8wMDM3eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658486	10.0.0.2	legitimate-bank.com	A	NOERROR	203.0.113.1	8.8.8.8
+1774658396	192.168.100.75	mftc9f1lqftl.org	A	NXDOMAIN		8.8.8.8
+1774658226	10.0.0.2	api.reddit.com	A	NOERROR	1.2.3.65	8.8.8.8
+1774658371	192.168.100.75	p0r0203w6dzm.cc	A	NXDOMAIN		8.8.8.8
+1774659032	10.0.0.10	malware-c2.net	A	NOERROR	192.0.2.1	8.8.8.8
+1774658438	192.168.100.75	3ih4ljorbzay.org	A	NXDOMAIN		8.8.8.8
+1774658124	10.0.0.5	mail.wikipedia.org	A	NOERROR	1.2.3.63	8.8.8.8
+1774659839	192.168.200.100	MNWWIXZQGAZDO.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658530	10.0.0.1	assets.google.com	A	NOERROR	1.2.3.204	8.8.8.8
+1774658043	10.0.0.3	imap.wikipedia.org	A	NOERROR	1.2.3.92	8.8.8.8
+1774658341	192.168.100.75	00x34g35ismd.net	A	NXDOMAIN		8.8.8.8
+1774658423	192.168.100.75	bl0dqompqyxu.cc	A	NXDOMAIN		8.8.8.8
+1774658376	10.0.0.1	vpn.apple.com	A	NOERROR	1.2.3.171	8.8.8.8
+1774658588	203.0.113.50	internal.company.local	NS	NOERROR	10.0.0.1	8.8.8.8
+1774658259	10.0.0.10	upload.cloudflare.com	A	NOERROR	1.2.3.237	8.8.8.8
+1774659011	10.0.0.1	malware-c2.net	A	NOERROR	192.0.2.7	8.8.8.8
+1774658220	10.0.0.3	static.netflix.com	A	NOERROR	1.2.3.3	8.8.8.8
+1774658468	10.0.0.5	pop.linkedin.com	A	NOERROR	1.2.3.193	8.8.8.8
+1774658459	10.0.0.5	vpn.netflix.com	A	NOERROR	1.2.3.188	8.8.8.8
+1774658170	10.0.0.3	cdn.apple.com	A	NOERROR	1.2.3.240	8.8.8.8
+1774658373	10.0.0.1	upload.reddit.com	A	NOERROR	1.2.3.194	8.8.8.8
+1774658761	192.168.100.75	amazon.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658406	192.168.100.75	4n24xmfto4nw.org	A	NXDOMAIN		8.8.8.8
+1774658765	192.168.100.75	akamai.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658893	192.168.100.50		HTTPS	NOERROR	1.1.1.1	1.1.1.1
+1774658195	10.0.0.3	download.facebook.com	A	NOERROR	1.2.3.225	8.8.8.8
+1774658227	10.0.0.3	imap.stackoverflow.com	A	NOERROR	1.2.3.74	8.8.8.8
+1774658762	192.168.100.75	youtube.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658488	10.0.0.3	static.apple.com	A	NOERROR	1.2.3.219	8.8.8.8
+1774658422	192.168.100.75	545ph2gds6lv.net	A	NXDOMAIN		8.8.8.8
+1774658362	192.168.100.75	es1o0ofrdpn7.com	A	NXDOMAIN		8.8.8.8
+1774658204	10.0.0.10	api.akamai.com	A	NOERROR	1.2.3.59	8.8.8.8
+1774658370	192.168.100.75	z0gzf6d415sg.ru	A	NXDOMAIN		8.8.8.8
+1774659133	192.168.100.75	c2VjcmV0ZGF0YV8wMDI0eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658364	192.168.100.75	qhl1y1hwyt3f.cc	A	NXDOMAIN		8.8.8.8
+1774659128	192.168.100.75	c2VjcmV0ZGF0YV8wMDE1eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658379	192.168.100.75	7oz0bzxiok3n.net	A	NXDOMAIN		8.8.8.8
+1774658340	10.0.0.5	ftp.reddit.com	A	NOERROR	1.2.3.218	8.8.8.8
+1774658432	192.168.100.75	v5w56vadb6ad.org	A	NXDOMAIN		8.8.8.8
+1774658321	10.0.0.5	admin.facebook.com	A	NOERROR	1.2.3.111	8.8.8.8
+1774658375	10.0.0.5	www.stackoverflow.com	A	NOERROR	1.2.3.237	8.8.8.8
+1774658386	192.168.100.75	ducovd0wfmr6.net	A	NXDOMAIN		8.8.8.8
+1774658762	192.168.200.100	MNWWIXZQGAYDS.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658360	192.168.100.75	mj74m7akldk5.cc	A	NXDOMAIN		8.8.8.8
+1774658060	10.0.0.1	admin.amazon.com	A	NOERROR	1.2.3.215	8.8.8.8
+1774658491	10.0.0.10	mail.akamai.com	A	NOERROR	1.2.3.148	8.8.8.8
+1774658671	10.0.0.10	dnssec-zone.com	A	SERVFAIL		8.8.8.8
+1774659124	192.168.100.75	c2VjcmV0ZGF0YV8wMDA3eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658439	10.0.0.10	vpn.linkedin.com	A	NOERROR	1.2.3.254	8.8.8.8
+1774658330	10.0.0.10	download.akamai.com	A	NOERROR	1.2.3.68	8.8.8.8
+1774658398	10.0.0.2	static.reddit.com	A	NOERROR	1.2.3.58	8.8.8.8
+1774658462	10.0.0.3	files.netflix.com	A	NOERROR	1.2.3.3	8.8.8.8
+1774658355	10.0.0.3	cdn.twitter.com	A	NOERROR	1.2.3.206	8.8.8.8
+1774658319	10.0.0.10	images.youtube.com	A	NOERROR	1.2.3.78	8.8.8.8
+1774658372	192.168.100.75	akjc778shzcs.org	A	NXDOMAIN		8.8.8.8
+1774658819	192.168.200.100	MNWWIXZQGAYTA.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658273	10.0.0.10	assets.akamai.com	A	NOERROR	1.2.3.138	8.8.8.8
+1774658275	10.0.0.3	smtp.facebook.com	A	NOERROR	1.2.3.103	8.8.8.8
+1774658590	203.0.113.50	internal.company.local	SOA	NOERROR	10.0.0.1	8.8.8.8
+1774658265	10.0.0.5	static.linkedin.com	A	NOERROR	1.2.3.226	8.8.8.8
+1774658769	192.168.100.75	amazon.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658100	10.0.0.5	pop.reddit.com	A	NOERROR	1.2.3.251	8.8.8.8
+1774658111	192.168.100.75	HHAA24KTIZN2M7G7DBOFN7JK2LMILYSYQGS3NYLCJQMTK25D.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658115	192.168.100.75	ACHPDQ2P4RH4JZFK2LPJ3ZE6HPCEC77DYWNJIYOZYNCBXIPU.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658234	10.0.0.1	assets.linkedin.com	A	NOERROR	1.2.3.211	8.8.8.8
+1774658764	192.168.100.75	youtube.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658427	192.168.100.75	kio616rtc9qk.cc	A	NXDOMAIN		8.8.8.8
+1774658229	10.0.0.10	upload.microsoft.com	A	NOERROR	1.2.3.130	8.8.8.8
+1774658334	10.0.0.2	ftp.facebook.com	A	NOERROR	1.2.3.224	8.8.8.8
+1774659129	192.168.100.75	c2VjcmV0ZGF0YV8wMDE2eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658393	192.168.100.75	kcyod8z71btb.org	A	NOERROR	10.0.0.99	8.8.8.8
+1774658765	192.168.100.75	youtube.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658237	10.0.0.2	cdn.apple.com	A	NOERROR	1.2.3.144	8.8.8.8
+1774658761	192.168.100.75	facebook.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774660498	192.168.200.100	MNWWIXZQGAZTQ.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774659125	192.168.100.75	c2VjcmV0ZGF0YV8wMDA5eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658767	192.168.100.75	youtube.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658933	192.168.100.50		HTTPS	NOERROR	1.1.1.1	1.1.1.1
+1774659002	10.0.0.10	malware-c2.net	A	NOERROR	192.0.2.1	8.8.8.8
+1774658428	192.168.100.75	nwyt6o8li6n6.net	A	NXDOMAIN		8.8.8.8
+1774658189	10.0.0.5	smtp.stackoverflow.com	A	NOERROR	1.2.3.184	8.8.8.8
+1774658761	192.168.100.75	microsoft.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658311	10.0.0.2	vpn.youtube.com	A	NOERROR	1.2.3.33	8.8.8.8
+1774658384	10.0.0.3	admin.wikipedia.org	A	NOERROR	1.2.3.163	8.8.8.8
+1774658764	192.168.100.75	reddit.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658408	10.0.0.5	pop.amazon.com	A	NOERROR	1.2.3.124	8.8.8.8
+1774658278	10.0.0.1	vpn.microsoft.com	A	NOERROR	1.2.3.192	8.8.8.8
+1774658527	10.0.0.5	static.reddit.com	A	NOERROR	1.2.3.45	8.8.8.8
+1774658135	10.0.0.1	smtp.amazon.com	A	NOERROR	1.2.3.114	8.8.8.8
+1774658284	10.0.0.3	imap.cloudflare.com	A	NOERROR	1.2.3.120	8.8.8.8
+1774658769	192.168.100.75	twitter.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658770	192.168.100.75	github.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658283	10.0.0.1	vpn.wikipedia.org	A	NOERROR	1.2.3.158	8.8.8.8
+1774658389	192.168.100.75	cxkt7asz7uam.ru	A	NXDOMAIN		8.8.8.8
+1774658350	192.168.100.75	cvucgsxo19zb.cc	A	NXDOMAIN		8.8.8.8
+1774658198	10.0.0.5	files.netflix.com	A	NOERROR	1.2.3.216	8.8.8.8
+1774658131	192.168.100.75	WC2PZUV7MVRB7CZJ4LHUYKCWKDHY4MRC5JTLVWHGFDUQEOVW.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774659016	10.0.0.5	malware-c2.net	A	NOERROR	192.0.2.10	8.8.8.8
+1774658771	10.0.0.3	dnssec-zone.com	A	SERVFAIL		8.8.8.8
+1774658167	10.0.0.10	mail.linkedin.com	A	NOERROR	1.2.3.196	8.8.8.8
+1774658768	192.168.100.75	apple.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658117	10.0.0.2	vpn.microsoft.com	A	NOERROR	1.2.3.169	8.8.8.8
+1774659029	10.0.0.1	malware-c2.net	A	NOERROR	192.0.2.19	8.8.8.8
+1774658282	10.0.0.3	cdn.apple.com	A	NOERROR	1.2.3.103	8.8.8.8
+1774658764	192.168.100.75	twitter.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658427	10.0.0.1	download.stackoverflow.com	A	NOERROR	1.2.3.142	8.8.8.8
+1774658362	10.0.0.1	admin.youtube.com	A	NOERROR	1.2.3.142	8.8.8.8
+1774658766	192.168.100.75	linkedin.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658521	10.0.0.2	legitimate-bank.com	A	NOERROR	192.0.2.12	8.8.8.8
+1774658286	10.0.0.1	static.facebook.com	A	NOERROR	1.2.3.245	8.8.8.8
+1774658079	10.0.0.10	upload.microsoft.com	A	NOERROR	1.2.3.231	8.8.8.8
+1774658051	10.0.0.2	images.reddit.com	A	NOERROR	1.2.3.128	8.8.8.8
+1774658501	10.0.0.5	legitimate-bank.com	A	NOERROR	192.0.2.8	8.8.8.8
+1774658581	203.0.113.50	internal.company.local	AXFR	REFUSED		10.0.0.1
+1774658412	192.168.100.75	de6s7pwh4p2b.com	A	NXDOMAIN		8.8.8.8
+1774659125	192.168.100.75	c2VjcmV0ZGF0YV8wMDA4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658372	10.0.0.1	download.apple.com	A	NOERROR	1.2.3.208	8.8.8.8
+1774658769	192.168.100.75	twitter.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658146	10.0.0.10	smtp.wikipedia.org	A	NOERROR	1.2.3.254	8.8.8.8
+1774658143	192.168.100.75	UFYN7MS76PEGBOYCFX2KECRWQER36UD3656NHMVLXOXU6LKO.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658432	10.0.0.3	api.akamai.com	A	NOERROR	1.2.3.51	8.8.8.8
+1774660680	192.168.200.100	MNWWIXZQGA2DC.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658228	10.0.0.5	download.apple.com	A	NOERROR	1.2.3.147	8.8.8.8
+1774658393	10.0.0.3	imap.facebook.com	A	NOERROR	1.2.3.109	8.8.8.8
+1774658907	192.168.100.50		HTTPS	NOERROR	1.1.1.1	1.1.1.1
+1774658136	10.0.0.10	upload.cloudflare.com	A	NOERROR	1.2.3.172	8.8.8.8
+1774658385	192.168.100.75	4wedahfndwex.com	A	NOERROR	10.0.0.99	8.8.8.8
+1774658266	10.0.0.10	imap.linkedin.com	A	NOERROR	1.2.3.210	8.8.8.8
+1774658763	192.168.100.75	twitter.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658901	192.168.100.50		HTTPS	NOERROR	8.8.8.8	8.8.8.8
+1774658293	10.0.0.1	imap.twitter.com	A	NOERROR	1.2.3.19	8.8.8.8
+1774658122	10.0.0.1	smtp.google.com	A	NOERROR	1.2.3.227	8.8.8.8
+1774658365	192.168.100.75	0bglshuljozn.org	A	NXDOMAIN		8.8.8.8
+1774658414	192.168.100.75	cmgenf14zjdb.ru	A	NXDOMAIN		8.8.8.8
+1774658225	10.0.0.2	www.google.com	A	NOERROR	1.2.3.150	8.8.8.8
+1774660024	192.168.200.100	MNWWIXZQGAZTA.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658431	10.0.0.3	api.facebook.com	A	NOERROR	1.2.3.42	8.8.8.8
+1774658214	10.0.0.2	assets.youtube.com	A	NOERROR	1.2.3.126	8.8.8.8
+1774658519	10.0.0.1	vpn.youtube.com	A	NOERROR	1.2.3.60	8.8.8.8
+1774658401	192.168.100.75	mkde4woovt1o.net	A	NXDOMAIN		8.8.8.8
+1774658525	10.0.0.5	static.stackoverflow.com	A	NOERROR	1.2.3.118	8.8.8.8
+1774658376	192.168.100.75	55rwwl0aifu3.net	A	NXDOMAIN		8.8.8.8
+1774658478	10.0.0.1	assets.github.com	A	NOERROR	1.2.3.225	8.8.8.8
+1774659013	10.0.0.2	malware-c2.net	A	NOERROR	192.0.2.8	8.8.8.8
+1774660864	192.168.200.100	MNWWIXZQGA2DI.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658344	192.168.100.75	w3uj3d8xb28t.com	A	NXDOMAIN		8.8.8.8
+1774659140	192.168.100.75	c2VjcmV0ZGF0YV8wMDM4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658390	10.0.0.2	api.microsoft.com	A	NOERROR	1.2.3.133	8.8.8.8
+1774658436	10.0.0.10	cdn.youtube.com	A	NOERROR	1.2.3.121	8.8.8.8
+1774658524	192.168.200.100	cmd.botnet-control.ru	TXT	NOERROR	execute_payload	8.8.8.8
+1774658062	10.0.0.10	cdn.linkedin.com	A	NOERROR	1.2.3.156	8.8.8.8
+1774658768	192.168.100.75	amazon.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658141	10.0.0.10	static.stackoverflow.com	A	NOERROR	1.2.3.141	8.8.8.8
+1774658355	192.168.100.75	lzmbsrx0nbpx.ru	A	NXDOMAIN		8.8.8.8
+1774658143	10.0.0.3	upload.google.com	A	NOERROR	1.2.3.69	8.8.8.8
+1774658279	192.168.200.100	MNWWIXZQGAYDC.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658223	192.168.200.100	cmd.botnet-control.ru	TXT	NOERROR	execute_payload	8.8.8.8
+1774658218	10.0.0.5	imap.apple.com	A	NOERROR	1.2.3.160	8.8.8.8
+1774658168	10.0.0.1	imap.netflix.com	A	NOERROR	1.2.3.72	8.8.8.8
+1774658763	192.168.100.75	wikipedia.org	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658115	10.0.0.2	vpn.microsoft.com	A	NOERROR	1.2.3.118	8.8.8.8
+1774658154	10.0.0.10	mail.amazon.com	A	NOERROR	1.2.3.184	8.8.8.8
+1774658257	10.0.0.10	pop.facebook.com	A	NOERROR	1.2.3.142	8.8.8.8
+1774659046	10.0.0.3	malware-c2.net	A	NOERROR	192.0.2.10	8.8.8.8
+1774658768	192.168.100.75	reddit.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658448	10.0.0.10	pop.netflix.com	A	NOERROR	1.2.3.211	8.8.8.8
+1774658247	10.0.0.5	imap.apple.com	A	NOERROR	1.2.3.31	8.8.8.8
+1774659122	192.168.100.75	c2VjcmV0ZGF0YV8wMDAzeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658316	10.0.0.1	www.github.com	A	NOERROR	1.2.3.197	8.8.8.8
+1774658364	192.168.100.75	fyamxmtatexk.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658145	192.168.100.75	NJSULBS4G4RSHJD25XMQE56GSU5UP6H7WPC2SHWRHPEDNAL5.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774660258	192.168.200.100	MNWWIXZQGAZTI.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658092	10.0.0.1	cdn.google.com	A	NOERROR	1.2.3.53	8.8.8.8
+1774658556	10.0.0.3	legitimate-bank.com	A	NOERROR	203.0.113.1	8.8.8.8
+1774658121	10.0.0.5	vpn.google.com	A	NOERROR	1.2.3.226	8.8.8.8
+1774658439	192.168.100.75	mk7w7wb8ig5w.com	A	NXDOMAIN		8.8.8.8
+1774658393	192.168.100.75	ln3x5xj0wm7b.cc	A	NOERROR	10.0.0.99	8.8.8.8
+1774658250	10.0.0.1	mail.wikipedia.org	A	NOERROR	1.2.3.169	8.8.8.8
+1774659142	192.168.100.75	c2VjcmV0ZGF0YV8wMDQyeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658413	192.168.100.75	hwkmwzf5xse1.com	A	NXDOMAIN		8.8.8.8
+1774658222	192.168.200.100	MNWWIXZQGAYDA.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658118	10.0.0.10	mail.netflix.com	A	NOERROR	1.2.3.39	8.8.8.8
+1774659056	10.0.0.10	malware-c2.net	A	NOERROR	192.0.2.17	8.8.8.8
+1774658403	192.168.200.100	MNWWIXZQGAYDG.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658380	192.168.100.75	i1x6jba0sqjv.net	A	NXDOMAIN		8.8.8.8
+1774658641	10.0.0.1	dnssec-zone.com	A	SERVFAIL		8.8.8.8
+1774658768	192.168.100.75	stackoverflow.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658763	192.168.100.75	wikipedia.org	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658506	10.0.0.3	legitimate-bank.com	A	NOERROR	203.0.113.1	8.8.8.8
+1774658392	10.0.0.3	vpn.linkedin.com	A	NOERROR	1.2.3.89	8.8.8.8
+1774659026	10.0.0.2	malware-c2.net	A	NOERROR	192.0.2.17	8.8.8.8
+1774658766	192.168.100.75	google.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658764	192.168.100.75	linkedin.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658353	192.168.100.75	4cmj0w14aqre.com	A	NXDOMAIN		8.8.8.8
+1774658508	10.0.0.1	mail.akamai.com	A	NOERROR	1.2.3.66	8.8.8.8
+1774658512	10.0.0.2	pop.apple.com	A	NOERROR	1.2.3.52	8.8.8.8
+1774658423	192.168.100.75	hgy6na3hjfwv.cc	A	NOERROR	10.0.0.99	8.8.8.8
+1774658106	10.0.0.5	upload.akamai.com	A	NOERROR	1.2.3.241	8.8.8.8
+1774658333	10.0.0.3	cdn.amazon.com	A	NOERROR	1.2.3.231	8.8.8.8
+1774658152	10.0.0.1	ftp.wikipedia.org	A	NOERROR	1.2.3.80	8.8.8.8
+1774659659	192.168.200.100	MNWWIXZQGAZDI.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658763	192.168.100.75	stackoverflow.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658332	10.0.0.1	api.linkedin.com	A	NOERROR	1.2.3.104	8.8.8.8
+1774658157	192.168.100.75	ASISGKJ2SBPUHFI3HQROEMLMSZ6FNJ3DDSU75U4NGG4A34TY.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658408	192.168.100.75	chjnkf2nvg9q.net	A	NXDOMAIN		8.8.8.8
+1774658591	203.0.113.50	internal.company.local	NS	NOERROR	10.0.0.1	8.8.8.8
+1774658768	192.168.100.75	microsoft.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658518	10.0.0.5	files.cloudflare.com	A	NOERROR	1.2.3.56	8.8.8.8
+1774658502	10.0.0.2	static.netflix.com	A	NOERROR	1.2.3.93	8.8.8.8
+1774658762	192.168.100.75	youtube.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658087	10.0.0.3	upload.twitter.com	A	NOERROR	1.2.3.162	8.8.8.8
+1774659031	10.0.0.10	malware-c2.net	A	NOERROR	192.0.2.0	8.8.8.8
+1774658909	192.168.100.50		HTTPS	NOERROR	1.1.1.1	1.1.1.1
+1774658421	10.0.0.3	api.microsoft.com	A	NOERROR	1.2.3.99	8.8.8.8
+1774658454	10.0.0.1	admin.netflix.com	A	NOERROR	1.2.3.246	8.8.8.8
+1774658240	10.0.0.3	assets.github.com	A	NOERROR	1.2.3.171	8.8.8.8
+1774658388	192.168.100.75	8vkumvzokfqw.net	A	NXDOMAIN		8.8.8.8
+1774658361	192.168.100.75	wxp779vphtof.com	A	NXDOMAIN		8.8.8.8
+1774658500	10.0.0.3	smtp.google.com	A	NOERROR	1.2.3.25	8.8.8.8
+1774658356	10.0.0.2	vpn.facebook.com	A	NOERROR	1.2.3.145	8.8.8.8
+1774658419	10.0.0.10	pop.facebook.com	A	NOERROR	1.2.3.222	8.8.8.8
+1774658531	10.0.0.1	legitimate-bank.com	A	NOERROR	192.0.2.14	8.8.8.8
+1774658464	10.0.0.3	static.linkedin.com	A	NOERROR	1.2.3.229	8.8.8.8
+1774658764	192.168.100.75	stackoverflow.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658471	10.0.0.3	legitimate-bank.com	A	NOERROR	192.0.2.2	8.8.8.8
+1774658370	192.168.100.75	9kff06hkgxio.org	A	NXDOMAIN		8.8.8.8
+1774658235	10.0.0.3	download.akamai.com	A	NOERROR	1.2.3.85	8.8.8.8
+1774658764	192.168.100.75	microsoft.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658767	192.168.100.75	twitter.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658522	10.0.0.1	assets.apple.com	A	NOERROR	1.2.3.124	8.8.8.8
+1774658126	10.0.0.2	upload.twitter.com	A	NOERROR	1.2.3.189	8.8.8.8
+1774658380	10.0.0.1	imap.twitter.com	A	NOERROR	1.2.3.11	8.8.8.8
+1774658365	192.168.100.75	3amxqc5071hr.com	A	NXDOMAIN		8.8.8.8
+1774659144	192.168.100.75	c2VjcmV0ZGF0YV8wMDQ2eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658427	192.168.100.75	g4flvogj8387.ru	A	NXDOMAIN		8.8.8.8
+1774658475	10.0.0.5	ftp.linkedin.com	A	NOERROR	1.2.3.149	8.8.8.8
+1774658466	10.0.0.2	ftp.reddit.com	A	NOERROR	1.2.3.155	8.8.8.8
+1774658368	192.168.100.75	itsi22bs7ig7.cc	A	NXDOMAIN		8.8.8.8
+1774658768	192.168.100.75	amazon.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774659053	10.0.0.10	malware-c2.net	A	NOERROR	192.0.2.15	8.8.8.8
+1774658406	10.0.0.2	api.netflix.com	A	NOERROR	1.2.3.145	8.8.8.8
+1774658044	10.0.0.1	upload.twitter.com	A	NOERROR	1.2.3.101	8.8.8.8
+1774659041	10.0.0.3	malware-c2.net	A	NOERROR	192.0.2.7	8.8.8.8
+1774658362	192.168.100.75	xzarocq58lw6.cc	A	NXDOMAIN		8.8.8.8
+1774658200	10.0.0.5	ftp.cloudflare.com	A	NOERROR	1.2.3.110	8.8.8.8
+1774658155	10.0.0.2	upload.facebook.com	A	NOERROR	1.2.3.181	8.8.8.8
+1774658416	10.0.0.5	ftp.linkedin.com	A	NOERROR	1.2.3.47	8.8.8.8
+1774658383	10.0.0.10	ftp.microsoft.com	A	NOERROR	1.2.3.125	8.8.8.8
+1774658381	10.0.0.10	images.netflix.com	A	NOERROR	1.2.3.112	8.8.8.8
+1774658343	192.168.100.75	rg3a2wldlbl9.com	A	NXDOMAIN		8.8.8.8
+1774659138	192.168.100.75	c2VjcmV0ZGF0YV8wMDM1eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658770	192.168.100.75	wikipedia.org	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658208	10.0.0.10	imap.google.com	A	NOERROR	1.2.3.166	8.8.8.8
+1774658769	192.168.100.75	netflix.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658365	10.0.0.1	cdn.facebook.com	A	NOERROR	1.2.3.45	8.8.8.8
+1774658396	192.168.100.75	rhpkykrzngym.org	A	NXDOMAIN		8.8.8.8
+1774658219	10.0.0.2	images.linkedin.com	A	NOERROR	1.2.3.188	8.8.8.8
+1774658409	192.168.100.75	mhlvnim5geln.org	A	NXDOMAIN		8.8.8.8
+1774658433	192.168.100.75	dtj2h2sipqdo.cc	A	NXDOMAIN		8.8.8.8
+1774658437	10.0.0.10	smtp.reddit.com	A	NOERROR	1.2.3.173	8.8.8.8
+1774658354	192.168.100.75	zofkoobo3l22.net	A	NXDOMAIN		8.8.8.8
+1774658133	10.0.0.5	static.youtube.com	A	NOERROR	1.2.3.69	8.8.8.8
+1774658077	10.0.0.5	static.microsoft.com	A	NOERROR	1.2.3.69	8.8.8.8
+1774658342	192.168.100.75	jrylkl3h6a8s.org	A	NXDOMAIN		8.8.8.8
+1774658188	10.0.0.1	assets.netflix.com	A	NOERROR	1.2.3.196	8.8.8.8
+1774658300	10.0.0.3	www.apple.com	A	NOERROR	1.2.3.84	8.8.8.8
+1774658762	192.168.100.75	twitter.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658210	10.0.0.10	ftp.facebook.com	A	NOERROR	1.2.3.191	8.8.8.8
+1774658503	10.0.0.2	files.youtube.com	A	NOERROR	1.2.3.70	8.8.8.8
+1774658361	10.0.0.1	download.apple.com	A	NOERROR	1.2.3.211	8.8.8.8
+1774659123	192.168.100.75	c2VjcmV0ZGF0YV8wMDA1eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658150	10.0.0.10	api.stackoverflow.com	A	NOERROR	1.2.3.55	8.8.8.8
+1774658762	192.168.100.75	stackoverflow.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658433	192.168.100.75	uld862dishbg.cc	A	NXDOMAIN		8.8.8.8
+1774658899	192.168.100.50		HTTPS	NOERROR	8.8.8.8	8.8.8.8
+1774658301	10.0.0.10	upload.microsoft.com	A	NOERROR	1.2.3.222	8.8.8.8
+1774658287	10.0.0.10	assets.apple.com	A	NOERROR	1.2.3.217	8.8.8.8
+1774658526	10.0.0.1	legitimate-bank.com	A	NOERROR	203.0.113.1	8.8.8.8
+1774659134	192.168.100.75	c2VjcmV0ZGF0YV8wMDI3eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658401	10.0.0.5	admin.netflix.com	A	NOERROR	1.2.3.43	8.8.8.8
+1774658359	192.168.100.75	f1um5hirk2sr.cc	A	NXDOMAIN		8.8.8.8
+1774659010	10.0.0.5	malware-c2.net	A	NOERROR	192.0.2.6	8.8.8.8
+1774659130	192.168.100.75	c2VjcmV0ZGF0YV8wMDE5eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658127	10.0.0.2	imap.cloudflare.com	A	NOERROR	1.2.3.166	8.8.8.8
+1774658260	10.0.0.2	admin.facebook.com	A	NOERROR	1.2.3.165	8.8.8.8
+1774660443	192.168.200.100	MNWWIXZQGAZTO.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774659058	10.0.0.10	malware-c2.net	A	NOERROR	192.0.2.18	8.8.8.8
+1774661042	192.168.200.100	MNWWIXZQGA2DO.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658461	192.168.200.100	MNWWIXZQGAYDI.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658443	10.0.0.10	mail.microsoft.com	A	NOERROR	1.2.3.222	8.8.8.8
+1774658403	10.0.0.2	download.facebook.com	A	NOERROR	1.2.3.196	8.8.8.8
+1774658360	192.168.100.75	nolmu84q74hs.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658121	192.168.100.75	2RK2U5EPRRK5VUFW52XSS5F3R65PHS5XSPMBWMU7RC2V2SGG.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658407	10.0.0.10	upload.amazon.com	A	NOERROR	1.2.3.137	8.8.8.8
+1774659040	10.0.0.10	malware-c2.net	A	NOERROR	192.0.2.6	8.8.8.8
+1774658372	192.168.100.75	6rrwb8qsajse.cc	A	NXDOMAIN		8.8.8.8
+1774658153	192.168.100.75	6WHPCPNEST5CYUNF6BRSBLHUHMTE2IJFE46SVOED27BGY4CV.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774659052	10.0.0.5	malware-c2.net	A	NOERROR	192.0.2.14	8.8.8.8
+1774659001	192.168.200.100	MNWWIXZQGAYTG.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658151	192.168.100.75	GH6NTLOT4EICU5ZSSABQ5L3JBFBKYSUJJPAIJ3TRBJHTWADJ.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774660202	192.168.200.100	MNWWIXZQGAZTG.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658348	10.0.0.2	mail.amazon.com	A	NOERROR	1.2.3.132	8.8.8.8
+1774658398	192.168.100.75	t92uecpk82am.com	A	NXDOMAIN		8.8.8.8
+1774658050	10.0.0.2	pop.youtube.com	A	NOERROR	1.2.3.209	8.8.8.8
+1774658481	10.0.0.5	legitimate-bank.com	A	NOERROR	192.0.2.4	8.8.8.8
+1774658184	10.0.0.3	imap.wikipedia.org	A	NOERROR	1.2.3.181	8.8.8.8
+1774658471	10.0.0.10	download.microsoft.com	A	NOERROR	1.2.3.250	8.8.8.8
+1774658414	192.168.100.75	qe6yh5oi25r3.net	A	NXDOMAIN		8.8.8.8
+1774658505	10.0.0.2	pop.stackoverflow.com	A	NOERROR	1.2.3.216	8.8.8.8
+1774658133	192.168.100.75	A6H2OB2J5PBVS666DPXTBEDGHKKNRY33QKIHDZOPVFQRLFRR.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658520	10.0.0.2	assets.amazon.com	A	NOERROR	1.2.3.111	8.8.8.8
+1774658769	192.168.100.75	linkedin.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658428	10.0.0.5	cdn.github.com	A	NOERROR	1.2.3.65	8.8.8.8
+1774658368	10.0.0.1	api.microsoft.com	A	NOERROR	1.2.3.26	8.8.8.8
+1774659126	192.168.100.75	c2VjcmV0ZGF0YV8wMDEweHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658883	192.168.200.100	MNWWIXZQGAYTC.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658157	10.0.0.2	images.amazon.com	A	NOERROR	1.2.3.155	8.8.8.8
+1774658514	10.0.0.5	admin.linkedin.com	A	NOERROR	1.2.3.5	8.8.8.8
+1774658350	10.0.0.10	images.amazon.com	A	NOERROR	1.2.3.63	8.8.8.8
+1774658400	10.0.0.3	ftp.netflix.com	A	NOERROR	1.2.3.187	8.8.8.8
+1774659028	10.0.0.3	malware-c2.net	A	NOERROR	192.0.2.18	8.8.8.8
+1774658392	192.168.100.75	ptvjlqg7ycxo.org	A	NXDOMAIN		8.8.8.8
+1774658108	10.0.0.3	imap.facebook.com	A	NOERROR	1.2.3.126	8.8.8.8
+1774658243	10.0.0.2	images.cloudflare.com	A	NOERROR	1.2.3.192	8.8.8.8
+1774658245	10.0.0.10	assets.github.com	A	NOERROR	1.2.3.14	8.8.8.8
+1774658384	192.168.100.75	5tx4ditvjk5w.cc	A	NXDOMAIN		8.8.8.8
+1774658768	192.168.100.75	twitter.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774659022	10.0.0.3	malware-c2.net	A	NOERROR	192.0.2.14	8.8.8.8
+1774658770	192.168.100.75	linkedin.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658347	192.168.100.75	kfqunrm25joc.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658205	10.0.0.3	ftp.wikipedia.org	A	NOERROR	1.2.3.193	8.8.8.8
+1774658387	192.168.100.75	ah1ng7kv8iyt.org	A	NOERROR	10.0.0.99	8.8.8.8
+1774658338	10.0.0.5	assets.youtube.com	A	NOERROR	1.2.3.84	8.8.8.8
+1774658913	192.168.100.50		HTTPS	NOERROR	8.8.8.8	8.8.8.8
+1774658350	192.168.100.75	sa03rjr6fevf.cc	A	NOERROR	10.0.0.99	8.8.8.8
+1774658472	10.0.0.10	cdn.stackoverflow.com	A	NOERROR	1.2.3.218	8.8.8.8
+1774658206	10.0.0.10	static.github.com	A	NOERROR	1.2.3.88	8.8.8.8
+1774658458	10.0.0.10	smtp.reddit.com	A	NOERROR	1.2.3.243	8.8.8.8
+1774659141	192.168.100.75	c2VjcmV0ZGF0YV8wMDQxeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658356	192.168.100.75	os7pq28kj6nw.net	A	NXDOMAIN		8.8.8.8
+1774659299	192.168.200.100	MNWWIXZQGAYTQ.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658344	10.0.0.10	admin.google.com	A	NOERROR	1.2.3.22	8.8.8.8
+1774658535	10.0.0.10	ftp.akamai.com	A	NOERROR	1.2.3.104	8.8.8.8
+1774659020	10.0.0.10	malware-c2.net	A	NOERROR	192.0.2.13	8.8.8.8
+1774658221	10.0.0.2	images.github.com	A	NOERROR	1.2.3.207	8.8.8.8
+1774658376	192.168.100.75	jzvbyvs8jsd9.org	A	NXDOMAIN		8.8.8.8
+1774658423	10.0.0.3	mail.stackoverflow.com	A	NOERROR	1.2.3.214	8.8.8.8
+1774658435	192.168.100.75	2cipioqg5y6f.net	A	NOERROR	10.0.0.99	8.8.8.8
+1774658919	192.168.100.50		HTTPS	NOERROR	1.1.1.1	1.1.1.1
+1774658701	10.0.0.5	dnssec-zone.com	A	SERVFAIL		8.8.8.8
+1774658342	10.0.0.3	static.cloudflare.com	A	NOERROR	1.2.3.64	8.8.8.8
+1774658766	192.168.100.75	netflix.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658480	10.0.0.10	cdn.wikipedia.org	A	NOERROR	1.2.3.101	8.8.8.8
+1774658230	10.0.0.2	pop.github.com	A	NOERROR	1.2.3.202	8.8.8.8
+1774659034	10.0.0.2	malware-c2.net	A	NOERROR	192.0.2.2	8.8.8.8
+1774658511	10.0.0.5	legitimate-bank.com	A	NOERROR	192.0.2.10	8.8.8.8
+1774658538	10.0.0.1	cdn.stackoverflow.com	A	NOERROR	1.2.3.245	8.8.8.8
+1774659958	192.168.200.100	MNWWIXZQGAZDS.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658180	10.0.0.1	upload.apple.com	A	NOERROR	1.2.3.207	8.8.8.8
+1774658119	192.168.100.75	5OCS3AQEKUHCZZ7TTTOZI2EFZAG36PDAGJ2G4F6FRBK6APDQ.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658430	192.168.100.75	eq8yle1e5t37.ru	A	NXDOMAIN		8.8.8.8
+1774658306	10.0.0.1	www.netflix.com	A	NOERROR	1.2.3.16	8.8.8.8
+1774659145	192.168.100.75	c2VjcmV0ZGF0YV8wMDQ5eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658165	10.0.0.1	upload.microsoft.com	A	NOERROR	1.2.3.253	8.8.8.8
+1774658373	192.168.100.75	go0koy782lf3.com	A	NXDOMAIN		8.8.8.8
+1774658765	192.168.100.75	reddit.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658765	192.168.100.75	cloudflare.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658417	10.0.0.10	files.akamai.com	A	NOERROR	1.2.3.20	8.8.8.8
+1774658681	10.0.0.1	dnssec-zone.com	A	SERVFAIL		8.8.8.8
+1774659122	192.168.200.100	MNWWIXZQGAYTK.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658069	10.0.0.1	vpn.google.com	A	NOERROR	1.2.3.20	8.8.8.8
+1774658385	192.168.100.75	aps6gi1vdjms.org	A	NXDOMAIN		8.8.8.8
+1774658455	10.0.0.2	ftp.cloudflare.com	A	NOERROR	1.2.3.152	8.8.8.8
+1774658887	192.168.100.50		HTTPS	NOERROR	45.33.32.156	45.33.32.156
+1774658272	10.0.0.2	api.wikipedia.org	A	NOERROR	1.2.3.151	8.8.8.8
+1774658054	10.0.0.3	static.github.com	A	NOERROR	1.2.3.153	8.8.8.8
+1774658444	10.0.0.1	api.microsoft.com	A	NOERROR	1.2.3.128	8.8.8.8
+1774658112	10.0.0.5	static.youtube.com	A	NOERROR	1.2.3.23	8.8.8.8
+1774658937	192.168.100.50		HTTPS	NOERROR	1.1.1.1	1.1.1.1
+1774658415	192.168.100.75	wa15s2gkhf16.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658407	192.168.100.75	9syu4u3nl0ph.org	A	NXDOMAIN		8.8.8.8
+1774658891	192.168.100.50		HTTPS	NOERROR	1.1.1.1	1.1.1.1
+1774658389	192.168.100.75	f526y9ftn2i3.cc	A	NXDOMAIN		8.8.8.8
+1774658348	192.168.100.75	w7ulq0vz2wez.org	A	NXDOMAIN		8.8.8.8
+1774658483	10.0.0.10	ftp.linkedin.com	A	NOERROR	1.2.3.94	8.8.8.8
+1774659004	10.0.0.5	malware-c2.net	A	NOERROR	192.0.2.2	8.8.8.8
+1774658222	10.0.0.2	ftp.facebook.com	A	NOERROR	1.2.3.3	8.8.8.8
+1774658762	192.168.100.75	netflix.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658073	10.0.0.1	ftp.facebook.com	A	NOERROR	1.2.3.41	8.8.8.8
+1774658391	192.168.100.75	gxsbyoc92to8.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658385	10.0.0.2	cdn.facebook.com	A	NOERROR	1.2.3.40	8.8.8.8
+1774658089	10.0.0.10	vpn.amazon.com	A	NOERROR	1.2.3.123	8.8.8.8
+1774658149	10.0.0.10	cdn.twitter.com	A	NOERROR	1.2.3.251	8.8.8.8
+1774658770	192.168.100.75	google.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658409	192.168.100.75	e97qmfs97oec.com	A	NXDOMAIN		8.8.8.8
+1774658731	10.0.0.10	dnssec-zone.com	A	SERVFAIL		8.8.8.8
+1774658449	10.0.0.10	cdn.reddit.com	A	NOERROR	1.2.3.239	8.8.8.8
+1774658358	192.168.100.75	9t32xur2mpt6.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658149	192.168.100.75	6VLTP53OKCMS2PX7OKYUELONJUM662BTCEO7OQQETEDWRZ34.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658763	192.168.100.75	wikipedia.org	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658359	192.168.100.75	m716dmlogybo.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658536	10.0.0.1	static.wikipedia.org	A	NOERROR	1.2.3.244	8.8.8.8
+1774658251	10.0.0.1	static.akamai.com	A	NOERROR	1.2.3.226	8.8.8.8
+1774658582	192.168.200.100	MNWWIXZQGAYDM.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658769	192.168.100.75	microsoft.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658261	10.0.0.10	admin.twitter.com	A	NOERROR	1.2.3.41	8.8.8.8
+1774658116	10.0.0.5	download.cloudflare.com	A	NOERROR	1.2.3.202	8.8.8.8
+1774658497	10.0.0.1	admin.amazon.com	A	NOERROR	1.2.3.199	8.8.8.8
+1774658295	10.0.0.3	download.netflix.com	A	NOERROR	1.2.3.252	8.8.8.8
+1774658380	192.168.100.75	fplc0h3t8ccl.net	A	NXDOMAIN		8.8.8.8
+1774658374	192.168.100.75	mnpc6rfm6w93.com	A	NXDOMAIN		8.8.8.8
+1774658401	192.168.100.75	vf6hk3js9tam.ru	A	NXDOMAIN		8.8.8.8
+1774658482	10.0.0.3	admin.stackoverflow.com	A	NOERROR	1.2.3.191	8.8.8.8
+1774658446	10.0.0.3	imap.twitter.com	A	NOERROR	1.2.3.177	8.8.8.8
+1774658453	10.0.0.1	imap.netflix.com	A	NOERROR	1.2.3.15	8.8.8.8
+1774659123	192.168.100.75	c2VjcmV0ZGF0YV8wMDA0eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658163	10.0.0.3	admin.stackoverflow.com	A	NOERROR	1.2.3.165	8.8.8.8
+1774658881	192.168.100.50		HTTPS	NOERROR	8.8.8.8	8.8.8.8
+1774658400	192.168.100.75	657tyo6c1br2.org	A	NXDOMAIN		8.8.8.8
+1774658072	10.0.0.1	files.cloudflare.com	A	NOERROR	1.2.3.183	8.8.8.8
+1774658351	10.0.0.5	cdn.akamai.com	A	NOERROR	1.2.3.233	8.8.8.8
+1774658927	192.168.100.50		HTTPS	NOERROR	8.8.8.8	8.8.8.8
+1774658312	10.0.0.1	assets.amazon.com	A	NOERROR	1.2.3.198	8.8.8.8
+1774658202	10.0.0.1	static.apple.com	A	NOERROR	1.2.3.174	8.8.8.8
+1774658415	10.0.0.5	images.microsoft.com	A	NOERROR	1.2.3.53	8.8.8.8
+1774658418	192.168.100.75	qfnre8bfwiio.ru	A	NXDOMAIN		8.8.8.8
+1774658817	192.168.200.100	cmd.botnet-control.ru	TXT	NOERROR	execute_payload	8.8.8.8
+1774658046	10.0.0.10	api.apple.com	A	NOERROR	1.2.3.116	8.8.8.8
+1774658117	192.168.100.75	GMR3FATAYXKQTRGZF7LGAGZE5POBPYHPK7P6KMJHMZUSFZ2K.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658297	10.0.0.2	admin.akamai.com	A	NOERROR	1.2.3.95	8.8.8.8
+1774658925	192.168.100.50		HTTPS	NOERROR	1.1.1.1	1.1.1.1
+1774658292	10.0.0.3	smtp.google.com	A	NOERROR	1.2.3.87	8.8.8.8
+1774658487	10.0.0.10	assets.github.com	A	NOERROR	1.2.3.119	8.8.8.8
+1774658302	10.0.0.2	static.twitter.com	A	NOERROR	1.2.3.89	8.8.8.8
+1774658363	192.168.100.75	6fxj1nogr4uh.com	A	NXDOMAIN		8.8.8.8
+1774658053	10.0.0.5	imap.github.com	A	NOERROR	1.2.3.36	8.8.8.8
+1774658242	10.0.0.10	api.twitter.com	A	NOERROR	1.2.3.38	8.8.8.8
+1774658346	192.168.100.75	rtd0ctahrpfb.cc	A	NXDOMAIN		8.8.8.8
+1774658763	192.168.100.75	apple.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774660138	192.168.200.100	MNWWIXZQGAZTE.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658042	10.0.0.10	static.linkedin.com	A	NOERROR	1.2.3.225	8.8.8.8
+1774658388	192.168.100.75	9scmyq60uwwj.org	A	NXDOMAIN		8.8.8.8
+1774658402	10.0.0.2	ftp.stackoverflow.com	A	NOERROR	1.2.3.50	8.8.8.8
+1774659135	192.168.100.75	c2VjcmV0ZGF0YV8wMDI4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658324	10.0.0.2	pop.cloudflare.com	A	NOERROR	1.2.3.36	8.8.8.8
+1774659136	192.168.100.75	c2VjcmV0ZGF0YV8wMDMxeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658915	192.168.100.50		HTTPS	NOERROR	8.8.8.8	8.8.8.8
+1774659141	192.168.100.75	c2VjcmV0ZGF0YV8wMDQweHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774659137	192.168.100.75	c2VjcmV0ZGF0YV8wMDMyeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774659124	192.168.100.75	c2VjcmV0ZGF0YV8wMDA2eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774659019	10.0.0.10	malware-c2.net	A	NOERROR	192.0.2.12	8.8.8.8
+1774658263	10.0.0.3	cdn.amazon.com	A	NOERROR	1.2.3.253	8.8.8.8
+1774658767	192.168.100.75	amazon.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658765	192.168.100.75	github.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658313	10.0.0.5	files.facebook.com	A	NOERROR	1.2.3.16	8.8.8.8
+1774658767	192.168.100.75	stackoverflow.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658374	10.0.0.10	vpn.linkedin.com	A	NOERROR	1.2.3.152	8.8.8.8
+1774658078	10.0.0.10	api.stackoverflow.com	A	NOERROR	1.2.3.247	8.8.8.8
+1774658532	10.0.0.1	ftp.apple.com	A	NOERROR	1.2.3.152	8.8.8.8
+1774658068	10.0.0.5	api.twitter.com	A	NOERROR	1.2.3.121	8.8.8.8
+1774658277	10.0.0.3	assets.youtube.com	A	NOERROR	1.2.3.166	8.8.8.8
+1774658417	192.168.100.75	wt2rfahymfev.net	A	NXDOMAIN		8.8.8.8
+1774658377	10.0.0.2	assets.cloudflare.com	A	NOERROR	1.2.3.169	8.8.8.8
+1774659238	192.168.200.100	MNWWIXZQGAYTO.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658367	10.0.0.1	www.twitter.com	A	NOERROR	1.2.3.113	8.8.8.8
+1774658540	10.0.0.1	files.amazon.com	A	NOERROR	1.2.3.163	8.8.8.8
+1774658703	192.168.200.100	MNWWIXZQGAYDQ.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658437	192.168.100.75	rt8bbp1mpw6o.cc	A	NXDOMAIN		8.8.8.8
+1774658065	10.0.0.5	mail.microsoft.com	A	NOERROR	1.2.3.206	8.8.8.8
+1774658086	10.0.0.3	ftp.cloudflare.com	A	NOERROR	1.2.3.234	8.8.8.8
+1774658144	10.0.0.2	static.netflix.com	A	NOERROR	1.2.3.190	8.8.8.8
+1774658387	10.0.0.3	ftp.apple.com	A	NOERROR	1.2.3.173	8.8.8.8
+1774658741	10.0.0.2	dnssec-zone.com	A	SERVFAIL		8.8.8.8
+1774658216	10.0.0.1	download.stackoverflow.com	A	NOERROR	1.2.3.30	8.8.8.8
+1774658764	192.168.100.75	github.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658270	10.0.0.10	ftp.netflix.com	A	NOERROR	1.2.3.50	8.8.8.8
+1774658192	10.0.0.3	files.wikipedia.org	A	NOERROR	1.2.3.40	8.8.8.8
+1774658104	10.0.0.10	vpn.twitter.com	A	NOERROR	1.2.3.1	8.8.8.8
+1774658232	10.0.0.1	mail.youtube.com	A	NOERROR	1.2.3.85	8.8.8.8
+1774658897	192.168.100.50		HTTPS	NOERROR	1.1.1.1	1.1.1.1
+1774659014	10.0.0.3	malware-c2.net	A	NOERROR	192.0.2.9	8.8.8.8
+1774658404	192.168.100.75	g3aqn6jfhxyk.net	A	NXDOMAIN		8.8.8.8
+1774658246	10.0.0.5	files.google.com	A	NOERROR	1.2.3.182	8.8.8.8
+1774658441	10.0.0.5	smtp.akamai.com	A	NOERROR	1.2.3.193	8.8.8.8
+1774658539	10.0.0.2	images.reddit.com	A	NOERROR	1.2.3.142	8.8.8.8
+1774658762	192.168.100.75	linkedin.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658404	192.168.100.75	w2xr5gezlz5q.ru	A	NXDOMAIN		8.8.8.8
+1774658415	192.168.100.75	fi2ltfywg11a.ru	A	NXDOMAIN		8.8.8.8
+1774658467	10.0.0.10	api.akamai.com	A	NOERROR	1.2.3.42	8.8.8.8
+1774658386	10.0.0.10	admin.apple.com	A	NOERROR	1.2.3.106	8.8.8.8
+1774658691	10.0.0.2	dnssec-zone.com	A	SERVFAIL		8.8.8.8
+1774658398	192.168.100.75	r63fg1kqg32m.com	A	NXDOMAIN		8.8.8.8
+1774659130	192.168.100.75	c2VjcmV0ZGF0YV8wMDE4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658439	192.168.100.75	id2dodzti0oi.cc	A	NXDOMAIN		8.8.8.8
+1774658147	192.168.100.75	ZVOZRVHJNNTIPUXONSJATDB65PTH7EF2WFGU5EGXL7QOKYUR.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774660024	192.168.200.100	cmd.botnet-control.ru	TXT	NOERROR	execute_payload	8.8.8.8
+1774658436	192.168.100.75	zkjtodbtitvi.net	A	NXDOMAIN		8.8.8.8
+1774659423	192.168.200.100	MNWWIXZQGAZDA.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658314	10.0.0.3	download.akamai.com	A	NOERROR	1.2.3.102	8.8.8.8
+1774658491	10.0.0.10	legitimate-bank.com	A	NOERROR	192.0.2.6	8.8.8.8
+1774658131	10.0.0.5	smtp.youtube.com	A	NOERROR	1.2.3.38	8.8.8.8
+1774658074	10.0.0.5	admin.cloudflare.com	A	NOERROR	1.2.3.137	8.8.8.8
+1774658271	10.0.0.5	api.youtube.com	A	NOERROR	1.2.3.196	8.8.8.8
+1774658357	10.0.0.10	mail.cloudflare.com	A	NOERROR	1.2.3.68	8.8.8.8
+1774658445	10.0.0.3	download.youtube.com	A	NOERROR	1.2.3.192	8.8.8.8
+1774658269	10.0.0.3	cdn.netflix.com	A	NOERROR	1.2.3.235	8.8.8.8
+1774658409	10.0.0.3	vpn.netflix.com	A	NOERROR	1.2.3.98	8.8.8.8
+1774658083	10.0.0.10	smtp.amazon.com	A	NOERROR	1.2.3.228	8.8.8.8
+1774658091	10.0.0.1	pop.linkedin.com	A	NOERROR	1.2.3.89	8.8.8.8
+1774658055	10.0.0.3	assets.apple.com	A	NOERROR	1.2.3.50	8.8.8.8
+1774658435	10.0.0.3	imap.twitter.com	A	NOERROR	1.2.3.114	8.8.8.8
+1774659138	192.168.100.75	c2VjcmV0ZGF0YV8wMDM0eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658417	192.168.100.75	ohrjgtm23vcz.cc	A	NXDOMAIN		8.8.8.8
+1774660323	192.168.200.100	MNWWIXZQGAZTK.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658303	10.0.0.2	assets.microsoft.com	A	NOERROR	1.2.3.47	8.8.8.8
+1774658433	10.0.0.1	imap.cloudflare.com	A	NOERROR	1.2.3.134	8.8.8.8
+1774658651	10.0.0.1	dnssec-zone.com	A	SERVFAIL		8.8.8.8
+1774658127	192.168.100.75	JN3YQMMYINTWMWXTVOME44PD7VNYYYD5RETMQZHFPFMLYLVS.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658155	192.168.100.75	4CBE7JIOBXZVIYNFVEUB5AO2WKVF3OILF43QCNUF7AOULVJX.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658885	192.168.100.50		HTTPS	NOERROR	8.8.8.8	8.8.8.8
+1774658161	10.0.0.2	cdn.wikipedia.org	A	NOERROR	1.2.3.198	8.8.8.8
+1774658763	192.168.100.75	amazon.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658368	192.168.100.75	m3fp7s8taggb.org	A	NXDOMAIN		8.8.8.8
+1774659037	10.0.0.3	malware-c2.net	A	NOERROR	192.0.2.4	8.8.8.8
+1774658484	10.0.0.5	smtp.reddit.com	A	NOERROR	1.2.3.13	8.8.8.8
+1774658342	192.168.100.75	ot7qpdm3x349.org	A	NXDOMAIN		8.8.8.8
+1774658769	192.168.100.75	reddit.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658066	10.0.0.3	mail.google.com	A	NOERROR	1.2.3.2	8.8.8.8
+1774658339	10.0.0.2	images.facebook.com	A	NOERROR	1.2.3.102	8.8.8.8
+1774658370	10.0.0.1	smtp.twitter.com	A	NOERROR	1.2.3.170	8.8.8.8
+1774658769	192.168.100.75	linkedin.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774659719	192.168.200.100	MNWWIXZQGAZDK.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658481	10.0.0.3	imap.microsoft.com	A	NOERROR	1.2.3.214	8.8.8.8
+1774658414	10.0.0.1	static.google.com	A	NOERROR	1.2.3.154	8.8.8.8
+1774658479	10.0.0.2	pop.google.com	A	NOERROR	1.2.3.215	8.8.8.8
+1774658361	192.168.100.75	0ggvfqb4kjav.cc	A	NXDOMAIN		8.8.8.8
+1774659132	192.168.100.75	c2VjcmV0ZGF0YV8wMDIyeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658215	10.0.0.5	vpn.facebook.com	A	NOERROR	1.2.3.33	8.8.8.8
+1774658081	10.0.0.1	assets.linkedin.com	A	NOERROR	1.2.3.235	8.8.8.8
+1774658328	10.0.0.10	assets.cloudflare.com	A	NOERROR	1.2.3.109	8.8.8.8
+1774658387	192.168.100.75	zcmmkft81gmy.net	A	NXDOMAIN		8.8.8.8
+1774658080	10.0.0.5	files.cloudflare.com	A	NOERROR	1.2.3.169	8.8.8.8
+1774659139	192.168.100.75	c2VjcmV0ZGF0YV8wMDM2eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774660740	192.168.200.100	MNWWIXZQGA2DE.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658410	192.168.100.75	71mi69297egg.cc	A	NXDOMAIN		8.8.8.8
+1774658495	10.0.0.5	assets.facebook.com	A	NOERROR	1.2.3.16	8.8.8.8
+1774659062	192.168.200.100	MNWWIXZQGAYTI.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658209	10.0.0.1	mail.youtube.com	A	NOERROR	1.2.3.152	8.8.8.8
+1774658197	10.0.0.5	cdn.stackoverflow.com	A	NOERROR	1.2.3.113	8.8.8.8
+1774658279	10.0.0.10	assets.google.com	A	NOERROR	1.2.3.181	8.8.8.8
+1774661104	192.168.200.100	MNWWIXZQGA2DQ.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774659127	192.168.100.75	c2VjcmV0ZGF0YV8wMDEyeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658751	10.0.0.10	dnssec-zone.com	A	SERVFAIL		8.8.8.8
+1774658895	192.168.100.50		HTTPS	NOERROR	1.1.1.1	1.1.1.1
+1774658764	192.168.100.75	microsoft.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658147	10.0.0.2	vpn.twitter.com	A	NOERROR	1.2.3.71	8.8.8.8
+1774658110	10.0.0.2	files.netflix.com	A	NOERROR	1.2.3.115	8.8.8.8
+1774658322	10.0.0.3	cdn.wikipedia.org	A	NOERROR	1.2.3.103	8.8.8.8
+1774658766	192.168.100.75	youtube.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774660625	192.168.200.100	cmd.botnet-control.ru	TXT	NOERROR	execute_payload	8.8.8.8
+1774658262	10.0.0.2	www.akamai.com	A	NOERROR	1.2.3.140	8.8.8.8
+1774658196	10.0.0.3	static.akamai.com	A	NOERROR	1.2.3.112	8.8.8.8
+1774658476	10.0.0.5	imap.wikipedia.org	A	NOERROR	1.2.3.59	8.8.8.8
+1774658585	203.0.113.50	internal.company.local	SOA	NOERROR	10.0.0.1	8.8.8.8
+1774658298	10.0.0.3	admin.github.com	A	NOERROR	1.2.3.58	8.8.8.8
+1774658383	192.168.100.75	krszmxulqj10.cc	A	NXDOMAIN		8.8.8.8
+1774658761	192.168.100.75	netflix.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658309	10.0.0.10	upload.netflix.com	A	NOERROR	1.2.3.28	8.8.8.8
+1774658442	10.0.0.1	download.twitter.com	A	NOERROR	1.2.3.181	8.8.8.8
+1774658052	10.0.0.3	ftp.cloudflare.com	A	NOERROR	1.2.3.193	8.8.8.8
+1774658413	192.168.100.75	pfdfo35b4952.ru	A	NXDOMAIN		8.8.8.8
+1774658366	192.168.100.75	h6n6lah7f0xd.net	A	NXDOMAIN		8.8.8.8
+1774658113	192.168.100.75	4MP3NKHF2UZXLMUDNBRBI4IHG5KFTP75QXBXALX67MIIKFOE.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658139	192.168.100.75	CQBQDCK52ZGVC5Y6ZLURJBE56H643SCKWIENLC72SQGHG7TN.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658207	10.0.0.1	assets.reddit.com	A	NOERROR	1.2.3.27	8.8.8.8
+1774658761	192.168.100.75	microsoft.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658917	192.168.100.50		HTTPS	NOERROR	1.1.1.1	1.1.1.1
+1774658426	192.168.100.75	y7idf6k3l633.net	A	NXDOMAIN		8.8.8.8
+1774658437	192.168.100.75	0blei1r2imge.org	A	NXDOMAIN		8.8.8.8
+1774658103	192.168.100.75	RWXDKM4CZPMKVRNK6XZ3KWUVIVCPSJSD2WPYAYRTSVH2RIUI.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658318	10.0.0.5	ftp.facebook.com	A	NOERROR	1.2.3.99	8.8.8.8
+1774658119	10.0.0.3	assets.apple.com	A	NOERROR	1.2.3.221	8.8.8.8
+1774658356	192.168.100.75	5zugggs96v5u.net	A	NXDOMAIN		8.8.8.8
+1774658440	192.168.100.75	nh347qizf2hu.org	A	NXDOMAIN		8.8.8.8
+1774658317	10.0.0.10	admin.wikipedia.org	A	NOERROR	1.2.3.237	8.8.8.8
+1774658358	10.0.0.5	mail.wikipedia.org	A	NOERROR	1.2.3.153	8.8.8.8
+1774658384	192.168.100.75	at3mx08z5rsf.com	A	NXDOMAIN		8.8.8.8
+1774659127	192.168.100.75	c2VjcmV0ZGF0YV8wMDEzeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658403	192.168.100.75	xcqa6yux0izo.cc	A	NXDOMAIN		8.8.8.8
+1774658389	10.0.0.3	assets.wikipedia.org	A	NOERROR	1.2.3.128	8.8.8.8
+1774658400	192.168.100.75	bua17nltimky.net	A	NXDOMAIN		8.8.8.8
+1774658075	10.0.0.10	cdn.amazon.com	A	NOERROR	1.2.3.9	8.8.8.8
+1774658213	10.0.0.10	download.akamai.com	A	NOERROR	1.2.3.152	8.8.8.8
+1774658394	192.168.100.75	wrx0prkztrsd.cc	A	NXDOMAIN		8.8.8.8
+1774658440	192.168.100.75	xnvxby4e0v9i.cc	A	NXDOMAIN		8.8.8.8
+1774658771	192.168.100.75	twitter.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658285	10.0.0.5	images.stackoverflow.com	A	NOERROR	1.2.3.113	8.8.8.8
+1774658256	10.0.0.3	vpn.facebook.com	A	NOERROR	1.2.3.111	8.8.8.8
+1774658190	10.0.0.2	download.github.com	A	NOERROR	1.2.3.202	8.8.8.8
+1774658395	10.0.0.3	www.twitter.com	A	NOERROR	1.2.3.25	8.8.8.8
+1774658510	10.0.0.3	www.microsoft.com	A	NOERROR	1.2.3.22	8.8.8.8
+1774658128	10.0.0.5	assets.wikipedia.org	A	NOERROR	1.2.3.251	8.8.8.8
+1774659126	192.168.100.75	c2VjcmV0ZGF0YV8wMDExeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658431	192.168.100.75	7h1dk2s6r6vz.org	A	NOERROR	10.0.0.99	8.8.8.8
+1774658394	192.168.100.75	ciyrf4zw229t.net	A	NXDOMAIN		8.8.8.8
+1774659784	192.168.200.100	MNWWIXZQGAZDM.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658172	10.0.0.2	images.youtube.com	A	NOERROR	1.2.3.119	8.8.8.8
+1774658111	10.0.0.5	static.linkedin.com	A	NOERROR	1.2.3.244	8.8.8.8
+1774658766	192.168.100.75	microsoft.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658347	10.0.0.10	files.youtube.com	A	NOERROR	1.2.3.118	8.8.8.8
+1774658096	10.0.0.3	assets.cloudflare.com	A	NOERROR	1.2.3.13	8.8.8.8
+1774658584	203.0.113.50	internal.company.local	NS	NOERROR	10.0.0.1	8.8.8.8
+1774658762	192.168.100.75	apple.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658323	10.0.0.10	mail.linkedin.com	A	NOERROR	1.2.3.29	8.8.8.8
+1774658921	192.168.100.50		HTTPS	NOERROR	1.1.1.1	1.1.1.1
+1774658463	10.0.0.2	vpn.github.com	A	NOERROR	1.2.3.182	8.8.8.8
+1774658103	10.0.0.5	images.github.com	A	NOERROR	1.2.3.249	8.8.8.8
+1774659047	10.0.0.10	malware-c2.net	A	NOERROR	192.0.2.11	8.8.8.8
+1774658085	10.0.0.2	images.cloudflare.com	A	NOERROR	1.2.3.232	8.8.8.8
+1774658767	192.168.100.75	github.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658348	192.168.100.75	1symkzib9gn1.cc	A	NOERROR	10.0.0.99	8.8.8.8
+1774658173	10.0.0.2	smtp.microsoft.com	A	NOERROR	1.2.3.191	8.8.8.8
+1774658457	10.0.0.1	pop.youtube.com	A	NOERROR	1.2.3.204	8.8.8.8
+1774658374	192.168.100.75	wgwmmyjz562b.org	A	NXDOMAIN		8.8.8.8
+1774658406	192.168.100.75	fx6y0wgp6qqv.cc	A	NOERROR	10.0.0.99	8.8.8.8
+1774658451	10.0.0.2	ftp.apple.com	A	NOERROR	1.2.3.211	8.8.8.8
+1774658390	192.168.100.75	59v3poz51np9.net	A	NXDOMAIN		8.8.8.8
+1774658191	10.0.0.5	api.amazon.com	A	NOERROR	1.2.3.19	8.8.8.8
+1774658768	192.168.100.75	cloudflare.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658496	10.0.0.10	imap.microsoft.com	A	NOERROR	1.2.3.11	8.8.8.8
+1774658434	192.168.100.75	0ev981frb91b.com	A	NXDOMAIN		8.8.8.8
+1774658537	10.0.0.10	static.akamai.com	A	NOERROR	1.2.3.90	8.8.8.8
+1774658377	192.168.100.75	d5jwa368to8v.com	A	NXDOMAIN		8.8.8.8
+1774658352	192.168.100.75	8vj3fpiqbwqu.com	A	NXDOMAIN		8.8.8.8
+1774658425	192.168.100.75	pp9utoo7qoia.net	A	NXDOMAIN		8.8.8.8
+1774658529	10.0.0.3	cdn.youtube.com	A	NOERROR	1.2.3.225	8.8.8.8
+1774658515	10.0.0.2	mail.youtube.com	A	NOERROR	1.2.3.42	8.8.8.8
+1774658551	10.0.0.10	legitimate-bank.com	A	NOERROR	192.0.2.18	8.8.8.8
+1774658047	10.0.0.5	static.facebook.com	A	NOERROR	1.2.3.236	8.8.8.8
+1774658351	192.168.100.75	ghr3mpnqyc75.ru	A	NXDOMAIN		8.8.8.8
+1774658211	10.0.0.2	ftp.youtube.com	A	NOERROR	1.2.3.178	8.8.8.8
+1774658367	192.168.100.75	zrblfkjq7v71.net	A	NXDOMAIN		8.8.8.8
+1774659043	10.0.0.2	malware-c2.net	A	NOERROR	192.0.2.8	8.8.8.8
+1774658761	10.0.0.5	dnssec-zone.com	A	SERVFAIL		8.8.8.8
+1774658436	192.168.100.75	2shjva44m70x.com	A	NXDOMAIN		8.8.8.8
+1774658767	192.168.100.75	apple.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774660381	192.168.200.100	MNWWIXZQGAZTM.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658395	192.168.100.75	5eypmeu9n0pi.cc	A	NOERROR	10.0.0.99	8.8.8.8
+1774658276	10.0.0.3	download.apple.com	A	NOERROR	1.2.3.3	8.8.8.8
+1774658288	10.0.0.10	upload.reddit.com	A	NOERROR	1.2.3.114	8.8.8.8
+1774658099	10.0.0.10	www.netflix.com	A	NOERROR	1.2.3.136	8.8.8.8
+1774658193	10.0.0.5	admin.reddit.com	A	NOERROR	1.2.3.193	8.8.8.8
+1774658426	10.0.0.1	smtp.facebook.com	A	NOERROR	1.2.3.234	8.8.8.8
+1774658460	10.0.0.1	admin.akamai.com	A	NOERROR	1.2.3.45	8.8.8.8
+1774658425	192.168.100.75	7iwq09mr7dv8.cc	A	NXDOMAIN		8.8.8.8
+1774658531	10.0.0.1	upload.stackoverflow.com	A	NOERROR	1.2.3.59	8.8.8.8
+1774658386	192.168.100.75	llfc3vrbrpkq.net	A	NXDOMAIN		8.8.8.8
+1774658519	192.168.200.100	MNWWIXZQGAYDK.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658473	10.0.0.10	cdn.google.com	A	NOERROR	1.2.3.47	8.8.8.8
+1774658057	10.0.0.5	static.twitter.com	A	NOERROR	1.2.3.186	8.8.8.8
+1774658343	192.168.200.100	MNWWIXZQGAYDE.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8
+1774658175	10.0.0.10	upload.akamai.com	A	NOERROR	1.2.3.54	8.8.8.8
+1774658125	192.168.100.75	552BGAQDPLCADHRDYMHET7MDTGN3OT3YA4CJZ7M5HSFW4CYZ.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774659001	10.0.0.3	malware-c2.net	A	NOERROR	192.0.2.0	8.8.8.8
+1774658335	10.0.0.3	ftp.akamai.com	A	NOERROR	1.2.3.50	8.8.8.8
+1774658337	10.0.0.5	static.amazon.com	A	NOERROR	1.2.3.150	8.8.8.8
+1774659038	10.0.0.2	malware-c2.net	A	NOERROR	192.0.2.5	8.8.8.8
+1774658402	192.168.100.75	r3vt2f3o5lie.cc	A	NXDOMAIN		8.8.8.8
+1774658076	10.0.0.10	imap.facebook.com	A	NOERROR	1.2.3.139	8.8.8.8
+1774658327	10.0.0.10	upload.akamai.com	A	NOERROR	1.2.3.100	8.8.8.8
+1774658411	192.168.100.75	lf4pq17d1ifw.net	A	NXDOMAIN		8.8.8.8
+1774658176	10.0.0.2	admin.google.com	A	NOERROR	1.2.3.202	8.8.8.8
+1774658326	10.0.0.2	images.stackoverflow.com	A	NOERROR	1.2.3.121	8.8.8.8
+1774658399	10.0.0.3	www.akamai.com	A	NOERROR	1.2.3.251	8.8.8.8
+1774658711	10.0.0.1	dnssec-zone.com	A	SERVFAIL		8.8.8.8
+1774658405	192.168.100.75	rg3vcvgqg8an.com	A	NXDOMAIN		8.8.8.8
+1774658130	10.0.0.10	vpn.github.com	A	NOERROR	1.2.3.92	8.8.8.8
+1774658434	10.0.0.10	images.linkedin.com	A	NOERROR	1.2.3.16	8.8.8.8
+1774659140	192.168.100.75	c2VjcmV0ZGF0YV8wMDM5eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg.botnet-control.ru	A	NXDOMAIN		8.8.8.8
+1774658388	10.0.0.1	assets.akamai.com	A	NOERROR	1.2.3.223	8.8.8.8
+1774660326	192.168.200.100	cmd.botnet-control.ru	TXT	NOERROR	execute_payload	8.8.8.8
+1774658349	192.168.100.75	ezo3ob8vafqy.net	A	NXDOMAIN		8.8.8.8
+1774658935	192.168.100.50		HTTPS	NOERROR	1.1.1.1	1.1.1.1
+1774658267	10.0.0.10	imap.google.com	A	NOERROR	1.2.3.217	8.8.8.8
+1774658382	192.168.100.75	ppznwk7jwkv2.cc	A	NXDOMAIN		8.8.8.8
+1774658418	192.168.100.75	1tcdl8z9wcuj.cc	A	NXDOMAIN		8.8.8.8
+1774658516	10.0.0.3	imap.github.com	A	NOERROR	1.2.3.218	8.8.8.8
+1774658396	10.0.0.10	static.akamai.com	A	NOERROR	1.2.3.212	8.8.8.8
+1774658113	10.0.0.1	admin.youtube.com	A	NOERROR	1.2.3.207	8.8.8.8
+1774658420	192.168.100.75	72ql7yqqpmem.com	A	NOERROR	10.0.0.99	8.8.8.8
+1774658768	192.168.100.75	reddit.com	TXT	NOERROR	v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all v=spf1 include:_spf.example.com ~all 	8.8.8.8
+1774658315	10.0.0.3	imap.github.com	A	NOERROR	1.2.3.102	8.8.8.8
+1774658486	10.0.0.5	smtp.wikipedia.org	A	NOERROR	1.2.3.161	8.8.8.8
+1774658432	192.168.100.75	h4w2tr55epub.ru	A	NXDOMAIN		8.8.8.8
+1774658492	10.0.0.10	files.netflix.com	A	NOERROR	1.2.3.195	8.8.8.8
+1774661164	192.168.200.100	MNWWIXZQGA2DS.botnet-control.ru	A	NOERROR	10.0.0.99	8.8.8.8

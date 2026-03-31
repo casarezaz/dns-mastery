@@ -1,0 +1,21 @@
+{
+  "name": "Hardened Home Network DNS Setup",
+  "resolver_type": "forwarding",
+  "encryption": "doh",
+  "dnssec_validation": true,
+  "upstream_providers": [
+    "1.1.1.1",
+    "1.0.0.1",
+    "9.9.9.9"
+  ],
+  "rpz_blocklists": [
+    "abuse.ch",
+    "surbl.org",
+    "quad9.net",
+    "opendns.com"
+  ],
+  "logging_level": "detailed",
+  "caching_enabled": true,
+  "rate_limiting": true,
+  "description": "Hardened DNS resolver with DoH, DNSSEC, and RPZ blocklists"
+}

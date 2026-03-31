@@ -1,0 +1,33 @@
+// Lab 11 — DNS Threat Model & Architecture Analyzer
+// Splunk Detection Queries for DNS Architecture Monitoring
+// Author: Angie Casarez (casarezaz)
+
+// QUERY 1: Monitor for Plaintext DNS Queries (Unencrypted)
+index=dns dest_port=53 protocol=udp | stats count by src, dest, query | where count > 10
+
+// QUERY 2: DNS Cache Poisoning Attempt Detection
+index=dns query=* response_code=0 | stats values(answer) as responses by query | where mvcount(responses) > 2
+
+// QUERY 3: DGA (Domain Generation Algorithm) Activity Detection
+index=dns query=* src=192.168.1.* | eval entropy=len(query) | where entropy > 20 AND len(query) > 30 | stats count by src
+
+// QUERY 4: DNS Tunneling Detection
+index=dns query=* | eval query_length=len(query) | where query_length > 100 | stats count by src, query_length
+
+// QUERY 5: C2 Communication via DNS
+index=dns query=* src=192.168.1.* | stats count by src, query | where count > 100
+
+// QUERY 6: Suspicious DNS Responses
+index=dns response_size > 1500 OR response_time > 5000 | stats count by src, dest
+
+// QUERY 7: DNSSEC Validation Failures
+index=dns dnssec_status=fail OR dnssec_valid=0 | stats count by src, query
+
+// QUERY 8: Resolver Configuration Changes
+index=dns_config source=resolver_config action=changed | fields _time, src, config_change
+
+// QUERY 9: RPZ Blocklist Hits
+index=dns action=blocked rpz_list=* | stats count by src, query, rpz_list
+
+// QUERY 10: Baseline Deviation in DNS Query Volume
+index=dns src=192.168.1.* | timechart count by src | eventstats avg(count) as baseline

@@ -1,0 +1,182 @@
+---
+# Sigma Detection Rule: RPZ Policy Bypass Attempts
+# Detects techniques used to evade RPZ policy enforcement
+# Lab 10 — RPZ Policy Builder
+
+title: RPZ Policy Bypass via Fast-Flux Domain Rotation
+id: rpz-bypass-fast-flux-001
+status: experimental
+description: |
+  Detects attempts to bypass RPZ policy enforcement through fast-flux domain
+  rotation. Attackers rapidly change subdomains of a blocked base domain to
+  evade RPZ policies that block specific FQDNs.
+references:
+  - https://attack.mitre.org/techniques/T1568/
+  - https://attack.mitre.org/techniques/T1583/001/
+author: Angie Casarez (casarezaz)
+date: 2024/03/27
+modified: 2024/03/27
+tags:
+  - dns
+  - fast-flux
+  - c2
+  - t1568
+  - t1583.001
+logsource:
+  product: dns
+  service: query
+detection:
+  selection:
+    # High-entropy subdomains (random strings)
+    query|re: '^[a-z0-9]{12,}\..*\.(com|net|org|ru|cc)$'
+  filter_benign:
+    # Exclude known benign high-entropy patterns
+    query|startswith:
+      - '_dmarc.'
+      - '_domainkey.'
+      - '_acme-challenge.'
+      - '_mta-sts.'
+  condition: selection and not filter_benign
+falsepositives:
+  - CDN and legitimate random subdomains
+  - ACME challenge verification
+  - DKIM/SPF infrastructure
+level: medium
+---
+
+title: RPZ Policy Evasion via Subdomain Enumeration
+id: rpz-bypass-subdomain-enum-002
+status: experimental
+description: |
+  Detects systematic subdomain enumeration attempts that may indicate
+  attackers probing for non-blocked subdomains of a blacklisted domain.
+references:
+  - https://attack.mitre.org/techniques/T1584/002/
+author: Angie Casarez (casarezaz)
+date: 2024/03/27
+modified: 2024/03/27
+tags:
+  - dns
+  - recon
+  - enumeration
+  - t1584.002
+logsource:
+  product: dns
+  service: query
+detection:
+  selection:
+    # Same source IP querying different subdomains of same base domain
+    query|re: '^[a-z0-9]{1,20}\..*evil\..*$'
+  timeframe: 5m
+  condition: selection | count(query) by src_ip > 10
+falsepositives:
+  - Bulk domain verification tools
+  - Legitimate subdomain discovery
+  - Certificate authority validation
+level: medium
+---
+
+title: RPZ Block Response Anomaly
+id: rpz-bypass-response-anomaly-003
+status: experimental
+description: |
+  Detects anomalous DNS responses to blocked domains, indicating potential
+  RPZ policy bypass or misconfiguration. Monitors for responses that should
+  be NXDOMAIN/NODATA but return valid answers.
+references:
+  - https://attack.mitre.org/techniques/T1565/002/
+author: Angie Casarez (casarezaz)
+date: 2024/03/27
+modified: 2024/03/27
+tags:
+  - dns
+  - manipulation
+  - policy-evasion
+  - t1565.002
+logsource:
+  product: dns
+  service: query
+detection:
+  selection:
+    # Query to known blocked domain
+    query|contains:
+      - 'malware'
+      - 'botnet'
+      - 'c2-'
+      - 'ransomware'
+      - 'phishing'
+    # But receives valid response instead of block
+    response_code:
+      - 'NOERROR'
+      - 'NOANSWER'
+    answer|exists: true
+  condition: selection
+falsepositives:
+  - Delayed RPZ zone updates
+  - DNS cache inconsistency
+  - Misconfigured RPZ policies
+level: high
+---
+
+title: RPZ Zone Transfer Attempt
+id: rpz-bypass-zone-transfer-004
+status: experimental
+description: |
+  Detects DNS zone transfer (AXFR) requests targeting RPZ zones, indicating
+  potential reconnaissance to identify blocked domains.
+references:
+  - https://attack.mitre.org/techniques/T1040/
+author: Angie Casarez (casarezaz)
+date: 2024/03/27
+modified: 2024/03/27
+tags:
+  - dns
+  - reconnaissance
+  - zone-transfer
+  - t1040
+logsource:
+  product: dns
+  service: query
+detection:
+  selection:
+    query_type: AXFR
+    query|contains: '.rpz'
+  condition: selection
+falsepositives:
+  - Legitimate zone transfers between authoritative nameservers
+  - DNS replication traffic
+level: high
+---
+
+title: Excessive NXDOMAIN Responses Indicative of DGA Activity
+id: rpz-dga-activity-005
+status: experimental
+description: |
+  Detects excessive NXDOMAIN responses that indicate domain generation
+  algorithm (DGA) activity, which RPZ blocks but may indicate malware
+  attempting to contact C2.
+references:
+  - https://attack.mitre.org/techniques/T1568/002/
+author: Angie Casarez (casarezaz)
+date: 2024/03/27
+modified: 2024/03/27
+tags:
+  - dns
+  - dga
+  - malware
+  - t1568.002
+logsource:
+  product: dns
+  service: query
+detection:
+  selection:
+    response_code: NXDOMAIN
+    # Random-looking domain names
+    query|re: '^[a-z]{10,20}\d{2,6}\..*$'
+  timeframe: 1m
+  condition: selection | count(query) by src_ip > 5
+falsepositives:
+  - Legitimate subdomain probing
+  - Web crawlers and scanners
+  - Automated discovery tools
+level: medium

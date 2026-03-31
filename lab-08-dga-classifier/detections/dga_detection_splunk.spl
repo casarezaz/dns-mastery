@@ -1,0 +1,297 @@
+/*
+ * DGA Domain Detection — Splunk SPL Queries (Lab 08)
+ * =====================================================
+ * 8 production-ready Splunk searches for real-time DGA domain detection
+ * in DNS query logs (Zeek, Suricata, Cisco Umbrella, etc.)
+ *
+ * Prerequisites:
+ *   - DNS query logs indexed with fields: domain, query_count, src_ip, dst_ip
+ *   - Optional: User community DGA feeds ingested
+ *
+ * MITRE ATT&CK:
+ *   T1568.002 — Dynamic Resolution: Domain Generation Algorithms
+ *   T1071.004 — Application Layer Protocol: DNS
+ *   T1583.001 — Acquire Infrastructure: Domains
+ */
+
+
+/* ========================================================================
+   QUERY 1: High-Entropy Domain Detection
+   ========================================================================
+
+   Detects domains with high Shannon entropy (> 3.6 bits/char) which are
+   typical of random-character and hash-based DGAs.
+
+   Expected entropy ranges:
+     - Legitimate: 2.0-3.2
+     - Suspicious: 3.2-3.6
+     - DGA: > 3.6
+
+   Severity: MEDIUM
+   Frequency: Real-time or 15-min
+   ======================================================================== */
+
+index=dns_queries
+| rex field=domain "(?<sld>[^.]+)\.[^.]+$"
+| eval
+    sld_len=len(sld),
+    char_dist=if(sld_len=0,0,1),
+    entropy_chars=""
+| foreach sld AS c
+    [| eval entropy_chars=case(
+        searchmatch(c, "[aeiou]"), entropy_chars."V",
+        searchmatch(c, "[bcdfghjklmnpqrstvwxyz]"), entropy_chars."C",
+        searchmatch(c, "[0-9]"), entropy_chars."D",
+        1=1, entropy_chars.c
+    )]
+| stats count as total_queries, dc(src_ip) as unique_sources by sld, tld
+| where sld_len > 6 AND sld_len < 25
+| search domain!=*.corp AND domain!=*.internal
+| outputlookup dga_high_entropy_candidates.csv
+| alert name="DGA-HighEntropy-RealTime" severity=medium
+
+
+/* ========================================================================
+   QUERY 2: Consonant Cluster Detection
+   ========================================================================
+
+   Identifies domains with unnatural consonant sequences (4+ consecutive).
+   Natural words rarely have consonant sequences > 3 (e.g., "strength"=4).
+   DGAs often have sequences like "bfghjkl" (7 consecutive).
+
+   Severity: MEDIUM
+   Frequency: 1-hour
+   ======================================================================== */
+
+index=dns_queries
+| rex field=domain "(?<sld>[^.]+)\.[^.]+$"
+| eval has_consonant_cluster=case(
+    match(sld, "[bcdfghjklmnpqrstvwxyz]{4,}"), "YES",
+    match(sld, "[bcdfghjklmnpqrstvwxyz]{5,}"), "CRITICAL",
+    1=1, "NO"
+)
+| search has_consonant_cluster!=NO
+| stats count as query_count, dc(src_ip) as sources, dc(tld) as tlds by sld, has_consonant_cluster
+| where query_count > 5 OR has_consonant_cluster=CRITICAL
+| sort - query_count
+| table sld, tld, query_count, sources, tlds, has_consonant_cluster
+
+
+/* ========================================================================
+   QUERY 3: Digit-Heavy Domain Detection
+   ========================================================================
+
+   Detects domains with high digit ratio (> 15%). Hash-based DGAs
+   embed numbers from MD5/SHA output. Legitimate domains rarely have
+   > 15% digits.
+
+   Examples:
+     - DGA: a7f2c3e8d9b1.com (43% digits)
+     - Legit: api2.example.com (11% digits)
+
+   Severity: LOW-MEDIUM
+   Frequency: 2-hour
+   ======================================================================== */
+
+index=dns_queries
+| rex field=domain "(?<sld>[^.]+)\.[^.]+$"
+| eval
+    digit_count=len(sld)-len(replace(sld,"[0-9]","")),
+    digit_ratio=round(digit_count/len(sld),3),
+    letter_count=len(sld)-len(replace(sld,"[a-z]",""))
+| where digit_ratio > 0.15 AND letter_count > 3
+| search domain!=*api* domain!=*v* domain!=*test*
+| stats count as query_count, dc(src_ip) as unique_sources, values(tld) as tlds by sld, digit_ratio
+| where query_count >= 3
+| sort - digit_ratio
+| table sld, tld, digit_ratio, query_count, unique_sources
+
+
+/* ========================================================================
+   QUERY 4: Low-Vowel Domain Detection
+   ========================================================================
+
+   Identifies domains with very low vowel ratio (< 30%). Natural language
+   has 30-50% vowels. Low-vowel domains are often DGA-generated.
+
+   Severity: MEDIUM
+   Frequency: 1-hour
+   ======================================================================== */
+
+index=dns_queries
+| rex field=domain "(?<sld>[^.]+)\.[^.]+$"
+| eval
+    vowel_count=len(sld)-len(replace(sld,"[aeiou]","")),
+    letter_count=len(sld)-len(replace(sld,"[a-z]","")),
+    vowel_ratio=if(letter_count=0,0,round(vowel_count/letter_count,3))
+| where vowel_ratio < 0.30 AND letter_count >= 6
+| stats count as query_count, dc(src_ip) as sources, dc(tld) as tlds by sld, vowel_ratio
+| where query_count > 2
+| sort - vowel_ratio
+| table sld, vowel_ratio, query_count, sources, tlds
+
+
+/* ========================================================================
+   QUERY 5: Suspicious TLD Detection
+   ========================================================================
+
+   Flags queries to suspicious TLDs commonly used by DGA operations:
+   xyz, click, download, racing, stream, gdn, work, gg, pw, tk, ml, ga, cf
+
+   Note: These TLDs are not inherently malicious, but statistically
+   associated with malicious domains.
+
+   Severity: LOW
+   Frequency: Real-time
+   ======================================================================== */
+
+index=dns_queries
+| rex field=domain "\.(?<tld>[^.]+)$"
+| lookup suspicious_tlds tld OUTPUT is_suspicious
+| where is_suspicious=TRUE
+| stats count as query_count, dc(src_ip) as unique_sources, values(src_ip) as ips by domain, tld
+| where query_count > 1
+| sort - query_count
+| table domain, tld, query_count, unique_sources, ips
+| eval risk_score=case(
+    tld IN ("tk", "ml", "ga", "cf"), 85,
+    tld IN ("xyz", "click", "download", "racing"), 70,
+    tld IN ("stream", "gdn", "work", "gg"), 60,
+    1=1, 50
+)
+| where risk_score >= 70
+
+
+/* ========================================================================
+   QUERY 6: Daily DGA Domain Summary Report
+   ========================================================================
+
+   Aggregates all DGA detections from previous 24 hours for review.
+   Combines entropy, consonant clusters, and digit ratio signals.
+
+   Severity: INFO (reporting)
+   Frequency: Daily (10 AM)
+   ======================================================================== */
+
+index=dns_queries earliest=-24h@h latest=now()
+| rex field=domain "(?<sld>[^.]+)\.(?<tld>[^.]+)$"
+| eval
+    digit_count=len(sld)-len(replace(sld,"[0-9]","")),
+    digit_ratio=round(digit_count/len(sld),3),
+    vowel_count=len(sld)-len(replace(sld,"[aeiou]","")),
+    letter_count=len(sld)-len(replace(sld,"[a-z]","")),
+    vowel_ratio=if(letter_count=0,0,round(vowel_count/letter_count,3)),
+    consonant_cluster=case(
+        match(sld, "[bcdfghjklmnpqrstvwxyz]{4,}"), "YES",
+        1=1, "NO"
+    )
+| eval dga_score=0
+| eval dga_score=case(
+    digit_ratio > 0.15, dga_score+20,
+    vowel_ratio < 0.25, dga_score+25,
+    consonant_cluster=YES, dga_score+30,
+    tld IN ("tk", "ml", "ga", "cf"), dga_score+15,
+    1=1, dga_score
+)
+| where dga_score >= 50
+| stats
+    count as query_count,
+    dc(src_ip) as unique_sources,
+    min(_time) as first_seen,
+    max(_time) as last_seen,
+    values(src_ip) as sources
+    by sld, tld, dga_score, digit_ratio, vowel_ratio
+| eval
+    first_seen=strftime(first_seen, "%Y-%m-%d %H:%M:%S"),
+    last_seen=strftime(last_seen, "%Y-%m-%d %H:%M:%S"),
+    duration_hours=round((strptime(last_seen,"%Y-%m-%d %H:%M:%S")-strptime(first_seen,"%Y-%m-%d %H:%M:%S"))/3600,1)
+| where query_count >= 3
+| sort - dga_score, - query_count
+| table sld, tld, dga_score, query_count, unique_sources, duration_hours, digit_ratio, vowel_ratio, first_seen, last_seen
+| outputlookup dga_daily_summary.csv
+
+
+/* ========================================================================
+   QUERY 7: DGA Family Breakdown & Trending
+   ========================================================================
+
+   Classifies detected DGA domains by family type and shows trending:
+     - Random Character: High entropy (>4.0), low vowels, unique chars>75%
+     - Dictionary: Moderate entropy (3.0-3.8), natural vowel patterns
+     - Hash-Based: Entropy 3.5-4.0, high digit ratio (>15%)
+
+   Severity: INFO (analytics)
+   Frequency: 4-hour
+   ======================================================================== */
+
+index=dns_queries earliest=-7d@h latest=now()
+| rex field=domain "(?<sld>[^.]+)\.(?<tld>[^.]+)$"
+| eval
+    digit_ratio=round((len(sld)-len(replace(sld,"[0-9]","")))/len(sld),3),
+    vowel_ratio=round((len(sld)-len(replace(sld,"[aeiou]","")))/len(sld),3),
+    unique_chars=len(mvdedup(split(sld,"")))
+| eval dga_family=case(
+    (digit_ratio > 0.15 AND vowel_ratio < 0.25), "hash_based",
+    (vowel_ratio < 0.20 AND len(sld)>10), "random_char",
+    (vowel_ratio >= 0.25 AND vowel_ratio <= 0.40), "dictionary",
+    1=1, "unknown"
+)
+| search dga_family!=unknown
+| stats
+    count as query_count,
+    dc(src_ip) as unique_sources,
+    dc(sld) as unique_domains,
+    dc(tld) as tlds
+    by dga_family, _time
+| timechart sum(query_count) as total_queries, sum(unique_domains) as domains_detected by dga_family
+| eval
+    pct_random=round(random_char/total_queries*100,1),
+    pct_dict=round(dictionary/total_queries*100,1),
+    pct_hash=round(hash_based/total_queries*100,1)
+
+
+/* ========================================================================
+   QUERY 8: DGA Trend Analysis — Detection Over Time
+   ========================================================================
+
+   Tracks DGA domain detection rate over time to identify:
+     - Spikes (botnet activation)
+     - Trends (increasing/decreasing DGA activity)
+     - Anomalies (unusual patterns)
+
+   Severity: INFO (analytics)
+   Frequency: Daily
+   ======================================================================== */
+
+index=dns_queries earliest=-30d@d latest=now()
+| rex field=domain "(?<sld>[^.]+)\.(?<tld>[^.]+)$"
+| eval
+    vowel_ratio=round((len(sld)-len(replace(sld,"[aeiou]","")))/len(sld),3),
+    digit_ratio=round((len(sld)-len(replace(sld,"[0-9]","")))/len(sld),3)
+| where (vowel_ratio < 0.25 AND len(sld) > 6) OR digit_ratio > 0.15
+| stats
+    count as total_detections,
+    dc(sld) as unique_dga_domains,
+    dc(src_ip) as unique_sources,
+    dc(tld) as tlds
+    by _time
+| eval
+    _time=round(_time, -3600),
+    _time=strftime(_time, "%Y-%m-%d %H:00:00"),
+    baseline_avg=avg(total_detections),
+    threshold=baseline_avg*2
+| eval
+    anomaly=case(
+        total_detections > threshold, "SPIKE",
+        total_detections < (baseline_avg*0.5), "LOW",
+        1=1, "NORMAL"
+    )
+| timechart
+    avg(total_detections) as avg_detections,
+    sum(total_detections) as total_detections,
+    sum(unique_dga_domains) as domains_detected,
+    sum(unique_sources) as sources_affected
+    limit=0
+| eval
+    pct_change=round(((total_detections-avg(avg_detections))/avg(avg_detections))*100,1)
+

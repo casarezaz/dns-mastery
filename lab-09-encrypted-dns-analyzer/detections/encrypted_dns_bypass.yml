@@ -1,0 +1,342 @@
+---
+# Encrypted DNS Analyzer — Sigma Detection Rules
+# ===============================================
+# YAML-based detection rules for encrypted DNS protocols and bypass attempts
+# Compatible with Sigma-enabled SIEM platforms (Splunk, Elastic, QRadar, etc.)
+
+---
+title: DoH Bypass Detection - External Provider Usage
+id: dns-analyzer-001
+status: experimental
+description: |
+  Detects clients connecting to external DoH (DNS over HTTPS) providers instead of
+  enterprise DNS resolver. Indicates potential DNS policy bypass or security risk.
+
+  T1071.004 - Application Layer Protocol: DNS
+  T1572 - Protocol Tunneling
+references:
+  - https://attack.mitre.org/techniques/T1071/004/
+  - https://attack.mitre.org/techniques/T1572/
+author: Angie Casarez
+date: 2024-03-01
+logsource:
+  product: firewall
+  service: connection
+detection:
+  selection_doh:
+    dest_port: 443
+    uri|contains:
+      - '/dns-query'
+  selection_external:
+    dest_ip|cidr:
+      - '!10.0.0.0/8'
+      - '!172.16.0.0/12'
+      - '!192.168.0.0/16'
+  selection_provider:
+    dest_ip|in:
+      - '8.8.8.8'
+      - '8.8.4.4'
+      - '1.1.1.1'
+      - '1.0.0.1'
+      - '9.9.9.9'
+      - '149.112.112.112'
+      - '208.67.222.222'
+      - '208.67.220.220'
+    dest_domain|in:
+      - 'dns.google.com'
+      - 'dns.google'
+      - 'one.one.one.one'
+      - 'dns.quad9.net'
+      - 'dns.opendns.com'
+  filter_whitelist:
+    src_ip|in:
+      - '10.0.0.201'  # Whitelist specific approved clients if needed
+  condition: (selection_doh or selection_external or selection_provider) and not filter_whitelist
+falsepositives:
+  - Legitimate external DoH usage by user consent
+  - Guest network DoH usage
+  - BYOD devices with personal DNS settings
+level: high
+tags:
+  - detection.defense_evasion
+  - attack.dns
+
+
+---
+title: Plaintext DNS Detection - Unencrypted Queries
+id: dns-analyzer-002
+status: experimental
+description: |
+  Detects unencrypted DNS traffic on port 53. Modern best practice
+  recommends encrypted DNS (DoT, DoH, DoQ). Plaintext DNS is vulnerable
+  to MITM attacks, surveillance, and manipulation.
+
+  T1071.004 - Application Layer Protocol: DNS
+references:
+  - https://attack.mitre.org/techniques/T1071/004/
+author: Angie Casarez
+date: 2024-03-01
+logsource:
+  product: firewall
+  service: dns
+detection:
+  selection:
+    dest_port: 53
+    protocol:
+      - 'UDP'
+      - 'TCP'
+  filter_encrypted:
+    tls_version|regex: '^TLS'
+    protocol|in:
+      - 'TLS'
+      - 'SSL'
+      - 'QUIC'
+  condition: selection and not filter_encrypted
+falsepositives:
+  - Legacy systems requiring plaintext DNS
+  - Internal DNS queries to enterprise resolver (acceptable in some environments)
+  - DNS over TCP (zone transfers, large responses)
+level: medium
+tags:
+  - detection.initial_access
+  - attack.dns
+
+
+---
+title: DoT Detection - DNS over TLS Port 853
+id: dns-analyzer-003
+status: experimental
+description: |
+  Detects DNS over TLS (DoT) connections on port 853.
+
+  DoT provides encrypted DNS via TLS on dedicated port 853.
+  This is a positive indicator of encryption, though port 853
+  may be blocked by some firewalls/ISPs.
+references:
+  - https://tools.ietf.org/html/rfc7858
+author: Angie Casarez
+date: 2024-03-01
+logsource:
+  product: firewall
+  service: connection
+detection:
+  selection:
+    dest_port: 853
+    protocol|in:
+      - 'TLS'
+      - 'TCP'
+    tls_version|regex: '^TLS 1\.[23]'
+  condition: selection
+falsepositives:
+  - None expected (port 853 + TLS is DoT by definition)
+level: informational
+tags:
+  - detection.dns_encryption
+  - attack.dns
+
+
+---
+title: DoQ Detection - DNS over QUIC Port 853
+id: dns-analyzer-004
+status: experimental
+description: |
+  Detects DNS over QUIC (DoQ) connections on port 853.
+
+  DoQ is modern encrypted DNS using QUIC protocol (UDP-based).
+  Offers 0-RTT connection establishment and connection migration.
+  Emerging standard (RFC 9250) with growing support.
+references:
+  - https://tools.ietf.org/html/rfc9250
+author: Angie Casarez
+date: 2024-03-01
+logsource:
+  product: firewall
+  service: connection
+detection:
+  selection_quic:
+    dest_port: 853
+    protocol|in:
+      - 'QUIC'
+      - 'UDP'
+    transport|in:
+      - 'QUIC'
+      - 'UDP'
+  selection_tls:
+    dest_port: 853
+    tls_version|contains: 'QUIC'
+  condition: selection_quic or selection_tls
+falsepositives:
+  - None expected (port 853 + QUIC is DoQ by definition)
+level: informational
+tags:
+  - detection.dns_encryption
+  - attack.dns
+
+
+---
+title: DoH Encryption Coverage Low - Risk Alert
+id: dns-analyzer-005
+status: experimental
+description: |
+  Aggregate alert: triggers when encryption coverage falls below threshold.
+
+  Monitors encryption coverage percentage across all DNS traffic.
+  Alerts when plaintext percentage exceeds policy threshold (e.g., >20%).
+references:
+  - https://attack.mitre.org/techniques/T1071/004/
+author: Angie Casarez
+date: 2024-03-01
+logsource:
+  product: firewall
+  service: dns_aggregate
+detection:
+  selection:
+    dest_port|in:
+      - 53
+      - 443
+      - 853
+    timeframe: 1h
+  aggregation:
+    plaintext_count: "count where dest_port=53"
+    total_count: "count"
+  calculation: "(plaintext_count / total_count) > 0.20"
+  condition: selection and aggregation and calculation
+falsepositives:
+  - Legacy system migration (temporary spike in plaintext)
+  - DNS proxy/resolver that doesn't expose encryption metadata
+level: medium
+tags:
+  - detection.dns_encryption
+  - detection.monitoring
+
+
+---
+title: Suspicious DoH Query Frequency - Possible Exfiltration
+id: dns-analyzer-006
+status: experimental
+description: |
+  Detects anomalously high DNS over HTTPS query frequency, suggesting
+  possible data exfiltration or DNS-based command & control.
+
+  Baseline: normal DNS queries 1-10 per minute per client.
+  Alert threshold: >100 queries per minute
+
+  T1572 - Protocol Tunneling
+  T1041 - Exfiltration Over C2 Channel
+references:
+  - https://attack.mitre.org/techniques/T1572/
+  - https://attack.mitre.org/techniques/T1041/
+author: Angie Casarez
+date: 2024-03-01
+logsource:
+  product: firewall
+  service: connection
+detection:
+  selection:
+    dest_port: 443
+    uri|contains: '/dns-query'
+    dest_ip|cidr:
+      - '!10.0.0.0/8'
+      - '!172.16.0.0/12'
+      - '!192.168.0.0/16'
+  aggregation:
+    src_ip: '...'
+    timeframe: 1m
+    count: count()
+  condition: selection and aggregation | count() > 100
+falsepositives:
+  - DNS query bursts during client startup/config refresh
+  - Legitimate bulk domain lookups (e.g., email link preview)
+  - Automated security scanning tools
+level: high
+tags:
+  - detection.exfiltration
+  - detection.c2
+  - attack.dns
+
+
+---
+title: Encryption Protocol Mismatch - Client Inconsistency
+id: dns-analyzer-007
+status: experimental
+description: |
+  Detects clients using multiple encryption protocols inconsistently.
+
+  Indicates:
+  - Client misconfiguration (mixed DNS settings)
+  - Potential malware with fallback DNS
+  - User bypassing one protocol for another
+
+  Flags clients using both plaintext AND encrypted protocols.
+author: Angie Casarez
+date: 2024-03-01
+logsource:
+  product: firewall
+  service: connection
+detection:
+  selection_plaintext:
+    dest_port: 53
+    protocol|in:
+      - 'UDP'
+      - 'TCP'
+    tls_version: null
+  selection_encrypted:
+    dest_port|in:
+      - 443
+      - 853
+    protocol|in:
+      - 'TLS'
+      - 'QUIC'
+      - 'HTTPS'
+  aggregation:
+    src_ip: '...'
+    timeframe: 5m
+    has_plaintext: "count(selection_plaintext)"
+    has_encrypted: "count(selection_encrypted)"
+  condition: aggregation | (has_plaintext > 0 and has_encrypted > 0)
+falsepositives:
+  - Legitimate dual-stack DNS clients
+  - Client with fallback from DoT to plaintext (timeout)
+  - Testing and validation environments
+level: medium
+tags:
+  - detection.anomaly
+  - attack.dns
+
+
+---
+title: Known Malicious DoH Provider - Suspicious DNS Activity
+id: dns-analyzer-008
+status: experimental
+description: |
+  Detects connections to known malicious or suspicious DoH providers.
+
+  May indicate:
+  - Malware using custom DoH resolver
+  - Botnet C2 via DNS
+  - Circumventing security controls
+
+  NOTE: Update provider list based on threat intelligence feeds.
+author: Angie Casarez
+date: 2024-03-01
+logsource:
+  product: firewall
+  service: connection
+detection:
+  selection:
+    dest_port: 443
+    uri|contains: '/dns-query'
+    dest_ip|in:
+      - '203.0.113.0'      # Example malicious provider (placeholder)
+      - '198.51.100.0'     # Example malicious provider (placeholder)
+    dest_domain|in:
+      - 'malicious-dns.ru'
+      - 'c2-resolver.io'
+  condition: selection
+falsepositives:
+  - Legitimate providers on threat intel lists (rare false positives)
+level: critical
+tags:
+  - detection.c2
+  - detection.malware
+  - attack.dns

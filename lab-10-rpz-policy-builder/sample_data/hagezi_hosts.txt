@@ -1,0 +1,37 @@
+# Hagezi hosts file format
+# Generated: 2026-03-27T18:30:46.820840
+#
+0.0.0.0 malware-c2.com
+0.0.0.0 www.malware-c2.com
+0.0.0.0 mail.malware-c2.com
+127.0.0.1 botnet-control.net
+192.0.2.1 ransomware-gateway.org
+0.0.0.0 trojan-delivery.ru
+0.0.0.0 www.trojan-delivery.ru
+0.0.0.0 mail.trojan-delivery.ru
+127.0.0.1 rootkit-command.cc
+192.0.2.1 adware-loader.info
+0.0.0.0 worm-distribution.tk
+0.0.0.0 www.worm-distribution.tk
+0.0.0.0 mail.worm-distribution.tk
+127.0.0.1 spyware-beacon.xyz
+192.0.2.1 backdoor-tunnel.pw
+0.0.0.0 exploit-kit.tv
+0.0.0.0 www.exploit-kit.tv
+0.0.0.0 mail.exploit-kit.tv
+127.0.0.1 paypal-login-verify.com
+192.0.2.1 amazon-account-confirm.org
+0.0.0.0 microsoft-office365-update.net
+0.0.0.0 www.microsoft-office365-update.net
+0.0.0.0 mail.microsoft-office365-update.net
+127.0.0.1 apple-id-security.xyz
+192.0.2.1 bank-credentials-check.ru
+0.0.0.0 ebay-billing-update.info
+0.0.0.0 www.ebay-billing-update.info
+0.0.0.0 mail.ebay-billing-update.info
+127.0.0.1 linkedin-verification.tk
+192.0.2.1 google-account-recovery.cc
+0.0.0.0 facebook-security-alert.pw
+0.0.0.0 www.facebook-security-alert.pw
+0.0.0.0 mail.facebook-security-alert.pw
+127.0.0.1 netflix-billing-verify.tv

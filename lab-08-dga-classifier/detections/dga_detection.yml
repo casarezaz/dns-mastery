@@ -1,0 +1,307 @@
+---
+# DGA Detection Rules — Sigma Format (Lab 08)
+# ==============================================
+# 5 SIEM-agnostic detection rules for DGA domain identification
+# Compatible with: Splunk, Elasticsearch, ArcSight, QRadar, Microsoft Sentinel
+#
+# MITRE ATT&CK:
+#   T1568.002 — Dynamic Resolution: Domain Generation Algorithms
+#   T1071.004 — Application Layer Protocol: DNS
+#   T1583.001 — Acquire Infrastructure: Domains
+#
+# References:
+#   - https://github.com/SigmaHQ/sigma/
+#   - https://attack.mitre.org/techniques/T1568/002/
+
+---
+title: High-Entropy DGA Domain Query
+id: 550e8b11-4a72-4a91-a1a2-1234567890ab
+description: |
+  Detects DNS queries to domains with high Shannon entropy (>3.6 bits/char).
+  Typical of random-character and hash-based DGAs. Natural domains have entropy
+  2.0-3.2; DGA domains typically exceed 3.6.
+status: experimental
+date: 2024-01-15
+modified: 2024-01-15
+author: Angie Casarez (casarezaz)
+references:
+  - https://attack.mitre.org/techniques/T1568/002/
+  - https://en.wikipedia.org/wiki/Entropy_(information_theory)
+logsource:
+  product: dns
+  service: dns
+detection:
+  selection:
+    DomainEntropy|gt: 3.6
+    DomainLength|range:
+      - 6
+      - 25
+  exclusion_local:
+    Domain|endswith:
+      - .corp
+      - .internal
+      - .local
+      - .localhost
+      - .test
+  exclusion_common_words:
+    Domain|contains:
+      - google
+      - microsoft
+      - amazon
+      - apple
+      - github
+      - cloudflare
+      - akamai
+  filter:
+    selection
+    | not exclusion_local
+    | not exclusion_common_words
+falsepositives:
+  - Legitimate domains with multiple hyphens or numbers
+  - Subdomains with random identifiers (UUIDs, hashes)
+  - CDN or SaaS provider domains
+level: medium
+tags:
+  - attack.t1568.002
+  - detection.endpoint
+  - detection.network
+
+---
+title: Dictionary-Based DGA Pattern Detection
+id: 550e8b11-4a72-4a91-a1a2-1234567890ac
+description: |
+  Detects DNS queries to domains with characteristics of dictionary-based DGAs.
+  Pattern: Concatenated dictionary words with moderate entropy (3.0-3.8),
+  natural vowel ratios (25-50%), occasional digits.
+  Examples: applecherry.com, bananaforest42.net, quietriver.org
+status: experimental
+date: 2024-01-15
+modified: 2024-01-15
+author: Angie Casarez (casarezaz)
+references:
+  - https://attack.mitre.org/techniques/T1568/002/
+logsource:
+  product: dns
+  service: dns
+detection:
+  selection_entropy:
+    DomainEntropy|range:
+      - 3.0
+      - 3.8
+  selection_vowels:
+    DomainVowelRatio|range:
+      - 0.25
+      - 0.50
+  selection_bigrams:
+    DomainCommonBigrams|lt: 0.4
+  selection_characteristics:
+    DomainLength|range:
+      - 8
+      - 22
+    DomainDigits|lt: 3
+  filter:
+    selection_entropy
+    | selection_vowels
+    | selection_bigrams
+    | selection_characteristics
+  exclusion:
+    Domain|contains:
+      - apple
+      - amazon
+      - cherry
+      - google
+      - forest
+      - river
+      - mountain
+  condition: filter and not exclusion
+falsepositives:
+  - Compound legitimate domain names
+  - Marketing/branding domains with unusual names
+  - Startup domains with creative naming
+level: medium
+tags:
+  - attack.t1568.002
+
+---
+title: Hash-Based DGA Pattern Detection
+id: 550e8b11-4a72-4a91-a1a2-1234567890ad
+description: |
+  Detects DNS queries to domains with hash-based DGA characteristics.
+  Pattern: High entropy (3.5-4.0), high digit ratio (>15%), few common bigrams,
+  deterministic-looking alphanumeric strings.
+  Examples: a7f2c3e8d9b1.com, f4e2d7a5c89.net, b3f1c8e2a47.org
+status: experimental
+date: 2024-01-15
+modified: 2024-01-15
+author: Angie Casarez (casarezaz)
+references:
+  - https://attack.mitre.org/techniques/T1568/002/
+logsource:
+  product: dns
+  service: dns
+detection:
+  selection_entropy:
+    DomainEntropy|range:
+      - 3.5
+      - 4.0
+  selection_digits:
+    DomainDigitRatio|gt: 0.15
+  selection_vowels:
+    DomainVowelRatio|lt: 0.30
+  selection_bigrams:
+    DomainCommonBigrams|lt: 0.25
+  selection_characteristics:
+    DomainLength|range:
+      - 10
+      - 20
+    DomainUniqueChars|gt: 0.70
+  filter:
+    selection_entropy
+    | selection_digits
+    | selection_vowels
+    | selection_bigrams
+    | selection_characteristics
+  exclusion:
+    Domain|contains:
+      - api
+      - v1
+      - v2
+      - test
+      - staging
+      - cdn
+  condition: filter and not exclusion
+falsepositives:
+  - Legitimate domains with UUIDs or hashes (tracking IDs)
+  - API endpoints with version numbers and identifiers
+  - Content delivery networks with alphanumeric subdomains
+level: medium
+tags:
+  - attack.t1568.002
+
+---
+title: Suspicious TLD Query Detection
+id: 550e8b11-4a72-4a91-a1a2-1234567890ae
+description: |
+  Detects DNS queries to suspicious TLDs commonly abused by DGA operators
+  and malicious actors. While these TLDs are not inherently malicious,
+  they statistically show higher correlation with malicious activity.
+  Suspicious TLDs: .xyz, .click, .download, .racing, .stream, .gdn, .work,
+  .gg, .pw, .tk, .ml, .ga, .cf
+status: experimental
+date: 2024-01-15
+modified: 2024-01-15
+author: Angie Casarez (casarezaz)
+references:
+  - https://attack.mitre.org/techniques/T1568.002/
+logsource:
+  product: dns
+  service: dns
+detection:
+  selection_suspicious_tld:
+    DomainTLD|in:
+      - xyz
+      - click
+      - download
+      - racing
+      - stream
+      - gdn
+      - work
+      - gg
+      - pw
+      - tk
+      - ml
+      - ga
+      - cf
+  exclusion_known_legitimate:
+    Domain|startswith:
+      - github.io
+      - github.gg
+      - examples.
+  filter:
+    selection_suspicious_tld
+    | not exclusion_known_legitimate
+condition: filter
+falsepositives:
+  - Legitimate businesses using new TLDs (.xyz, .click, etc.)
+  - Startup companies with creative domain names
+  - Community platforms (.gg gaming communities)
+level: low
+tags:
+  - attack.t1568.002
+
+---
+title: DGA Domain Clustering Detection
+id: 550e8b11-4a72-4a91-a1a2-1234567890af
+description: |
+  Detects potential DGA activity by identifying clusters of related domains
+  with similar characteristics queried from same source or within short timeframe.
+  Indicators:
+    - Multiple domains from same IP in short window (< 1 hour)
+    - Domains sharing similar entropy/characteristics
+    - Rapid query rate (> 5 queries/second)
+    - Shared DGA family characteristics
+status: experimental
+date: 2024-01-15
+modified: 2024-01-15
+author: Angie Casarez (casarezaz)
+references:
+  - https://attack.mitre.org/techniques/T1568.002/
+logsource:
+  product: dns
+  service: dns
+detection:
+  selection_high_volume:
+    QueryCount|gt: 50
+    TimeWindow: 3600
+  selection_characteristics:
+    # Multiple domains with similar characteristics
+    AvgEntropy|gt: 3.5
+    UniqueDomainsFromSource|gt: 10
+  selection_pattern:
+    # All domains have similar structure
+    CommonTLD|in:
+      - com
+      - net
+      - org
+    AvgVowelRatio|lt: 0.35
+  filter:
+    selection_high_volume
+    | (selection_characteristics and selection_pattern)
+  exclusion:
+    Domain|contains:
+      - akamai
+      - cloudflare
+      - amazon
+      - microsoft
+      - google
+condition: filter and not exclusion
+falsepositives:
+  - Legitimate bulk domain registration/scanning
+  - Security testing or penetration testing
+  - Cloud provider instances querying multiple subdomains
+  - SaaS applications with distributed domain structure
+level: medium
+tags:
+  - attack.t1568.002
+
+---
+# Lookup Table: suspicious_tlds.csv
+# ===================================
+# Used by above rules for TLD-based filtering
+#
+# Format:
+#   tld,risk_score
+#   xyz,70
+#   click,70
+#   download,70
+#   racing,70
+#   stream,60
+#   gdn,60
+#   work,60
+#   gg,50
+#   pw,75
+#   tk,85
+#   ml,85
+#   ga,85
+#   cf,85
+

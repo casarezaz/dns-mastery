@@ -1,0 +1,5002 @@
+[
+  {
+    "timestamp": "2024-01-01T00:04:07Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:57Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:05Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:16Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:59Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "10.0.0.2",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "stackoverflow.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:06:55Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:31Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:42Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:27Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "10.0.0.2",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:56Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:40Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:42Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:48Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:21Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:42Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:55Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:14Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:37Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:10Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:48Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:04Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:41Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:26Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:55Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:08:07Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "8.8.4.4",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.google",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:56Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "1.1.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "one.one.one.one",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:02Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:12Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "10.0.0.2",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "internal-app.local",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:01:27Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "cdn.company.net",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:00:01Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "github.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:00:58Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "10.0.0.2",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "backup.internal",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:00:49Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "10.0.0.2",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "google.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:07:09Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:55Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "8.8.8.8",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.google.com",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:35Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:40Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:21Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:45Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:48Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:28Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:28Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:58Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:27Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:27Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:45Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:58Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:48Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "192.168.1.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "api.service.local",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:00:45Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "10.0.0.2",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "internal-app.local",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:02:54Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:14Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:53Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:36Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "cdn.company.net",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:06:44Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:05Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "google.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:03:01Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:03Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:51Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:58Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "8.8.8.8",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.google.com",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:02Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:55Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:04Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "mail.example.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:05:31Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:26Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "10.0.0.2",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "stackoverflow.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:02:32Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:33Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:01Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "192.168.1.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "google.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:01:31Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "10.0.0.2",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "mail.example.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:00:37Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "stackoverflow.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:03:09Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:50Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "208.67.222.222",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.opendns.com",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:41Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:06Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:22Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:39Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:17Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:03Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "internal-app.local",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:00:05Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "api.service.local",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:01:12Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "api.service.local",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:05:35Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:17Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "backup.internal",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:06:10Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:25Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "10.0.0.2",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "internal-app.local",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:04:11Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:40Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:18Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:47Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:30Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "8.8.4.4",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.google",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:47Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "10.0.0.2",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:11Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "192.168.1.1",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "google.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:07:49Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "208.67.220.220",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.opendns.com",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:59Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "208.67.220.220",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.opendns.com",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:48Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:08:00Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "208.67.222.222",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.opendns.com",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:57Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:16Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:17Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:00Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:25Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "stackoverflow.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:05:33Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:04Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:37Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "10.0.0.2",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:12Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:24Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:28Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "192.168.1.1",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "mail.example.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:07:37Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "1.1.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "one.one.one.one",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:36Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:20Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "192.168.1.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "internal-app.local",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:07:24Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:38Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "192.168.1.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "internal-app.local",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:05:22Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "10.0.0.2",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:59Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:15Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "192.168.1.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "github.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:02:04Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:48Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "208.67.222.222",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.opendns.com",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:59Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:04Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "192.168.1.1",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "internal-app.local",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:00:55Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "stackoverflow.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:05:44Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:29Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:23Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "192.168.1.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "api.service.local",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:07:10Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:08:11Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "9.9.9.9",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.quad9.net",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:58Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:12Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "10.0.0.2",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:46Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:38Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:42Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:20Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:19Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:41Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:13Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:08:17Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "149.112.112.112",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.quad9.net",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:07Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:40Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "149.112.112.112",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.quad9.net",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:44Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:45Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:14Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:00Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:13Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:19Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "api.service.local",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:03:52Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:41Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "208.67.220.220",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.opendns.com",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:33Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "192.168.1.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "backup.internal",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:05:51Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:34Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "1.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "one.one.one.one",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:21Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:21Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:09Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:07Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:06Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:59Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:16Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:08:13Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "9.9.9.9",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.quad9.net",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:08:06Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "208.67.222.222",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.opendns.com",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:57Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "cdn.company.net",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:02:10Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:46Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "208.67.222.222",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.opendns.com",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:48Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:35Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:11Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:27Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:18Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:20Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:16Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "192.168.1.1",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "stackoverflow.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:01:28Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "cdn.company.net",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:01:21Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "192.168.1.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "google.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:04:56Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:43Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:44Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "github.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:04:50Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:46Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "10.0.0.2",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:17Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "10.0.0.2",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:31Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "192.168.1.1",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "mail.example.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:08:16Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "8.8.4.4",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.google.com",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:05Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:45Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:53Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:54Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "192.168.1.1",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "google.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:07:04Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:06Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "10.0.0.2",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "mail.example.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:08:02Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "8.8.4.4",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.google.com",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:30Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "10.0.0.2",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "mail.example.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:02:23Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:26Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:12Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:07Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:47Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "10.0.0.2",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "github.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:00:06Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "api.service.local",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:00:29Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "cdn.company.net",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:05:08Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "10.0.0.2",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:21Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:46Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:20Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "192.168.1.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "stackoverflow.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:01:41Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:31Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:15Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:35Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "github.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:04:44Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:00Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:17Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:08Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:32Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:34Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "10.0.0.2",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "api.service.local",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:01:55Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:51Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:39Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "192.168.1.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "cdn.company.net",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:04:13Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:03Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:57Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:38Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "10.0.0.2",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "mail.example.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:06:51Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:46Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:45Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:25Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "10.0.0.2",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:00Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "10.0.0.2",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "google.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:00:17Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "10.0.0.2",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "internal-app.local",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:05:01Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:53Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "8.8.4.4",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.google.com",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:52Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:20Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:46Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:35Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:34Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:36Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "192.168.1.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "github.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:00:07Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "github.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:04:18Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:33Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "8.8.8.8",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.google",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:21Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:25Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:13Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:03Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "10.0.0.2",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:13Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:52Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:28Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:38Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "208.67.220.220",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.opendns.com",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:20Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:29Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:08:04Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "8.8.8.8",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.google.com",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:26Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:51Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:37Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:30Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "internal-app.local",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:03:53Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:42Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:45Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "208.67.220.220",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.opendns.com",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:26Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:43Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "9.9.9.9",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.quad9.net",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:06Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:47Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:08:03Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "8.8.8.8",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.google.com",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:26Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "10.0.0.2",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:49Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:03Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:03Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:54Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "1.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "one.one.one.one",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:36Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:08:19Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "1.1.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "one.one.one.one",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:47Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:59Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:01Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:44Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:58Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "10.0.0.2",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:57Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "9.9.9.9",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.quad9.net",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:40Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:15Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:37Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:56Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:16Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:25Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "10.0.0.2",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:49Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:31Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:14Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:36Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "10.0.0.2",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:07Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:37Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:22Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:24Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:49Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:25Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:08:18Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "149.112.112.112",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.quad9.net",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:53Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:49Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:20Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:57Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:24Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:37Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "192.168.1.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "cdn.company.net",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:04:59Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:20Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "10.0.0.2",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:02Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:30Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "10.0.0.2",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:23Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:48Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:31Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "149.112.112.112",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.quad9.net",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:41Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:21Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "10.0.0.2",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "stackoverflow.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:07:11Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:10Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "10.0.0.2",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:43Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:30Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:18Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "google.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:06:22Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:55Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "10.0.0.2",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:09Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "10.0.0.2",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "google.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:01:33Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "10.0.0.2",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "github.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:04:05Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:57Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:29Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "10.0.0.2",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "github.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:02:53Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:39Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "10.0.0.2",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:40Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:49Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:08Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "10.0.0.2",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "mail.example.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:02:50Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:57Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "10.0.0.2",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:53Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "10.0.0.2",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "github.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:05:39Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "10.0.0.2",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:56Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:29Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:02Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:50Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "10.0.0.2",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:09Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:35Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:18Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:47Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "208.67.222.222",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.opendns.com",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:19Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:19Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:10Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "192.168.1.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "api.service.local",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:07:02Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:29Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:08:15Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "149.112.112.112",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.quad9.net",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:38Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:08:09Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "1.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "one.one.one.one",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:34Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "mail.example.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:03:04Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:28Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:43Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "internal-app.local",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:01:35Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "stackoverflow.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:03:33Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:23Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:44Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "149.112.112.112",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.quad9.net",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:00Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:14Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:00Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "internal-app.local",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:03:39Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:29Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:13Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "mail.example.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:02:03Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:54Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "10.0.0.2",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:23Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:23Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:08Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "10.0.0.2",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "google.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:04:34Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:08:01Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "149.112.112.112",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.quad9.net",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:15Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:06Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:32Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "stackoverflow.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:03:54Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:18Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:27Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:14Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:08:10Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "208.67.220.220",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.opendns.com",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:24Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "github.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:01:02Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "192.168.1.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "stackoverflow.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:02:34Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:51Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "208.67.220.220",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.opendns.com",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:27Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:56Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "10.0.0.2",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "internal-app.local",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:03:36Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:15Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:11Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:40Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:16Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "10.0.0.2",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "internal-app.local",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:01:50Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:11Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:09Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "192.168.1.1",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "cdn.company.net",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:00:40Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "10.0.0.2",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "github.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:00:02Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "github.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:05:15Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:35Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "9.9.9.9",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.quad9.net",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:08:05Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "8.8.4.4",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.google",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:01Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:11Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "192.168.1.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "stackoverflow.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:05:56Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:01Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:26Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:08:08Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "8.8.8.8",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.google.com",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:08Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:14Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "192.168.1.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "github.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:02:51Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:32Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:05Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:50Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "api.service.local",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:02:43Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:14Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "api.service.local",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:01:54Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:39Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:41Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "api.service.local",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:03:17Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:00Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:11Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:16Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:22Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:27Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "192.168.1.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "mail.example.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:03:32Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:13Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "10.0.0.2",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "backup.internal",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:02:58Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:52Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:53Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:46Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "192.168.1.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "internal-app.local",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:03:43Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:15Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "10.0.0.2",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "github.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:04:22Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "10.0.0.2",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:50Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:19Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:13Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:30Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:42Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "192.168.1.1",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "internal-app.local",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:07:39Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "208.67.220.220",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.opendns.com",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:03Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "192.168.1.1",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "stackoverflow.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:04:24Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "10.0.0.2",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:04Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "10.0.0.2",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:52Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "stackoverflow.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:04:43Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:10Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:06Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:28Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "10.0.0.2",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:26Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "192.168.1.1",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "cdn.company.net",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:02:08Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:10Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "192.168.1.1",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "github.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:05:09Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "10.0.0.2",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:50Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:42Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:58Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:22Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "google.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:03:34Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:30Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "10.0.0.2",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:17Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "10.0.0.2",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:15Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:38Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:24Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:33Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:56Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:45Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:52Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "10.0.0.2",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:47Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:08Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:39Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "192.168.1.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "google.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:08:12Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "208.67.220.220",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.opendns.com",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:00Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:36Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "9.9.9.9",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.quad9.net",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:52Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "8.8.8.8",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.google.com",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:38Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:02Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:33Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:59Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:49Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:41Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:23Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:25Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:25Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:12Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:47Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:01Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:08Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:46Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "10.0.0.2",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:06Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:03:30Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:22Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "mail.example.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:03:44Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.2"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:09Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "10.0.0.2",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:24Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "api.service.local",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:07:42Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "208.67.222.222",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.opendns.com",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:54Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:19Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:08:14Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "149.112.112.112",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.quad9.net",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:54Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:05Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:32Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "internal-app.local",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:01:23Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "192.168.1.1",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "cdn.company.net",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:01:18Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "cdn.company.net",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:03:12Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "9.9.9.9",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "dns.quad9.net",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:05Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "10.0.0.2",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:01:07Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "192.168.1.1",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "internal-app.local",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:05:16Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:32Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:28Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:52Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:05:38Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:19Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "10.0.0.2",
+    "server_port": 53,
+    "protocol": "TCP",
+    "domain": "github.com",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:04:29Z",
+    "client_ip": "192.168.1.102",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:32Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "8.8.8.8",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "dns.google",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:18Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:07Z",
+    "client_ip": "192.168.1.103",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:36Z",
+    "client_ip": "10.0.0.52",
+    "server_ip": "192.168.1.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:06:34Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:04:19Z",
+    "client_ip": "10.0.0.51",
+    "server_ip": "10.0.0.1",
+    "server_port": 443,
+    "protocol": "HTTPS",
+    "domain": "internal-resolver.local",
+    "path": "/dns-query",
+    "tls_version": "TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:00:51Z",
+    "client_ip": "192.168.1.101",
+    "server_ip": "10.0.0.1",
+    "server_port": 53,
+    "protocol": "UDP",
+    "domain": "internal-app.local",
+    "path": "",
+    "tls_version": ""
+  },
+  {
+    "timestamp": "2024-01-01T00:06:43Z",
+    "client_ip": "192.168.1.104",
+    "server_ip": "2606:4700:4700::1111",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:07:12Z",
+    "client_ip": "10.0.0.50",
+    "server_ip": "8.8.8.8",
+    "server_port": 853,
+    "protocol": "QUIC",
+    "domain": "dns.google",
+    "path": "",
+    "tls_version": "QUIC/TLS 1.3"
+  },
+  {
+    "timestamp": "2024-01-01T00:02:31Z",
+    "client_ip": "192.168.1.100",
+    "server_ip": "1.1.1.1",
+    "server_port": 853,
+    "protocol": "TLS",
+    "domain": "one.one.one.one",
+    "path": "",
+    "tls_version": "TLS 1.3"
+  }
+]

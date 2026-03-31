@@ -1,0 +1,99 @@
+[
+  {
+    "timestamp": "2026-03-22T08:00:00+00:00",
+    "event_type": "Web Visit",
+    "description": "User visits malware site",
+    "source_ip": "192.168.1.100",
+    "severity": "INFO"
+  },
+  {
+    "timestamp": "2026-03-22T08:05:00+00:00",
+    "event_type": "DNS Query",
+    "description": "C2 contact: evil.attacker.com",
+    "source_ip": "192.168.1.100",
+    "target_domain": "evil.attacker.com",
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-03-22T08:10:00+00:00",
+    "event_type": "DNS Query",
+    "description": "DGA: xyzabc123def.com",
+    "source_ip": "192.168.1.100",
+    "target_domain": "xyzabc123def.com",
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-03-22T08:12:00+00:00",
+    "event_type": "DNS Query",
+    "description": "DGA: abcdef456ghi.net",
+    "source_ip": "192.168.1.100",
+    "target_domain": "abcdef456ghi.net",
+    "severity": "WARNING"
+  },
+  {
+    "timestamp": "2026-03-22T08:20:00+00:00",
+    "event_type": "DNS Resolution",
+    "description": "C2 resolved to 192.0.2.42",
+    "source_ip": "192.168.1.100",
+    "target_domain": "evil.attacker.com",
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-03-22T08:25:00+00:00",
+    "event_type": "DNS Query",
+    "description": "Data exfiltration",
+    "source_ip": "192.168.1.100",
+    "target_domain": "evil.attacker.com",
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-03-22T09:00:00+00:00",
+    "event_type": "Anomaly Detection",
+    "description": "47 DNS queries in 30 seconds",
+    "source_ip": "192.168.1.100",
+    "target_domain": "evil.attacker.com",
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-03-22T10:00:00+00:00",
+    "event_type": "Alert",
+    "description": "Malware detected",
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-03-22T10:15:00+00:00",
+    "event_type": "Response",
+    "description": "Host isolated",
+    "severity": "WARNING"
+  },
+  {
+    "timestamp": "2026-03-22T12:00:00+00:00",
+    "event_type": "Remediation",
+    "description": "System restored",
+    "severity": "INFO"
+  },
+  {
+    "timestamp": "2026-03-22T14:00:00+00:00",
+    "event_type": "Hardening",
+    "description": "DoH enabled",
+    "severity": "INFO"
+  },
+  {
+    "timestamp": "2026-03-22T16:00:00+00:00",
+    "event_type": "Hardening",
+    "description": "RPZ blocklists enabled",
+    "severity": "INFO"
+  },
+  {
+    "timestamp": "2026-03-22T20:00:00+00:00",
+    "event_type": "Verification",
+    "description": "attacker.com blocked by RPZ",
+    "severity": "INFO"
+  },
+  {
+    "timestamp": "2026-03-23T00:00:00+00:00",
+    "event_type": "Incident Closed",
+    "description": "Incident response complete",
+    "severity": "INFO"
+  }
+]

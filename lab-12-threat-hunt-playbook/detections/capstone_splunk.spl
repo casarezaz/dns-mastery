@@ -1,0 +1,183 @@
+// DNS Threat Hunt Playbook — Splunk SPL Queries
+// All 10 hunts consolidated into ready-to-use Splunk queries
+//
+// Usage:
+//   1. Copy/paste entire hunt query into Splunk search bar
+//   2. Adjust source, index, and fields to match your environment
+//   3. Set appropriate time range and alert thresholds
+//
+// Author: Angie Casarez (casarezaz)
+// License: MIT
+
+// ============================================================================
+// [H001] DNS Tunneling Detection
+// ============================================================================
+// Detect high-entropy subdomains indicating encoded tunnel data
+// Tunneling tools like iodine encode data in DNS labels using base32/64
+//
+// Search: Find subdomains with Shannon entropy > 3.5 bits/character
+// Indicates non-human-readable data (encoded payloads)
+
+source="dns.log" OR index=dns
+| stats avg(entropy) as avg_entropy, max(entropy) as max_entropy, count as query_count by src_ip, query_name, base_domain=mvindex(split(query_name, "."), -2)
+| where avg_entropy > 3.5 OR max_entropy > 4.0
+| where query_count >= 10
+| fields src_ip, query_name, base_domain, avg_entropy, max_entropy, query_count
+| sort - avg_entropy
+
+
+// ============================================================================
+// [H002] Command & Control (C2) over DNS — Beacon Detection
+// ============================================================================
+// Detect beacon-like query patterns with regular intervals and low jitter
+// C2 malware checks in with command server at regular intervals (60s, 300s, etc.)
+//
+// Search: Find regular DNS queries with low coefficient of variation
+// Legitimate DNS has high variance; C2 has regular timing
+
+source="dns.log" OR index=dns
+| stats count as query_count, values(timestamp) as timestamps, values(_time) as times by src_ip, query_name
+| where query_count > 10
+| eval time_diffs=array_slice(times, 1, -1)
+| eval intervals_json=mvjoin(time_diffs, ",")
+| where stddev(times) > 0
+| eval coefficient_variation = stdev(times) / (avg(times) - min(times))
+| where coefficient_variation < 0.20
+| fields src_ip, query_name, query_count, coefficient_variation
+| sort src_ip, query_name
+
+
+// ============================================================================
+// [H003] Domain Generation Algorithm (DGA) Detection
+// ============================================================================
+// Detect high NXDOMAIN rates indicating DGA attempts
+// DGAs generate 100s of random domains; most fail (NXDOMAIN), a few resolve to C2
+//
+// Search: Find hosts querying many domains with high NXDOMAIN rate
+
+source="dns.log" OR index=dns
+| stats count as total_queries, count(eval(rcode="NXDOMAIN" OR response_code="NXDOMAIN")) as nxdomain_count, dc(query_name) as unique_domains by src_ip
+| eval nxdomain_ratio = nxdomain_count / total_queries
+| eval domain_query_rate = unique_domains / (total_queries / 60)
+| where nxdomain_ratio > 0.5 AND unique_domains > 50 AND total_queries > 100
+| fields src_ip, total_queries, unique_domains, nxdomain_count, nxdomain_ratio, domain_query_rate
+| sort - nxdomain_ratio
+
+
+// ============================================================================
+// [H004] DNS Cache Poisoning Detection
+// ============================================================================
+// Detect multiple conflicting A record responses for same domain
+// Poisoning typically involves injecting false A records
+//
+// Search: Find query_name that returns multiple unrelated A records
+
+source="dns.log" OR index=dns qtype="A" OR query_type="A"
+| stats values(answer) as answers, count as response_count, dc(answer) as unique_answers by query_name, server_ip
+| eval answer_count = mvcount(answers)
+| where answer_count > 2 OR unique_answers > 2
+| where response_count > 5
+| table query_name, server_ip, answer_count, answers, unique_answers, response_count
+| sort - unique_answers
+
+
+// ============================================================================
+// [H005] Zone Transfer Abuse (AXFR) Detection
+// ============================================================================
+// Detect AXFR queries (zone transfers) from unexpected sources
+// AXFR should only succeed to authorized secondary DNS servers
+//
+// Search: Find AXFR requests (qtype=252) from non-authorized IPs
+
+source="dns.log" OR index=dns qtype="AXFR" OR query_type="AXFR"
+| stats count as axfr_count, sum(bytes) as total_bytes by src_ip, query_name, server_ip, dest_ip
+| where axfr_count > 0
+| fields src_ip, query_name, server_ip, dest_ip, axfr_count, total_bytes
+| search total_bytes > 1024
+| sort - total_bytes
+
+
+// ============================================================================
+// [H006] DNSSEC Validation Failure Detection
+// ============================================================================
+// Detect DNSSEC validation failures (SERVFAIL, BOGUS, ad=false)
+// Can indicate spoofing attempts or misconfiguration
+//
+// Search: Find DNSSEC validation failures
+
+source="dns.log" OR index=dns (rcode="SERVFAIL" OR rcode="BOGUS" OR ad=false)
+| stats count as failure_count, values(rcode) as rcodes by src_ip, query_name, server_ip
+| where failure_count >= 5
+| fields src_ip, query_name, server_ip, failure_count, rcodes
+| sort - failure_count
+
+
+// ============================================================================
+// [H007] DNS Amplification & Reflection Attack Detection
+// ============================================================================
+// Detect large DNS responses (amplification) to queries from spoofed sources
+// Response size 10x+ larger than query = amplification opportunity
+//
+// Search: Find responses > 10x query size with high volume
+
+source="dns.log" OR index=dns rcode="NOERROR" OR response_code="NOERROR"
+| stats avg(response_bytes) as avg_resp_size, sum(response_bytes) as total_resp_bytes, count as query_count, sum(query_bytes) as total_query_bytes by query_name
+| eval amplification_factor = avg_resp_size / 60
+| eval avg_query_size = total_query_bytes / query_count
+| eval response_to_query_ratio = avg_resp_size / avg_query_size
+| where response_to_query_ratio > 10 AND query_count > 100 AND avg_resp_size > 512
+| fields query_name, avg_resp_size, query_count, amplification_factor, response_to_query_ratio
+| sort - amplification_factor
+
+
+// ============================================================================
+// [H008] DNS over HTTPS (DoH) Bypass Detection
+// ============================================================================
+// Detect HTTPS connections to known DoH providers
+// DoH bypasses corporate DNS controls by using HTTPS on port 443
+//
+// Search: Find connections to known DoH provider IPs
+
+source="firewall" OR source="proxy" OR index=network proto="tcp" dest_port=443
+| regex dest_ip in (8.8.8.8, 1.1.1.1, 45.33.32.156, 2001:4860:4860::8888, 2606:4700:4700::1111)
+| where bytes_in > 100 AND bytes_out > 100
+| stats count as conn_count, sum(bytes_in) as total_in, sum(bytes_out) as total_out by src_ip, dest_ip, dest_name
+| where conn_count >= 10
+| fields src_ip, dest_ip, dest_name, conn_count, total_in, total_out
+| sort - conn_count
+
+
+// ============================================================================
+// [H009] Fast-Flux Domain Detection
+// ============================================================================
+// Detect rapid A record changes indicating fast-flux networks
+// Domain rotating between multiple IPs to evade sinkholing
+//
+// Search: Find domains with many different A records in short time
+
+source="dns.log" OR index=dns qtype="A" OR query_type="A" rcode="NOERROR" OR response_code="NOERROR"
+| stats values(answer) as answers, count as response_count, dc(answer) as unique_ips, latest(_time) as latest_time, earliest(_time) as earliest_time by query_name
+| eval time_window = latest_time - earliest_time
+| eval unique_ips = mvcount(answers)
+| where unique_ips >= 5 AND time_window <= 3600 AND response_count <= 100
+| fields query_name, unique_ips, response_count, time_window, answers
+| sort - unique_ips
+
+
+// ============================================================================
+// [H010] DNS Data Exfiltration Detection
+// ============================================================================
+// Detect long subdomain labels indicating data encoding/exfiltration
+// Legitimate subdomains typically < 20 chars; exfiltration uses 50+ chars
+//
+// Search: Find subdomains with abnormally long labels
+
+source="dns.log" OR index=dns
+| eval query_parts=split(query_name, ".")
+| eval subdomain_length = len(query_name) - len(mvindex(split(query_name, "."), -2)) - len(mvindex(split(query_name, "."), -1)) - 2
+| eval max_label_length = mvmax(map(len, query_parts))
+| stats avg(subdomain_length) as avg_len, max(max_label_length) as max_label_len, count as query_count by src_ip, query_name
+| where avg_len > 30 OR max_label_len > 50
+| where query_count >= 20
+| fields src_ip, query_name, avg_len, max_label_len, query_count
+| sort - avg_len

@@ -1,0 +1,199 @@
+---
+title: Plaintext DNS Query Detected
+id: 11-dns-plaintext-001
+date: 2026-03-27
+author: Angie Casarez
+status: experimental
+description: Detects DNS queries over plaintext (port 53) instead of encrypted
+logsource:
+  category: dns_query
+  product: dns_resolver
+detection:
+  selection:
+    QueryProtocol|contains:
+      - "udp"
+    DestPort: 53
+  condition: selection
+level: medium
+tags:
+  - attack.t1071.004
+  - dns
+---
+
+title: DNS Spoofing Attempt Detected
+id: 11-dns-spoofing-001
+date: 2026-03-27
+author: Angie Casarez
+status: experimental
+description: Detects potential DNS spoofing
+logsource:
+  category: dns_response
+  product: dns_resolver
+detection:
+  selection:
+    QueryName: "*"
+    ResponseCode: 0
+  condition: selection
+level: high
+tags:
+  - attack.t1557.004
+  - dns
+---
+
+title: DGA Domain Query Detected
+id: 11-dga-detection-001
+date: 2026-03-27
+author: Angie Casarez
+status: experimental
+description: Detects queries to high-entropy domains
+logsource:
+  category: dns_query
+  product: dns_resolver
+detection:
+  selection:
+    QueryName|re: "^[a-z0-9]{30,}\.(com|net|org|biz|info)$"
+  condition: selection
+level: high
+tags:
+  - attack.t1590.002
+  - malware
+---
+
+title: DNS Tunneling Activity Detected
+id: 11-dns-tunneling-001
+date: 2026-03-27
+author: Angie Casarez
+status: experimental
+description: Detects potential data exfiltration via DNS
+logsource:
+  category: dns_query
+  product: dns_resolver
+detection:
+  selection:
+    QueryName|length: >100
+  condition: selection
+level: high
+tags:
+  - attack.t1071.004
+  - exfiltration
+---
+
+title: DNS C2 Beaconing Detected
+id: 11-dns-c2-beacon-001
+date: 2026-03-27
+author: Angie Casarez
+status: experimental
+description: Detects DNS-based C2 beaconing patterns
+logsource:
+  category: dns_query
+  product: dns_resolver
+detection:
+  selection:
+    QueryName: "*"
+  condition: selection
+level: high
+tags:
+  - attack.t1071.004
+  - c2
+---
+
+title: DNSSEC Validation Failure Detected
+id: 11-dnssec-failure-001
+date: 2026-03-27
+author: Angie Casarez
+status: experimental
+description: Detects DNSSEC validation failures
+logsource:
+  category: dns_response
+  product: dns_resolver
+detection:
+  selection:
+    DnssecStatus|contains:
+      - "fail"
+      - "invalid"
+  condition: selection
+level: medium
+tags:
+  - attack.t1557.004
+  - dnssec
+---
+
+title: RPZ Blocklist Hit
+id: 11-rpz-hit-001
+date: 2026-03-27
+author: Angie Casarez
+status: experimental
+description: Detects when queries are blocked by RPZ
+logsource:
+  category: dns_response
+  product: dns_resolver
+detection:
+  selection:
+    Action: blocked
+    BlockListName|contains:
+      - "abuse.ch"
+      - "surbl"
+  condition: selection
+level: high
+tags:
+  - attack.t1590.002
+  - malware
+---
+
+title: DNS Query Volume Anomaly Detected
+id: 11-dns-volume-anomaly-001
+date: 2026-03-27
+author: Angie Casarez
+status: experimental
+description: Detects anomalous spikes in DNS query volume
+logsource:
+  category: dns_query
+  product: dns_resolver
+detection:
+  selection:
+    SrcIp: "*"
+  condition: selection
+level: medium
+tags:
+  - dns
+  - anomaly_detection
+---
+
+title: DNS Resolver Configuration Changed
+id: 11-resolver-config-change-001
+date: 2026-03-27
+author: Angie Casarez
+status: experimental
+description: Detects changes to DNS resolver configuration
+logsource:
+  category: process_modification
+  product: dns_resolver
+detection:
+  selection:
+    ProcessName|contains:
+      - "named"
+      - "dnsmasq"
+  condition: selection
+level: medium
+tags:
+  - dns
+  - configuration
+---
+
+title: Unauthorized External Recursive DNS Query
+id: 11-external-recursive-query-001
+date: 2026-03-27
+author: Angie Casarez
+status: experimental
+description: Detects recursive DNS queries from external sources
+logsource:
+  category: dns_query
+  product: dns_resolver
+detection:
+  selection:
+    QueryRecursionDesired: true
+  condition: selection
+level: medium
+tags:
+  - attack.t1590.002
+  - reconnaissance

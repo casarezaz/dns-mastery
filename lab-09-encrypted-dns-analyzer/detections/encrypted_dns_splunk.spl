@@ -1,0 +1,161 @@
+// Encrypted DNS Analyzer — Splunk Detection Queries
+// ================================================
+// 8 production-ready SPL queries for DNS encryption protocol detection,
+// bypass identification, and encryption coverage reporting.
+//
+// These queries work with firewall logs, proxy logs, DNS query logs,
+// and network telemetry containing connection metadata.
+
+
+// =========================================================================
+// Query 1: DoH Detection (DNS over HTTPS)
+// =========================================================================
+// Identifies DNS over HTTPS connections to port 443 with /dns-query path
+// or known DoH provider IPs
+//
+// Use Case: Detect encrypted DNS traffic via HTTPS
+// Relevant For: Firewall, proxy, and network flow data
+
+index=network
+  (dest_port=443 AND (
+    (uri="*/dns-query*") OR
+    (dest_ip IN (8.8.8.8, 8.8.4.4, 1.1.1.1, 1.0.0.1, 9.9.9.9, 149.112.112.112, 208.67.222.222, 208.67.220.220)) OR
+    (host IN ("dns.google.com", "dns.google", "one.one.one.one", "dns.quad9.net", "dns.opendns.com"))
+  ))
+| stats count by src_ip, dest_ip, host, uri
+| where count >= 1
+
+
+// =========================================================================
+// Query 2: DoT Detection (DNS over TLS on port 853)
+// =========================================================================
+// Identifies DNS over TLS connections on port 853 with TLS encryption
+//
+// Use Case: Detect encrypted DNS traffic via TLS dedicated port
+// Relevant For: Firewall, IDS, and network flow data
+
+index=network dest_port=853
+  (transport=tcp OR tls_version IN ("TLS 1.2", "TLS 1.3"))
+| stats count by src_ip, dest_ip, dest_port, transport, tls_version
+| rename src_ip as client_ip, dest_ip as server_ip
+| eval protocol="DoT (port 853)"
+
+
+// =========================================================================
+// Query 3: DoQ Detection (DNS over QUIC on port 853)
+// =========================================================================
+// Identifies DNS over QUIC connections on port 853 (UDP-based, encrypted)
+//
+// Use Case: Detect modern encrypted DNS via QUIC
+// Relevant For: Network telemetry with QUIC support
+
+index=network dest_port=853
+  (transport=udp OR protocol="QUIC" OR (protocol="UDP" AND tls_version="QUIC*"))
+| stats count by src_ip, dest_ip, dest_port, protocol
+| rename src_ip as client_ip, dest_ip as server_ip
+| eval encryption_protocol="DoQ (QUIC port 853)"
+
+
+// =========================================================================
+// Query 4: Plaintext DNS Detection (Unencrypted on port 53)
+// =========================================================================
+// Identifies unencrypted DNS traffic on port 53 (security risk)
+//
+// Use Case: Find clients using unencrypted DNS
+// Relevant For: DNS query logs, network telemetry, packet capture
+
+index=network dest_port=53
+  NOT (tls_version=* OR transport=ssl OR protocol=tls)
+| stats count by src_ip, dest_ip, transport
+| where count >= 1
+| eval risk="Plaintext DNS - No Encryption"
+| eval severity="HIGH"
+
+
+// =========================================================================
+// Query 5: DoH Bypass Detection - Clients Using External Providers
+// =========================================================================
+// Identifies clients connecting to external DoH providers instead of
+// enterprise resolver. Flags potential policy violations.
+//
+// Use Case: Detect DNS exfiltration and policy bypass attempts
+// Relevant For: Firewall, proxy, and network telemetry
+
+index=network dest_port=443 uri="*/dns-query*"
+  NOT (dest_ip IN (10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16))
+  AND (dest_ip IN (8.8.8.8, 8.8.4.4, 1.1.1.1, 1.0.0.1, 9.9.9.9, 149.112.112.112) OR
+    host IN ("dns.google.com", "one.one.one.one", "dns.quad9.net"))
+| stats count as bypass_attempts by src_ip, dest_ip, host
+| where bypass_attempts >= 1
+| eval severity=if(bypass_attempts > 5, "CRITICAL", "HIGH")
+| eval alert="DoH Bypass: Client using external DNS provider"
+
+
+// =========================================================================
+// Query 6: Encryption Coverage Summary (Last 24 hours)
+// =========================================================================
+// Generates encryption coverage percentage across all DNS traffic
+//
+// Use Case: Track DNS encryption adoption over time
+// Relevant For: Security posture and compliance reporting
+
+index=network (dest_port=53 OR dest_port=443 OR dest_port=853)
+  earliest=-24h
+| eval encryption_type=case(
+    dest_port=53 AND (NOT (tls_version=* OR protocol="tls" OR protocol="QUIC")), "plaintext",
+    dest_port=853 AND (transport=tcp OR tls_version=*), "DoT",
+    dest_port=853 AND (transport=udp OR protocol="QUIC"), "DoQ",
+    dest_port=443 AND (uri="*/dns-query*" OR host IN ("dns.google*", "one.one.one.one", "dns.quad9*")), "DoH",
+    1=1, "unknown"
+  )
+| stats count by encryption_type
+| stats sum(count) as total
+| addcoltotals
+| eval encryption_coverage=round((total-plaintext)/total*100, 2)
+
+
+// =========================================================================
+// Query 7: Per-Client DNS Encryption Protocol Usage
+// =========================================================================
+// Shows which DNS protocols each client uses (identifies inconsistent behavior)
+//
+// Use Case: Find clients with mixed or anomalous DNS usage patterns
+// Relevant For: Client behavior analysis and anomaly detection
+
+index=network (dest_port=53 OR dest_port=443 OR dest_port=853)
+  earliest=-24h
+| eval dns_protocol=case(
+    dest_port=53 AND (NOT (tls_version=* OR protocol=tls)), "plaintext",
+    dest_port=853 AND transport=tcp, "DoT",
+    dest_port=853 AND (transport=udp OR protocol="QUIC"), "DoQ",
+    dest_port=443 AND uri="*/dns-query*", "DoH",
+    1=1, "unknown"
+  )
+| stats count by src_ip, dns_protocol
+| stats values(dns_protocol) as protocols, sum(count) as total_queries by src_ip
+| eval protocol_count=mvcount(protocols)
+| where protocol_count > 1
+
+
+// =========================================================================
+// Query 8: Suspicious DoH Query Patterns (Potential Exfiltration)
+// =========================================================================
+// Detects unusual DoH query patterns suggesting data exfiltration:
+// - High frequency (queries per minute)
+// - Large response sizes
+// - Queries to external provider (not enterprise resolver)
+// - Bulk DNS queries (potential command & control)
+//
+// Use Case: Detect DNS-based data exfiltration and C2 communication
+// Relevant For: Threat hunting and advanced threat detection
+
+index=network dest_port=443 uri="*/dns-query*"
+  NOT (dest_ip IN (10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16))
+  earliest=-24h
+| bucket _time span=1m
+| stats count as queries_per_minute by src_ip, _time
+| where queries_per_minute > 100
+| eval anomaly="Suspicious DoH activity - High query frequency"
+| stats count(queries_per_minute) as suspicious_minutes by src_ip
+| where suspicious_minutes > 5
+| eval severity="CRITICAL", mitre_attack="T1572 - Protocol Tunneling (DNS)"

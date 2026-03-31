@@ -1,0 +1,392 @@
+---
+# DNS Threat Hunt Playbook — Sigma Detection Rules
+# All 10 hunts consolidated as Sigma YAML rules
+#
+# Sigma is a generic and open standard for writing detection rules.
+# These rules can be converted to SIEM queries (Splunk, Elastic, etc.)
+# using the Sigma tooling.
+#
+# Usage:
+#   - Convert with sigma-cli to Splunk, Elastic, or other backends
+#   - Import into SIEM tools that support Sigma
+#   - Customize field names for your environment
+#
+# Author: Angie Casarez (casarezaz)
+# License: MIT
+
+# ============================================================================
+# [H001] DNS Tunneling Detection
+# ============================================================================
+- title: DNS Tunneling - High Entropy Subdomains
+  id: dns-tunnel-001
+  description: Detects DNS tunneling via high-entropy subdomain labels indicating encoded data
+  author: Angie Casarez
+  date: 2026/03/27
+  logsource:
+    product: dns
+    service: dns_query
+  detection:
+    selection:
+      entropy: '>3.5'
+      query_count: '>10'
+    filter_benign:
+      domain_type: legitimate
+    condition: selection and not filter_benign
+  falsepositives:
+    - Legitimate CDN queries
+    - DKIM/SPF records from email providers
+  level: high
+  references:
+    - https://attack.mitre.org/techniques/T1572/
+
+# ============================================================================
+# [H002] Command & Control (C2) over DNS
+# ============================================================================
+- title: DNS C2 - Beacon with Regular Intervals
+  id: dns-c2-beacon-001
+  description: Detects DNS C2 beacons with regular check-in intervals and low jitter
+  author: Angie Casarez
+  date: 2026/03/27
+  logsource:
+    product: dns
+    service: dns_query
+  detection:
+    selection:
+      entropy: '>3.5'
+      query_count: '>10'
+      jitter_ratio: '<0.20'
+      query_interval_seconds:
+        - 60
+        - 120
+        - 300
+        - 600
+        - 900
+    condition: selection
+  falsepositives:
+    - Periodic health checks (Windows Update, AV updates)
+  level: critical
+  references:
+    - https://attack.mitre.org/techniques/T1071/004/
+
+- title: DNS C2 - TXT Record Abuse
+  id: dns-c2-txt-001
+  description: Detects TXT record abuse for C2 command download (>50% of queries are TXT)
+  author: Angie Casarez
+  date: 2026/03/27
+  logsource:
+    product: dns
+    service: dns_query
+  detection:
+    selection:
+      query_type:
+        - TXT
+      query_count: '>50'
+      txt_ratio: '>0.50'
+    condition: selection
+  falsepositives:
+    - Email authentication checks (SPF, DKIM, DMARC)
+    - Domain verification queries
+  level: high
+  references:
+    - https://attack.mitre.org/techniques/T1071/004/
+
+# ============================================================================
+# [H003] Domain Generation Algorithm (DGA) Detection
+# ============================================================================
+- title: DNS DGA - High NXDOMAIN Rate
+  id: dns-dga-001
+  description: Detects DGA malware generating random domains with high NXDOMAIN rate
+  author: Angie Casarez
+  date: 2026/03/27
+  logsource:
+    product: dns
+    service: dns_query
+  detection:
+    selection:
+      nxdomain_rate: '>0.50'
+      total_queries: '>100'
+      unique_domains: '>50'
+    condition: selection
+  falsepositives:
+    - DNS enumeration tools
+    - Security scanners (Nessus, Qualys)
+    - DNSBL lookups in bulk
+  level: high
+  references:
+    - https://attack.mitre.org/techniques/T1568/002/
+
+# ============================================================================
+# [H004] DNS Cache Poisoning Detection
+# ============================================================================
+- title: DNS Cache Poisoning - Multiple A Records
+  id: dns-poison-001
+  description: Detects DNS cache poisoning with multiple conflicting A records for same domain
+  author: Angie Casarez
+  date: 2026/03/27
+  logsource:
+    product: dns
+    service: dns_query
+  detection:
+    selection:
+      query_type: A
+      response_code: NOERROR
+      unique_answers: '>2'
+    filter_cdn:
+      response_type: CDN
+    condition: selection and not filter_cdn
+  falsepositives:
+    - Round-robin DNS
+    - Geolocation-based routing (CDN)
+    - Load balancers
+  level: critical
+  references:
+    - https://attack.mitre.org/techniques/T1557/004/
+
+- title: DNS Cache Poisoning - Low TTL
+  id: dns-poison-ttl-001
+  description: Detects suspicious low TTL values (< 5 seconds) indicating poisoning attempts
+  author: Angie Casarez
+  date: 2026/03/27
+  logsource:
+    product: dns
+    service: dns_response
+  detection:
+    selection:
+      ttl: '<5'
+      query_count: '>5'
+    condition: selection
+  falsepositives:
+    - Some CDN services use low TTLs
+  level: medium
+  references:
+    - https://attack.mitre.org/techniques/T1557/004/
+
+# ============================================================================
+# [H005] Zone Transfer Abuse (AXFR) Detection
+# ============================================================================
+- title: DNS Zone Transfer - AXFR from Unauthorized Source
+  id: dns-axfr-001
+  description: Detects AXFR zone transfer requests from unauthorized sources
+  author: Angie Casarez
+  date: 2026/03/27
+  logsource:
+    product: dns
+    service: dns_query
+  detection:
+    selection:
+      query_type: AXFR
+      response_bytes: '>1024'
+    filter_authorized:
+      source_ip_type: authorized_secondary
+    condition: selection and not filter_authorized
+  falsepositives:
+    - Legitimate secondary DNS servers
+    - Authorized zone transfers
+  level: high
+  references:
+    - https://attack.mitre.org/techniques/T1590/002/
+
+# ============================================================================
+# [H006] DNSSEC Validation Failure Detection
+# ============================================================================
+- title: DNSSEC - Validation Failure
+  id: dns-dnssec-001
+  description: Detects DNSSEC validation failures (SERVFAIL, BOGUS, ad=false)
+  author: Angie Casarez
+  date: 2026/03/27
+  logsource:
+    product: dns
+    service: dns_response
+  detection:
+    selection:
+      response_code:
+        - SERVFAIL
+        - BOGUS
+      authenticated_data: false
+    condition: selection
+  falsepositives:
+    - Zone transitions
+    - Signature expiration
+    - Clock skew on resolver
+  level: medium
+  references:
+    - https://attack.mitre.org/techniques/T1557/004/
+
+# ============================================================================
+# [H007] DNS Amplification & Reflection Attack Detection
+# ============================================================================
+- title: DNS Amplification - Large Response to External Query
+  id: dns-amplif-001
+  description: Detects DNS amplification attacks with response size > 10x query size
+  author: Angie Casarez
+  date: 2026/03/27
+  logsource:
+    product: dns
+    service: dns_response
+  detection:
+    selection:
+      response_bytes: '>512'
+      query_bytes: '<50'
+      amplification_ratio: '>10'
+      query_count: '>100'
+    filter_internal:
+      source_type: internal_customer
+    condition: selection and not filter_internal
+  falsepositives:
+    - Legitimate DNSSEC/TXT queries
+    - Legitimate customers with high query volume
+  level: high
+  references:
+    - https://attack.mitre.org/techniques/T1048/003/
+
+- title: DNS Amplification - ANY Query Flood
+  id: dns-amplif-any-001
+  description: Detects DNS amplification using ANY queries (deprecated but still dangerous)
+  author: Angie Casarez
+  date: 2026/03/27
+  logsource:
+    product: dns
+    service: dns_query
+  detection:
+    selection:
+      query_type: ANY
+      query_count: '>1000'
+    filter_authorized:
+      source_type: authorized_customer
+    condition: selection and not filter_authorized
+  falsepositives:
+    - Zone transfer tools
+  level: high
+  references:
+    - https://attack.mitre.org/techniques/T1048/003/
+
+# ============================================================================
+# [H008] DNS over HTTPS (DoH) Bypass Detection
+# ============================================================================
+- title: DoH Bypass - Google DNS over HTTPS
+  id: dns-doh-google-001
+  description: Detects DNS over HTTPS (DoH) bypass using Google's public DNS
+  author: Angie Casarez
+  date: 2026/03/27
+  logsource:
+    product: network
+    service: firewall
+  detection:
+    selection:
+      destination_ip:
+        - 8.8.8.8
+        - 8.8.4.4
+        - 2001:4860:4860::8888
+        - 2001:4860:4860::8844
+      destination_port: 443
+      protocol: tcp
+      connection_count: '>10'
+    condition: selection
+  falsepositives:
+    - Authorized DoH use
+  level: medium
+  references:
+    - https://attack.mitre.org/techniques/T1071/004/
+
+- title: DoH Bypass - Cloudflare DNS over HTTPS
+  id: dns-doh-cloudflare-001
+  description: Detects DNS over HTTPS (DoH) bypass using Cloudflare's public DNS
+  author: Angie Casarez
+  date: 2026/03/27
+  logsource:
+    product: network
+    service: firewall
+  detection:
+    selection:
+      destination_ip:
+        - 1.1.1.1
+        - 1.0.0.1
+        - 2606:4700:4700::1111
+        - 2606:4700:4700::1001
+      destination_port: 443
+      protocol: tcp
+      connection_count: '>10'
+    condition: selection
+  falsepositives:
+    - Authorized DoH use
+  level: medium
+  references:
+    - https://attack.mitre.org/techniques/T1071/004/
+
+# ============================================================================
+# [H009] Fast-Flux Domain Detection
+# ============================================================================
+- title: Fast-Flux - Domain with Multiple A Records
+  id: dns-fastflux-001
+  description: Detects fast-flux domains with rapid A record changes to evade sinkholing
+  author: Angie Casarez
+  date: 2026/03/27
+  logsource:
+    product: dns
+    service: dns_query
+  detection:
+    selection:
+      query_type: A
+      response_code: NOERROR
+      unique_ips: '>=5'
+      time_window_seconds: '<=3600'
+      response_count: '<=100'
+    filter_cdn:
+      domain_type: cdn
+    condition: selection and not filter_cdn
+  falsepositives:
+    - CDN services (Akamai, Cloudflare, AWS)
+    - Load balancers
+    - Legitimate geolocation-based routing
+  level: high
+  references:
+    - https://attack.mitre.org/techniques/T1583/001/
+
+# ============================================================================
+# [H010] DNS Data Exfiltration Detection
+# ============================================================================
+- title: DNS Data Exfiltration - Long Subdomain Labels
+  id: dns-exfil-001
+  description: Detects DNS data exfiltration via long encoded subdomain labels
+  author: Angie Casarez
+  date: 2026/03/27
+  logsource:
+    product: dns
+    service: dns_query
+  detection:
+    selection:
+      max_label_length: '>50'
+      query_count: '>=20'
+      entropy: '>3.5'
+    filter_legitimate:
+      domain_type: legitimate_service
+    condition: selection and not filter_legitimate
+  falsepositives:
+    - Authentication tokens in subdomains
+    - Some legitimate services with long subdomains
+    - URL shorteners (Bit.ly, TinyURL)
+  level: high
+  references:
+    - https://attack.mitre.org/techniques/T1048/003/
+
+- title: DNS Data Exfiltration - High Volume to Attacker Domain
+  id: dns-exfil-volume-001
+  description: Detects consistent high-volume DNS queries to attacker-controlled domain
+  author: Angie Casarez
+  date: 2026/03/27
+  logsource:
+    product: dns
+    service: dns_query
+  detection:
+    selection:
+      query_name_entropy: '>3.8'
+      query_count: '>1000'
+      response_code: NXDOMAIN
+      source_ip_persistence: persistent
+    condition: selection
+  falsepositives:
+    - Legitimate bulk DNS lookups
+    - DNS enumeration tools
+  level: high
+  references:
+    - https://attack.mitre.org/techniques/T1048/003/

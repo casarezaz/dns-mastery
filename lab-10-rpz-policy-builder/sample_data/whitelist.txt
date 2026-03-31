@@ -1,0 +1,9 @@
+# Whitelist - domains that should never be blocked
+# Format: one domain per line
+# Generated: 2026-03-27T18:30:46.822425
+#
+google.com
+facebook.com
+github.com
+stackoverflow.com
+wikipedia.org
