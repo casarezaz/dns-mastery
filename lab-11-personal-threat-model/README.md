@@ -26,7 +26,7 @@ Both books as reference + personal research
 
 ## Status
 
-🔲 **Not started** — This lab is part of the 12-week DNS Mastery curriculum.
+✅ **Complete** — Detection engine, tests, sample data, Splunk queries, and Sigma rules all built.
 
 ---
 

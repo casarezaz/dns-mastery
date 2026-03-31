@@ -26,18 +26,18 @@ This repository contains 12 hands-on labs that build a complete understanding of
 | Lab | Project | Status | Description |
 |-----|---------|--------|-------------|
 | 05 | [DNS C2 Detector](lab-05-dns-c2-detector/) | ✅ Complete | Beacon pattern + high-entropy subdomain detection (Splunk SPL + Sigma) |
-| 06 | [Tunnel Hunter](lab-06-tunnel-hunter/) | 🔲 Planned | DNS tunneling detection engine — tested against iodine, dnscat2, dns2tcp |
-| 07 | [DNSSEC Validator](lab-07-dnssec-validator/) | 🔲 Planned | Full chain-of-trust validation from root KSK → target RRSIG |
-| 08 | [DGA Classifier](lab-08-dga-classifier/) | 🔲 Planned | ML model distinguishing DGA-generated domains from legitimate (AI×Cyber) |
+| 06 | [Tunnel Hunter](lab-06-tunnel-hunter/) | ✅ Complete | DNS tunneling detection engine — tested against iodine, dnscat2, dns2tcp |
+| 07 | [DNSSEC Validator](lab-07-dnssec-validator/) | ✅ Complete | Full chain-of-trust validation from root KSK → target RRSIG |
+| 08 | [DGA Classifier](lab-08-dga-classifier/) | ✅ Complete | ML model distinguishing DGA-generated domains from legitimate (AI×Cyber) |
 
 ### Phase 3: Modern DNS & Defensive Architecture (Weeks 9–12)
 
 | Lab | Project | Status | Description |
 |-----|---------|--------|-------------|
-| 09 | [Encrypted DNS Analyzer](lab-09-encrypted-dns-analyzer/) | 🔲 Planned | DoH/DoT/DoQ identification, bypass detection, certificate validation |
-| 10 | [RPZ Policy Builder](lab-10-rpz-policy-builder/) | 🔲 Planned | Automated threat intel → Response Policy Zone pipeline |
-| 11 | [Personal Threat Model](lab-11-personal-threat-model/) | 🔲 Planned | Real-world DNS incident response case study + hardened architecture |
-| 12 | [Threat Hunt Playbook](lab-12-threat-hunt-playbook/) | 🔲 Planned | Capstone — comprehensive DNS threat hunting guide with executable queries |
+| 09 | [Encrypted DNS Analyzer](lab-09-encrypted-dns-analyzer/) | ✅ Complete | DoH/DoT/DoQ identification, bypass detection, certificate validation |
+| 10 | [RPZ Policy Builder](lab-10-rpz-policy-builder/) | ✅ Complete | Automated threat intel → Response Policy Zone pipeline |
+| 11 | [Personal Threat Model](lab-11-personal-threat-model/) | ✅ Complete | Real-world DNS incident response case study + hardened architecture |
+| 12 | [Threat Hunt Playbook](lab-12-threat-hunt-playbook/) | ✅ Complete | Capstone — comprehensive DNS threat hunting guide with executable queries |
 
 ---
 
